@@ -22744,7 +22744,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "SLC"
+	(gr_text "SCL"
 		(at 121.27 112.85 90)
 		(layer "B.SilkS")
 		(uuid "149f9d0e-141f-4ed6-9b3a-405de75cb752")

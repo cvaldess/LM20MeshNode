@@ -71,11 +71,21 @@ The [`fab/pcbway/`](fab/pcbway/) folder contains:
 - `nrflm20-meshnode_rev0.1_pcbway.zip`: Gerber files (4 copper layers, masks, top paste,
   silkscreen, outline), Excellon drill files (PTH and NPTH) and an IPC-D-356 netlist.
 - `gerber/`: the same files unzipped, plus drill maps and the drill report.
+- `nrflm20-meshnode-BOM-PCBWay.csv`: bill of materials (40 lines, 71 parts) with manufacturer part
+  numbers and LCSC codes. A few passives are generic parts, listed by specification.
+- `nrflm20-meshnode-CPL-PCBWay.csv`: component placement (centroid) file in millimetres, in the
+  same coordinate system as the Gerber files. The OLED (DS501) is the only part on the bottom side.
 - `pedido_pcbway.txt`: order settings and pre-production checks (in Spanish).
+
+Not fitted (DNP) and left out of the BOM and placement files: R302, R404, C303, C304. Mounting
+holes and test points are not parts and are left out too.
 
 Board: 4 layers, 1.6 mm, 1 oz copper, ENIG recommended, minimum track/space 0.2 mm, minimum
 drill 0.3 mm. Stencil: top side only, 0.10 mm. The standard PCBWay 4-layer stackup is fine;
 impedance control is not needed.
+
+The files are generated from the saved board with `docs/gen/fab_pcbway.py` (Gerber, drill,
+IPC-D-356) and `docs/gen/bom_cpl_pcbway.py` (BOM and placement), using KiCad's Python.
 
 ## Design files
 
@@ -97,3 +107,15 @@ not included in this repository.
 - **Made with:** [Claude Code](https://claude.com/claude-code), [KiCad](https://www.kicad.org/)
   and [Konnect-EDA](https://github.com/Orchis-ai-LLC/Konnect-EDA)
 - **Sponsor:** [PCBWay](https://www.pcbway.com/)
+
+## License
+
+Copyright © 2026 CValdesS.
+
+This source describes Open Hardware and is licensed under the CERN-OHL-S v2
+([LICENSE](LICENSE)). You may redistribute and modify this source and make products using it
+under the terms of the CERN-OHL-S v2. This source is distributed WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR
+PURPOSE. Please see the CERN-OHL-S v2 for applicable conditions.
+
+Source location: https://github.com/cvaldess/LM20MeshNode

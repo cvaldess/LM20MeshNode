@@ -1,7 +1,10 @@
 PEDIDO PCBWay — nrflm20-meshnode rev 0.1                                        generado 12-11-2026
 
 Subir:  nrflm20-meshnode_rev0.1_pcbway.zip   (13 ficheros: 10 Gerber + PTH/NPTH Excellon + IPC-D-356)
-Placa:  nrflm20-meshnode.kicad_pcb guardada 12-11-2026 15:46, sha256 4d9225a0b012ae88…bc131d5
+Placa:  nrflm20-meshnode.kicad_pcb guardada 12-11-2026 16:50 (serigrafía SLC→SCL), sha256 75066421f6f948f3…5909be172
+        Regenerar: docs/gen/fab_pcbway.py (Gerber/taladros/IPC/zip/DRC) y docs/gen/bom_cpl_pcbway.py (BOM/CPL)
+Montaje (sólo si se pide PCBA): nrflm20-meshnode-BOM-PCBWay.csv + nrflm20-meshnode-CPL-PCBWay.csv
+        (sin DNP R302 R404 C303 C304, sin agujeros ni TP; DS501 es la única pieza en la cara inferior)
 
 FORMULARIO (PCB estándar)
   Tamaño            40 x 85,68 mm            Capas        4 (orden: GTL · G1 · G2 · GBL; X2 lo indica)
