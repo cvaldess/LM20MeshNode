@@ -1,0 +1,867 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="1690" viewBox="0 0 1720 1690" font-family="Segoe UI, Arial, sans-serif">
+<defs><style>
+ .frame { fill:#fbfcfe; stroke:#90a4ae; stroke-width:1.3; }
+ .framep { fill:#fffaf0; stroke:#b7791f; stroke-width:1.5; stroke-dasharray:6 4; }
+ .ft { font-size:13.5px; font-weight:700; fill:#102a43; }
+ .sym { fill:#ffffff; stroke:#263238; stroke-width:1.6; }
+ .symp { fill:#fff4d6; stroke:#b7791f; stroke-width:1.6; stroke-dasharray:5 3; }
+ .dnp { fill:#ffffff; stroke:#90a4ae; stroke-width:1.4; stroke-dasharray:4 3; }
+ .w { stroke:#263238; stroke-width:1.5; fill:none; }
+ .thin { stroke:#90a4ae; stroke-width:1.2; fill:none; }
+ .pw { stroke:#c62828; stroke-width:2.4; fill:none; }
+ .sg { stroke:#1565c0; stroke-width:1.8; fill:none; }
+ .rf { stroke:#2e7d32; stroke-width:2.6; fill:none; }
+ .df { stroke:#6a1b9a; stroke-width:2.0; fill:none; }
+ .gn { stroke:#ef6c00; stroke-width:2.2; fill:none; }
+ .ah_sg { fill:#1565c0; } .ah_pw { fill:#c62828; } .ah_rf { fill:#2e7d32; } .ah_df { fill:#6a1b9a; } .ah_gn { fill:#ef6c00; }
+ .plate { stroke:#263238; stroke-width:2.4; fill:none; }
+ .plated { stroke:#90a4ae; stroke-width:2.4; fill:none; stroke-dasharray:3 2; }
+ .nc { stroke:#c62828; stroke-width:1.8; }
+ .blk { fill:#eef4fb; stroke:#5c7a99; stroke-width:1.6; }
+ .blkp { fill:#fdecea; stroke:#c62828; stroke-width:1.6; }
+ .blkr { fill:#e8f5e9; stroke:#2e7d32; stroke-width:1.6; }
+ .blkg { fill:#fff3e0; stroke:#ef6c00; stroke-width:1.6; }
+ .bt { font-size:14px; font-weight:700; fill:#102a43; }
+ .bs { font-size:11.5px; fill:#37474f; }
+ .al { font-size:11px; fill:#102a43; font-weight:600; }
+ .t { font-size:13px; fill:#212121; }
+ .ts { font-size:11.5px; fill:#455a64; }
+ .tp { font-size:11.5px; fill:#8a5a00; font-weight:600; }
+ .tw { font-size:11.5px; fill:#b71c1c; font-weight:600; }
+ .tb { font-size:13px; font-weight:700; fill:#102a43; }
+ .h1 { font-size:22px; font-weight:700; fill:#102a43; }
+ .h2 { font-size:13px; fill:#455a64; }
+ .ref { font-size:11.5px; font-weight:700; fill:#102a43; }
+ .val { font-size:11px; fill:#37474f; }
+ .icref { font-size:13px; font-weight:700; fill:#102a43; }
+ .pn { font-size:10px; fill:#8d6e63; font-weight:600; }
+ .pname { font-size:11px; fill:#102a43; }
+ .lp { font-size:11.5px; fill:#c62828; font-weight:700; }
+ .lsb { font-size:11.5px; fill:#1565c0; font-weight:700; }
+ .ll { font-size:11.5px; fill:#4e342e; font-weight:700; }
+ .lab_p { fill:#ffebee; stroke:#c62828; stroke-width:1.2; }
+ .lab_s { fill:#e3f2fd; stroke:#1565c0; stroke-width:1.2; }
+ .lab_l { fill:#efebe9; stroke:#8d6e63; stroke-width:1.2; }
+ .th { font-size:11.5px; font-weight:700; fill:#102a43; }
+ .td { font-size:11px; fill:#263238; }
+ .tdm { font-size:11px; fill:#263238; font-family:Consolas, monospace; }
+</style></defs>
+<rect width="1720" height="1690" fill="#ffffff"/>
+<text x="24" y="36" class="h1" text-anchor="start" >01 · Alimentación — USB-C, nPM1300, batería</text>
+<text x="24" y="56" class="h2" text-anchor="start" >nrf54lm20-meshnode · hoja 1 · referencias 1xx · intención de 01_alimentacion.kicad_sch</text>
+<rect x="760" y="31" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="777.1" y="44.5" class="lp" text-anchor="middle" >3V3</text>
+<text x="806" y="44" class="ts" text-anchor="start" >alimentación global</text>
+<rect x="945" y="31" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="976.9" y="44.5" class="lsb" text-anchor="middle" >I2C_SDA</text>
+<text x="1020" y="44" class="ts" text-anchor="start" >jerárquica (otra hoja)</text>
+<rect x="1165" y="31" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="1182.1" y="44.5" class="ll" text-anchor="middle" >SW1</text>
+<text x="1208" y="44" class="ts" text-anchor="start" >local de la hoja</text>
+<rect x="1320" y="31" width="34" height="18" rx="3" class="dnp"/>
+<text x="1360" y="44" class="ts" text-anchor="start" >DNP / opcional</text>
+<rect x="1465" y="31" width="34" height="18" rx="3" class="symp"/>
+<text x="1505" y="44" class="ts" text-anchor="start" >pendiente de confirmar</text>
+<rect x="20" y="76" width="600" height="470" rx="7" class="frame"/>
+<text x="32" y="96" class="ft" text-anchor="start" >A · USB-C (KH-TYPE-C-16P) + ESD</text>
+<rect x="50" y="130" width="140" height="348" rx="3" class="sym"/>
+<text x="120.0" y="108" class="icref" text-anchor="middle" >J101</text>
+<text x="120.0" y="122" class="val" text-anchor="middle" >KH-TYPE-C-16P · C709357</text>
+<path d="M190,150 L230,150" class="w"/>
+<text x="194" y="146" class="pn" text-anchor="start" >A4/B9</text>
+<text x="184" y="154" class="pname" text-anchor="end" >VBUS</text>
+<path d="M190,172 L230,172" class="w"/>
+<text x="194" y="168" class="pn" text-anchor="start" >A9/B4</text>
+<text x="184" y="176" class="pname" text-anchor="end" >VBUS</text>
+<path d="M190,216 L230,216" class="w"/>
+<text x="194" y="212" class="pn" text-anchor="start" >A5</text>
+<text x="184" y="220" class="pname" text-anchor="end" >CC1</text>
+<path d="M190,238 L230,238" class="w"/>
+<text x="194" y="234" class="pn" text-anchor="start" >B5</text>
+<text x="184" y="242" class="pname" text-anchor="end" >CC2</text>
+<path d="M190,282 L230,282" class="w"/>
+<text x="194" y="278" class="pn" text-anchor="start" >A6/B6</text>
+<text x="184" y="286" class="pname" text-anchor="end" >DP1/DP2</text>
+<path d="M190,304 L230,304" class="w"/>
+<text x="194" y="300" class="pn" text-anchor="start" >A7/B7</text>
+<text x="184" y="308" class="pname" text-anchor="end" >DN1/DN2</text>
+<path d="M190,348 L230,348" class="w"/>
+<text x="194" y="344" class="pn" text-anchor="start" >A8</text>
+<text x="184" y="352" class="pname" text-anchor="end" >SBU1</text>
+<path d="M190,370 L230,370" class="w"/>
+<text x="194" y="366" class="pn" text-anchor="start" >B8</text>
+<text x="184" y="374" class="pname" text-anchor="end" >SBU2</text>
+<path d="M190,414 L230,414" class="w"/>
+<text x="194" y="410" class="pn" text-anchor="start" >A1/B12</text>
+<text x="184" y="418" class="pname" text-anchor="end" >GND</text>
+<path d="M190,436 L230,436" class="w"/>
+<text x="194" y="432" class="pn" text-anchor="start" >A12/B1</text>
+<text x="184" y="440" class="pname" text-anchor="end" >GND</text>
+<path d="M190,458 L230,458" class="w"/>
+<text x="194" y="454" class="pn" text-anchor="start" >SH1-4</text>
+<text x="184" y="462" class="pname" text-anchor="end" >SHIELD</text>
+<path d="M230,172 L244,172 L244,150" class="w"/>
+<circle cx="244" cy="150" r="3.2" fill="#263238"/>
+<path d="M230,150 L360,150" class="pw"/>
+<circle cx="300" cy="150" r="3.2" fill="#263238"/>
+<path d="M300,150 L300,165.0" class="w"/>
+<path d="M300,179.0 L300,194" class="w"/>
+<path d="M292,179.0 L308,179.0 L300,165.0 Z" class="sym"/>
+<path d="M289,162.0 L292,165.0 L308,165.0 L311,168.0" class="plate"/>
+<text x="314" y="170.0" class="ref" text-anchor="start" >D101</text>
+<text x="314" y="183.0" class="val" text-anchor="start" >ESD5Z6.0</text>
+<path d="M300,194 L300,201" class="w"/>
+<path d="M291,201 L309,201" class="w"/>
+<path d="M294,205 L306,205" class="w"/>
+<path d="M297,209 L303,209" class="w"/>
+<rect x="360" y="141" width="41.6" height="18" rx="3" class="lab_p"/>
+<text x="380.8" y="154.5" class="lp" text-anchor="middle" >VBUS</text>
+<rect x="230" y="207" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="247.1" y="220.5" class="ll" text-anchor="middle" >CC1</text>
+<rect x="230" y="229" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="247.1" y="242.5" class="ll" text-anchor="middle" >CC2</text>
+<rect x="230" y="273" width="56.400000000000006" height="18" rx="3" class="lab_s"/>
+<text x="258.2" y="286.5" class="lsb" text-anchor="middle" >USB_DP</text>
+<rect x="230" y="295" width="56.400000000000006" height="18" rx="3" class="lab_s"/>
+<text x="258.2" y="308.5" class="lsb" text-anchor="middle" >USB_DM</text>
+<path d="M225,343 L235,353" class="nc"/>
+<path d="M225,353 L235,343" class="nc"/>
+<path d="M225,365 L235,375" class="nc"/>
+<path d="M225,375 L235,365" class="nc"/>
+<path d="M230,414 L244,414" class="w"/>
+<path d="M244,414 L244,421" class="w"/>
+<path d="M235,421 L253,421" class="w"/>
+<path d="M238,425 L250,425" class="w"/>
+<path d="M241,429 L247,429" class="w"/>
+<path d="M230,436 L244,436" class="w"/>
+<path d="M244,436 L244,443" class="w"/>
+<path d="M235,443 L253,443" class="w"/>
+<path d="M238,447 L250,447" class="w"/>
+<path d="M241,451 L247,451" class="w"/>
+<path d="M230,458 L244,458" class="w"/>
+<path d="M244,458 L244,465" class="w"/>
+<path d="M235,465 L253,465" class="w"/>
+<path d="M238,469 L250,469" class="w"/>
+<path d="M241,473 L247,473" class="w"/>
+<text x="36" y="506" class="ts" text-anchor="start" >DP1/DP2 y DN1/DN2 unidos en el conector (USB 2.0 reversible). SBU sin uso.</text>
+<text x="36" y="521" class="ts" text-anchor="start" >Blindaje directo a GND (aparato a batería, sin chasis).</text>
+<rect x="410" y="226" width="100" height="164" rx="3" class="sym"/>
+<text x="460.0" y="204" class="icref" text-anchor="middle" >U102</text>
+<text x="460.0" y="218" class="val" text-anchor="middle" >TPD4E05U06DQAR · DOWO</text>
+<path d="M392,242 L410,242" class="w"/>
+<text x="406" y="238" class="pn" text-anchor="end" >1</text>
+<text x="416" y="246" class="pname" text-anchor="start" >D1+</text>
+<path d="M392,264 L410,264" class="w"/>
+<text x="406" y="260" class="pn" text-anchor="end" >2</text>
+<text x="416" y="268" class="pname" text-anchor="start" >D1-</text>
+<path d="M392,286 L410,286" class="w"/>
+<text x="406" y="282" class="pn" text-anchor="end" >4</text>
+<text x="416" y="290" class="pname" text-anchor="start" >D2+</text>
+<path d="M392,308 L410,308" class="w"/>
+<text x="406" y="304" class="pn" text-anchor="end" >5</text>
+<text x="416" y="312" class="pname" text-anchor="start" >D2-</text>
+<path d="M510,242 L528,242" class="w"/>
+<text x="514" y="238" class="pn" text-anchor="start" >10</text>
+<text x="504" y="246" class="pname" text-anchor="end" >NC·D1+</text>
+<path d="M510,264 L528,264" class="w"/>
+<text x="514" y="260" class="pn" text-anchor="start" >9</text>
+<text x="504" y="268" class="pname" text-anchor="end" >NC·D1-</text>
+<path d="M510,286 L528,286" class="w"/>
+<text x="514" y="282" class="pn" text-anchor="start" >7</text>
+<text x="504" y="290" class="pname" text-anchor="end" >NC·D2+</text>
+<path d="M510,308 L528,308" class="w"/>
+<text x="514" y="304" class="pn" text-anchor="start" >6</text>
+<text x="504" y="312" class="pname" text-anchor="end" >NC·D2-</text>
+<path d="M510,352 L528,352" class="w"/>
+<text x="514" y="348" class="pn" text-anchor="start" >3</text>
+<text x="504" y="356" class="pname" text-anchor="end" >GND</text>
+<path d="M510,374 L528,374" class="w"/>
+<text x="514" y="370" class="pn" text-anchor="start" >8</text>
+<text x="504" y="378" class="pname" text-anchor="end" >GND</text>
+<rect x="335.6" y="233" width="56.400000000000006" height="18" rx="3" class="lab_s"/>
+<text x="363.8" y="246.5" class="lsb" text-anchor="middle" >USB_DP</text>
+<rect x="528" y="233" width="56.400000000000006" height="18" rx="3" class="lab_s"/>
+<text x="556.2" y="246.5" class="lsb" text-anchor="middle" >USB_DP</text>
+<rect x="335.6" y="255" width="56.400000000000006" height="18" rx="3" class="lab_s"/>
+<text x="363.8" y="268.5" class="lsb" text-anchor="middle" >USB_DM</text>
+<rect x="528" y="255" width="56.400000000000006" height="18" rx="3" class="lab_s"/>
+<text x="556.2" y="268.5" class="lsb" text-anchor="middle" >USB_DM</text>
+<rect x="357.8" y="277" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="374.90000000000003" y="290.5" class="ll" text-anchor="middle" >CC1</text>
+<rect x="528" y="277" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="545.1" y="290.5" class="ll" text-anchor="middle" >CC1</text>
+<rect x="357.8" y="299" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="374.90000000000003" y="312.5" class="ll" text-anchor="middle" >CC2</text>
+<rect x="528" y="299" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="545.1" y="312.5" class="ll" text-anchor="middle" >CC2</text>
+<path d="M528,352 L538,352" class="w"/>
+<path d="M538,352 L538,359" class="w"/>
+<path d="M529,359 L547,359" class="w"/>
+<path d="M532,363 L544,363" class="w"/>
+<path d="M535,367 L541,367" class="w"/>
+<path d="M528,374 L538,374" class="w"/>
+<path d="M538,374 L538,381" class="w"/>
+<path d="M529,381 L547,381" class="w"/>
+<path d="M532,385 L544,385" class="w"/>
+<path d="M535,389 L541,389" class="w"/>
+<text x="330" y="410" class="ts" text-anchor="start" >Cj 0,4 pF típ. / 0,5 máx. (I/O–GND, datasheet</text>
+<text x="330" y="428" class="ts" text-anchor="start" >DOWO) ⇒ vale para USB HS: el del cajón sirve.</text>
+<text x="330" y="446" class="ts" text-anchor="start" >NC 10/9/7/6 enfrente de 1/2/4/5 y unidos a su</text>
+<text x="330" y="464" class="ts" text-anchor="start" >red: la pista cruza recta los dos pads.</text>
+<rect x="640" y="76" width="600" height="720" rx="7" class="frame"/>
+<text x="652" y="96" class="ft" text-anchor="start" >B · PMIC nPM1300-QEAA (QFN32, EP = AVSS)</text>
+<rect x="850" y="140" width="190" height="560" rx="3" class="sym"/>
+<text x="945.0" y="118" class="icref" text-anchor="middle" >U101</text>
+<text x="945.0" y="132" class="val" text-anchor="middle" >nPM1300-QEAA · C7501206</text>
+<path d="M830,160 L850,160" class="w"/>
+<text x="846" y="156" class="pn" text-anchor="end" >21</text>
+<text x="856" y="164" class="pname" text-anchor="start" >VBUS</text>
+<path d="M830,186 L850,186" class="w"/>
+<text x="846" y="182" class="pn" text-anchor="end" >22</text>
+<text x="856" y="190" class="pname" text-anchor="start" >VBUSOUT</text>
+<path d="M830,212 L850,212" class="w"/>
+<text x="846" y="208" class="pn" text-anchor="end" >23</text>
+<text x="856" y="216" class="pname" text-anchor="start" >CC1</text>
+<path d="M830,238 L850,238" class="w"/>
+<text x="846" y="234" class="pn" text-anchor="end" >24</text>
+<text x="856" y="242" class="pname" text-anchor="start" >CC2</text>
+<path d="M830,290 L850,290" class="w"/>
+<text x="846" y="286" class="pn" text-anchor="end" >19</text>
+<text x="856" y="294" class="pname" text-anchor="start" >VBAT</text>
+<path d="M830,316 L850,316" class="w"/>
+<text x="846" y="312" class="pn" text-anchor="end" >18</text>
+<text x="856" y="320" class="pname" text-anchor="start" >NTC</text>
+<path d="M830,368 L850,368" class="w"/>
+<text x="846" y="364" class="pn" text-anchor="end" >12</text>
+<text x="856" y="372" class="pname" text-anchor="start" >VDDIO</text>
+<path d="M830,394 L850,394" class="w"/>
+<text x="846" y="390" class="pn" text-anchor="end" >13</text>
+<text x="856" y="398" class="pname" text-anchor="start" >SDA</text>
+<path d="M830,420 L850,420" class="w"/>
+<text x="846" y="416" class="pn" text-anchor="end" >14</text>
+<text x="856" y="424" class="pname" text-anchor="start" >SCL</text>
+<path d="M830,472 L850,472" class="w"/>
+<text x="846" y="468" class="pn" text-anchor="end" >7</text>
+<text x="856" y="476" class="pname" text-anchor="start" >GPIO0</text>
+<path d="M830,498 L850,498" class="w"/>
+<text x="846" y="494" class="pn" text-anchor="end" >8</text>
+<text x="856" y="502" class="pname" text-anchor="start" >GPIO1</text>
+<path d="M830,524 L850,524" class="w"/>
+<text x="846" y="520" class="pn" text-anchor="end" >9</text>
+<text x="856" y="528" class="pname" text-anchor="start" >GPIO2</text>
+<path d="M830,550 L850,550" class="w"/>
+<text x="846" y="546" class="pn" text-anchor="end" >10</text>
+<text x="856" y="554" class="pname" text-anchor="start" >GPIO3</text>
+<path d="M830,576 L850,576" class="w"/>
+<text x="846" y="572" class="pn" text-anchor="end" >11</text>
+<text x="856" y="580" class="pname" text-anchor="start" >GPIO4</text>
+<path d="M830,628 L850,628" class="w"/>
+<text x="846" y="624" class="pn" text-anchor="end" >15</text>
+<text x="856" y="632" class="pname" text-anchor="start" >SHPHLD</text>
+<path d="M830,654 L850,654" class="w"/>
+<text x="846" y="650" class="pn" text-anchor="end" >17</text>
+<text x="856" y="658" class="pname" text-anchor="start" >VSET1</text>
+<path d="M830,680 L850,680" class="w"/>
+<text x="846" y="676" class="pn" text-anchor="end" >16</text>
+<text x="856" y="684" class="pname" text-anchor="start" >VSET2</text>
+<path d="M1040,160 L1060,160" class="w"/>
+<text x="1044" y="156" class="pn" text-anchor="start" >20</text>
+<text x="1034" y="164" class="pname" text-anchor="end" >VSYS</text>
+<path d="M1040,186 L1060,186" class="w"/>
+<text x="1044" y="182" class="pn" text-anchor="start" >4</text>
+<text x="1034" y="190" class="pname" text-anchor="end" >PVDD</text>
+<path d="M1040,238 L1060,238" class="w"/>
+<text x="1044" y="234" class="pn" text-anchor="start" >3</text>
+<text x="1034" y="242" class="pname" text-anchor="end" >SW1</text>
+<path d="M1040,264 L1060,264" class="w"/>
+<text x="1044" y="260" class="pn" text-anchor="start" >1</text>
+<text x="1034" y="268" class="pname" text-anchor="end" >VOUT1</text>
+<path d="M1040,290 L1060,290" class="w"/>
+<text x="1044" y="286" class="pn" text-anchor="start" >2</text>
+<text x="1034" y="294" class="pname" text-anchor="end" >PVSS1</text>
+<path d="M1040,342 L1060,342" class="w"/>
+<text x="1044" y="338" class="pn" text-anchor="start" >5</text>
+<text x="1034" y="346" class="pname" text-anchor="end" >SW2</text>
+<path d="M1040,368 L1060,368" class="w"/>
+<text x="1044" y="364" class="pn" text-anchor="start" >32</text>
+<text x="1034" y="372" class="pname" text-anchor="end" >VOUT2</text>
+<path d="M1040,394 L1060,394" class="w"/>
+<text x="1044" y="390" class="pn" text-anchor="start" >6</text>
+<text x="1034" y="398" class="pname" text-anchor="end" >PVSS2</text>
+<path d="M1040,446 L1060,446" class="w"/>
+<text x="1044" y="442" class="pn" text-anchor="start" >28</text>
+<text x="1034" y="450" class="pname" text-anchor="end" >LSIN1/VINLDO1</text>
+<path d="M1040,472 L1060,472" class="w"/>
+<text x="1044" y="468" class="pn" text-anchor="start" >29</text>
+<text x="1034" y="476" class="pname" text-anchor="end" >LSOUT1/VOUTLDO1</text>
+<path d="M1040,498 L1060,498" class="w"/>
+<text x="1044" y="494" class="pn" text-anchor="start" >30</text>
+<text x="1034" y="502" class="pname" text-anchor="end" >LSIN2/VINLDO2</text>
+<path d="M1040,524 L1060,524" class="w"/>
+<text x="1044" y="520" class="pn" text-anchor="start" >31</text>
+<text x="1034" y="528" class="pname" text-anchor="end" >LSOUT2/VOUTLDO2</text>
+<path d="M1040,576 L1060,576" class="w"/>
+<text x="1044" y="572" class="pn" text-anchor="start" >25</text>
+<text x="1034" y="580" class="pname" text-anchor="end" >LED0</text>
+<path d="M1040,602 L1060,602" class="w"/>
+<text x="1044" y="598" class="pn" text-anchor="start" >26</text>
+<text x="1034" y="606" class="pname" text-anchor="end" >LED1</text>
+<path d="M1040,628 L1060,628" class="w"/>
+<text x="1044" y="624" class="pn" text-anchor="start" >27</text>
+<text x="1034" y="632" class="pname" text-anchor="end" >LED2</text>
+<path d="M1040,680 L1060,680" class="w"/>
+<text x="1044" y="676" class="pn" text-anchor="start" >33</text>
+<text x="1034" y="684" class="pname" text-anchor="end" >AVSS (EP)</text>
+<rect x="788.4" y="151" width="41.6" height="18" rx="3" class="lab_p"/>
+<text x="809.1999999999999" y="164.5" class="lp" text-anchor="middle" >VBUS</text>
+<rect x="758.8" y="177" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="794.4" y="190.5" class="lsb" text-anchor="middle" >VBUS_MCU</text>
+<rect x="795.8" y="203" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="812.9" y="216.5" class="ll" text-anchor="middle" >CC1</text>
+<rect x="795.8" y="229" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="812.9" y="242.5" class="ll" text-anchor="middle" >CC2</text>
+<rect x="788.4" y="281" width="41.6" height="18" rx="3" class="lab_p"/>
+<text x="809.1999999999999" y="294.5" class="lp" text-anchor="middle" >VBAT</text>
+<rect x="795.8" y="307" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="812.9" y="320.5" class="ll" text-anchor="middle" >NTC</text>
+<rect x="795.8" y="359" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="812.9" y="372.5" class="lp" text-anchor="middle" >3V3</text>
+<rect x="766.2" y="385" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="798.1" y="398.5" class="lsb" text-anchor="middle" >I2C_SDA</text>
+<rect x="766.2" y="411" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="798.1" y="424.5" class="lsb" text-anchor="middle" >I2C_SCL</text>
+<rect x="766.2" y="463" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="798.1" y="476.5" class="lsb" text-anchor="middle" >GNSS_EN</text>
+<rect x="758.8" y="489" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="794.4" y="502.5" class="lsb" text-anchor="middle" >PMIC_INT</text>
+<path d="M825,519 L835,529" class="nc"/>
+<path d="M825,529 L835,519" class="nc"/>
+<path d="M825,545 L835,555" class="nc"/>
+<path d="M825,555 L835,545" class="nc"/>
+<path d="M825,571 L835,581" class="nc"/>
+<path d="M825,581 L835,571" class="nc"/>
+<rect x="773.6" y="619" width="56.400000000000006" height="18" rx="3" class="lab_l"/>
+<text x="801.8000000000001" y="632.5" class="ll" text-anchor="middle" >SHPHLD</text>
+<rect x="781.0" y="645" width="49.0" height="18" rx="3" class="lab_l"/>
+<text x="805.5" y="658.5" class="ll" text-anchor="middle" >VSET1</text>
+<rect x="781.0" y="671" width="49.0" height="18" rx="3" class="lab_l"/>
+<text x="805.5" y="684.5" class="ll" text-anchor="middle" >VSET2</text>
+<rect x="1060" y="151" width="41.6" height="18" rx="3" class="lab_p"/>
+<text x="1080.8" y="164.5" class="lp" text-anchor="middle" >VSYS</text>
+<rect x="1060" y="177" width="41.6" height="18" rx="3" class="lab_p"/>
+<text x="1080.8" y="190.5" class="lp" text-anchor="middle" >VSYS</text>
+<rect x="1060" y="229" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="1077.1" y="242.5" class="ll" text-anchor="middle" >SW1</text>
+<rect x="1060" y="255" width="56.400000000000006" height="18" rx="3" class="lab_p"/>
+<text x="1088.2" y="268.5" class="lp" text-anchor="middle" >V_GNSS</text>
+<path d="M1060,290 L1070,290" class="w"/>
+<path d="M1070,290 L1070,297" class="w"/>
+<path d="M1061,297 L1079,297" class="w"/>
+<path d="M1064,301 L1076,301" class="w"/>
+<path d="M1067,305 L1073,305" class="w"/>
+<rect x="1060" y="333" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="1077.1" y="346.5" class="ll" text-anchor="middle" >SW2</text>
+<rect x="1060" y="359" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="1077.1" y="372.5" class="lp" text-anchor="middle" >3V3</text>
+<path d="M1060,394 L1070,394" class="w"/>
+<path d="M1070,394 L1070,401" class="w"/>
+<path d="M1061,401 L1079,401" class="w"/>
+<path d="M1064,405 L1076,405" class="w"/>
+<path d="M1067,409 L1073,409" class="w"/>
+<path d="M1060,446 L1070,446" class="w"/>
+<path d="M1070,446 L1070,453" class="w"/>
+<path d="M1061,453 L1079,453" class="w"/>
+<path d="M1064,457 L1076,457" class="w"/>
+<path d="M1067,461 L1073,461" class="w"/>
+<path d="M1060,472 L1070,472" class="w"/>
+<path d="M1070,472 L1070,479" class="w"/>
+<path d="M1061,479 L1079,479" class="w"/>
+<path d="M1064,483 L1076,483" class="w"/>
+<path d="M1067,487 L1073,487" class="w"/>
+<path d="M1060,498 L1070,498" class="w"/>
+<path d="M1070,498 L1070,505" class="w"/>
+<path d="M1061,505 L1079,505" class="w"/>
+<path d="M1064,509 L1076,509" class="w"/>
+<path d="M1067,513 L1073,513" class="w"/>
+<path d="M1060,524 L1070,524" class="w"/>
+<path d="M1070,524 L1070,531" class="w"/>
+<path d="M1061,531 L1079,531" class="w"/>
+<path d="M1064,535 L1076,535" class="w"/>
+<path d="M1067,539 L1073,539" class="w"/>
+<rect x="1060" y="567" width="41.6" height="18" rx="3" class="lab_l"/>
+<text x="1080.8" y="580.5" class="ll" text-anchor="middle" >LED0</text>
+<rect x="1060" y="593" width="41.6" height="18" rx="3" class="lab_l"/>
+<text x="1080.8" y="606.5" class="ll" text-anchor="middle" >LED1</text>
+<path d="M1055,623 L1065,633" class="nc"/>
+<path d="M1055,633 L1065,623" class="nc"/>
+<path d="M1060,680 L1070,680" class="w"/>
+<path d="M1070,680 L1070,687" class="w"/>
+<path d="M1061,687 L1079,687" class="w"/>
+<path d="M1064,691 L1076,691" class="w"/>
+<path d="M1067,695 L1073,695" class="w"/>
+<text x="656" y="722" class="ts" text-anchor="start" >GPIO0 ← MCU: el firmware la asigna a BUCKENCTRL (enciende BUCK1 = GNSS) ⇒ PIN_GPS_EN.</text>
+<text x="656" y="737" class="ts" text-anchor="start" >GPIO1 → MCU: interrupción (VBUS, carga, botón). GPIO2-4 libres (pull-down interno de serie).</text>
+<text x="656" y="752" class="ts" text-anchor="start" >LSIN/LSOUT 1-2 sin uso ⇒ a GND, como la «Configuration 3» de Nordic (PS v1.3 §9.3.3).</text>
+<text x="656" y="767" class="ts" text-anchor="start" >PVSS1/2 a GND con vía junto al pad · EP con 5 vías térmicas (huella nPM1300-QFN32-EP3.5).</text>
+<rect x="1260" y="76" width="440" height="300" rx="7" class="frame"/>
+<text x="1272" y="96" class="ft" text-anchor="start" >C · Bucks (L 2,2 µH APH201610C2R2MP01, 0806)</text>
+<rect x="1265.8" y="131" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="1282.8999999999999" y="144.5" class="ll" text-anchor="middle" >SW1</text>
+<path d="M1300,140 L1311,140" class="pw"/>
+<path d="M1379,140 L1390,140" class="pw"/>
+<path d="M1311,140 a8.5,8.5 0 0 1 17.0,0 a8.5,8.5 0 0 1 17.0,0 a8.5,8.5 0 0 1 17.0,0 a8.5,8.5 0 0 1 17.0,0" class="w"/>
+<text x="1345.0" y="126" class="ref" text-anchor="middle" >L101 2,2 µH</text>
+<path d="M1390,140 L1470,140" class="pw"/>
+<circle cx="1430" cy="140" r="3.2" fill="#263238"/>
+<path d="M1430,140 L1430,159.0" class="w"/>
+<path d="M1430,165.0 L1430,184" class="w"/>
+<path d="M1421,159.0 L1439,159.0" class="plate"/>
+<path d="M1421,165.0 L1439,165.0" class="plate"/>
+<text x="1442" y="160.0" class="ref" text-anchor="start" >C107</text>
+<text x="1442" y="173.0" class="val" text-anchor="start" >10 µF</text>
+<path d="M1430,184 L1430,191" class="w"/>
+<path d="M1421,191 L1439,191" class="w"/>
+<path d="M1424,195 L1436,195" class="w"/>
+<path d="M1427,199 L1433,199" class="w"/>
+<rect x="1470" y="131" width="56.400000000000006" height="18" rx="3" class="lab_p"/>
+<text x="1498.2" y="144.5" class="lp" text-anchor="middle" >V_GNSS</text>
+<text x="1280" y="212" class="ts" text-anchor="start" >BUCK1 = raíl del GNSS: APAGADO al arrancar (VSET1 a GND).</text>
+<text x="1280" y="227" class="ts" text-anchor="start" >El firmware lo pone a 3,3 V y lo enciende con GPIO0.</text>
+<rect x="1265.8" y="261" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="1282.8999999999999" y="274.5" class="ll" text-anchor="middle" >SW2</text>
+<path d="M1300,270 L1311,270" class="pw"/>
+<path d="M1379,270 L1390,270" class="pw"/>
+<path d="M1311,270 a8.5,8.5 0 0 1 17.0,0 a8.5,8.5 0 0 1 17.0,0 a8.5,8.5 0 0 1 17.0,0 a8.5,8.5 0 0 1 17.0,0" class="w"/>
+<text x="1345.0" y="256" class="ref" text-anchor="middle" >L102 2,2 µH</text>
+<path d="M1390,270 L1470,270" class="pw"/>
+<circle cx="1430" cy="270" r="3.2" fill="#263238"/>
+<path d="M1430,270 L1430,289.0" class="w"/>
+<path d="M1430,295.0 L1430,314" class="w"/>
+<path d="M1421,289.0 L1439,289.0" class="plate"/>
+<path d="M1421,295.0 L1439,295.0" class="plate"/>
+<text x="1442" y="290.0" class="ref" text-anchor="start" >C108</text>
+<text x="1442" y="303.0" class="val" text-anchor="start" >10 µF</text>
+<path d="M1430,314 L1430,321" class="w"/>
+<path d="M1421,321 L1439,321" class="w"/>
+<path d="M1424,325 L1436,325" class="w"/>
+<path d="M1427,329 L1433,329" class="w"/>
+<rect x="1470" y="261" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="1487.1" y="274.5" class="lp" text-anchor="middle" >3V3</text>
+<text x="1280" y="342" class="ts" text-anchor="start" >BUCK2 = 3V3 principal desde el arranque (VSET2 330 kΩ).</text>
+<text x="1280" y="357" class="ts" text-anchor="start" >Pico: E22 140 + MCU ~15 + OLED ~20 = 175 de 200 mA.</text>
+<rect x="1260" y="390" width="440" height="180" rx="7" class="frame"/>
+<text x="1272" y="410" class="ft" text-anchor="start" >D · Tensión de arranque de los bucks (tablas 17/18)</text>
+<rect x="1281.0" y="431" width="49.0" height="18" rx="3" class="lab_l"/>
+<text x="1305.5" y="444.5" class="ll" text-anchor="middle" >VSET1</text>
+<path d="M1330,440 L1350,440" class="w"/>
+<path d="M1350,440 L1350,452.0" class="w"/>
+<path d="M1350,478.0 L1350,490" class="w"/>
+<rect x="1345" y="452.0" width="10" height="26" class="sym"/>
+<text x="1359" y="463.0" class="ref" text-anchor="start" >R101</text>
+<text x="1359" y="476.0" class="val" text-anchor="start" >0 Ω</text>
+<path d="M1350,490 L1350,497" class="w"/>
+<path d="M1341,497 L1359,497" class="w"/>
+<path d="M1344,501 L1356,501" class="w"/>
+<path d="M1347,505 L1353,505" class="w"/>
+<rect x="1461.0" y="431" width="49.0" height="18" rx="3" class="lab_l"/>
+<text x="1485.5" y="444.5" class="ll" text-anchor="middle" >VSET2</text>
+<path d="M1510,440 L1530,440" class="w"/>
+<path d="M1530,440 L1530,452.0" class="w"/>
+<path d="M1530,478.0 L1530,490" class="w"/>
+<rect x="1525" y="452.0" width="10" height="26" class="sym"/>
+<text x="1539" y="463.0" class="ref" text-anchor="start" >R102</text>
+<text x="1539" y="476.0" class="val" text-anchor="start" >330 kΩ 5 %</text>
+<path d="M1530,490 L1530,497" class="w"/>
+<path d="M1521,497 L1539,497" class="w"/>
+<path d="M1524,501 L1536,501" class="w"/>
+<path d="M1527,505 L1533,505" class="w"/>
+<text x="1280" y="530" class="ts" text-anchor="start" >R101 0 Ω ⇒ BUCK1 apagado (con 330 kΩ arrancaría a 2,7 V).</text>
+<text x="1280" y="545" class="ts" text-anchor="start" >R102 250–500 kΩ ⇒ 3,3 V: 330 kΩ 5 % (313–347 kΩ) basta. Comprar.</text>
+<rect x="1260" y="584" width="440" height="330" rx="7" class="frame"/>
+<text x="1272" y="604" class="ft" text-anchor="start" >G · Botón de encendido y LEDs de carga</text>
+<rect x="1253.6" y="631" width="56.400000000000006" height="18" rx="3" class="lab_l"/>
+<text x="1281.8" y="644.5" class="ll" text-anchor="middle" >SHPHLD</text>
+<path d="M1310,640 L1330,640" class="w"/>
+<path d="M1330,640 L1330,659.0" class="w"/>
+<path d="M1330,677.0 L1330,696" class="w"/>
+<circle cx="1330" cy="659.0" r="2.6" fill="#fff" stroke="#263238" stroke-width="1.5"/>
+<circle cx="1330" cy="677.0" r="2.6" fill="#fff" stroke="#263238" stroke-width="1.5"/>
+<path d="M1320,655.0 L1320,681.0" class="plate"/>
+<path d="M1320,668.0 L1311,668.0" class="w"/>
+<path d="M1311,662.0 L1311,674.0" class="w"/>
+<text x="1342" y="666.0" class="ref" text-anchor="start" >SW101</text>
+<text x="1342" y="679.0" class="val" text-anchor="start" >PWR · HX TS35CA</text>
+<path d="M1330,696 L1330,703" class="w"/>
+<path d="M1321,703 L1339,703" class="w"/>
+<path d="M1324,707 L1336,707" class="w"/>
+<path d="M1327,711 L1333,711" class="w"/>
+<text x="1280" y="740" class="ts" text-anchor="start" >Pata 2 = SHPHLD; 1, 3, 4 a GND.</text>
+<text x="1280" y="755" class="ts" text-anchor="start" >Sale del ship mode;</text>
+<text x="1280" y="770" class="ts" text-anchor="start" >larga = reset duro.</text>
+<rect x="1528.4" y="621" width="41.6" height="18" rx="3" class="lab_p"/>
+<text x="1549.2" y="634.5" class="lp" text-anchor="middle" >VSYS</text>
+<path d="M1570,630 L1590,630" class="w"/>
+<path d="M1590,630 L1590,645.0" class="w"/>
+<path d="M1590,659.0 L1590,674" class="w"/>
+<path d="M1582,645.0 L1598,645.0 L1590,659.0 Z" class="sym"/>
+<path d="M1582,659.0 L1598,659.0" class="w"/>
+<path d="M1600,649.0 L1607,642.0" class="w"/>
+<path d="M1603,642.0 L1607,642.0 L1607,646.0" class="w"/>
+<path d="M1600,656.0 L1607,649.0" class="w"/>
+<path d="M1603,649.0 L1607,649.0 L1607,653.0" class="w"/>
+<text x="1612" y="650.0" class="ref" text-anchor="start" >D102</text>
+<text x="1612" y="663.0" class="val" text-anchor="start" >azul · ERROR</text>
+<path d="M1590,674 L1590,686" class="w"/>
+<rect x="1569.2" y="686" width="41.6" height="18" rx="3" class="lab_l"/>
+<text x="1590.0" y="699.5" class="ll" text-anchor="middle" >LED0</text>
+<rect x="1528.4" y="731" width="41.6" height="18" rx="3" class="lab_p"/>
+<text x="1549.2" y="744.5" class="lp" text-anchor="middle" >VSYS</text>
+<path d="M1570,740 L1590,740" class="w"/>
+<path d="M1590,740 L1590,755.0" class="w"/>
+<path d="M1590,769.0 L1590,784" class="w"/>
+<path d="M1582,755.0 L1598,755.0 L1590,769.0 Z" class="sym"/>
+<path d="M1582,769.0 L1598,769.0" class="w"/>
+<path d="M1600,759.0 L1607,752.0" class="w"/>
+<path d="M1603,752.0 L1607,752.0 L1607,756.0" class="w"/>
+<path d="M1600,766.0 L1607,759.0" class="w"/>
+<path d="M1603,759.0 L1607,759.0 L1607,763.0" class="w"/>
+<text x="1612" y="760.0" class="ref" text-anchor="start" >D103</text>
+<text x="1612" y="773.0" class="val" text-anchor="start" >verde · CARGA</text>
+<path d="M1590,784 L1590,796" class="w"/>
+<rect x="1569.2" y="796" width="41.6" height="18" rx="3" class="lab_l"/>
+<text x="1590.0" y="809.5" class="ll" text-anchor="middle" >LED1</text>
+<text x="1280" y="846" class="ts" text-anchor="start" >LEDDRV = sumidero de 5 mA: sin resistencia (como la referencia).</text>
+<text x="1280" y="865" class="ts" text-anchor="start" >Por defecto LED0 = error del cargador, LED1 = cargando. LED2 sin uso.</text>
+<text x="1280" y="884" class="ts" text-anchor="start" >Azul Vf 2,6–3,4 V: lucen con USB (VSYS ≈ VBUS), que es cuando carga.</text>
+<rect x="20" y="560" width="600" height="380" rx="7" class="frame"/>
+<text x="32" y="580" class="ft" text-anchor="start" >E · Desacoplo del nPM1300 (BOM de la Configuration 1)</text>
+<rect x="68.4" y="611" width="41.6" height="18" rx="3" class="lab_p"/>
+<text x="89.2" y="624.5" class="lp" text-anchor="middle" >VBUS</text>
+<path d="M110,620 L130,620" class="w"/>
+<path d="M130,620 L130,639.0" class="w"/>
+<path d="M130,645.0 L130,664" class="w"/>
+<path d="M121,639.0 L139,639.0" class="plate"/>
+<path d="M121,645.0 L139,645.0" class="plate"/>
+<text x="142" y="640.0" class="ref" text-anchor="start" >C101</text>
+<text x="142" y="653.0" class="val" text-anchor="start" >1 µF 25 V</text>
+<path d="M130,664 L130,671" class="w"/>
+<path d="M121,671 L139,671" class="w"/>
+<path d="M124,675 L136,675" class="w"/>
+<path d="M127,679 L133,679" class="w"/>
+<rect x="38.8" y="721" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="74.4" y="734.5" class="lsb" text-anchor="middle" >VBUS_MCU</text>
+<path d="M110,730 L130,730" class="w"/>
+<path d="M130,730 L130,749.0" class="w"/>
+<path d="M130,755.0 L130,774" class="w"/>
+<path d="M121,749.0 L139,749.0" class="plate"/>
+<path d="M121,755.0 L139,755.0" class="plate"/>
+<text x="142" y="750.0" class="ref" text-anchor="start" >C102</text>
+<text x="142" y="763.0" class="val" text-anchor="start" >1 µF 25 V</text>
+<path d="M130,774 L130,781" class="w"/>
+<path d="M121,781 L139,781" class="w"/>
+<path d="M124,785 L136,785" class="w"/>
+<path d="M127,789 L133,789" class="w"/>
+<rect x="338.4" y="611" width="41.6" height="18" rx="3" class="lab_p"/>
+<text x="359.2" y="624.5" class="lp" text-anchor="middle" >VSYS</text>
+<path d="M380,620 L524,620" class="w"/>
+<path d="M400,620 L400,639.0" class="w"/>
+<path d="M400,645.0 L400,664" class="w"/>
+<path d="M391,639.0 L409,639.0" class="plate"/>
+<path d="M391,645.0 L409,645.0" class="plate"/>
+<text x="412" y="640.0" class="ref" text-anchor="start" >C103</text>
+<text x="412" y="653.0" class="val" text-anchor="start" >10 µF</text>
+<path d="M400,664 L400,671" class="w"/>
+<path d="M391,671 L409,671" class="w"/>
+<path d="M394,675 L406,675" class="w"/>
+<path d="M397,679 L403,679" class="w"/>
+<circle cx="462" cy="620" r="3.2" fill="#263238"/>
+<path d="M462,620 L462,639.0" class="w"/>
+<path d="M462,645.0 L462,664" class="w"/>
+<path d="M453,639.0 L471,639.0" class="plate"/>
+<path d="M453,645.0 L471,645.0" class="plate"/>
+<text x="474" y="640.0" class="ref" text-anchor="start" >C104</text>
+<text x="474" y="653.0" class="val" text-anchor="start" >10 µF</text>
+<path d="M462,664 L462,671" class="w"/>
+<path d="M453,671 L471,671" class="w"/>
+<path d="M456,675 L468,675" class="w"/>
+<path d="M459,679 L465,679" class="w"/>
+<circle cx="524" cy="620" r="3.2" fill="#263238"/>
+<path d="M524,620 L524,639.0" class="w"/>
+<path d="M524,645.0 L524,664" class="w"/>
+<path d="M515,639.0 L533,639.0" class="plate"/>
+<path d="M515,645.0 L533,645.0" class="plate"/>
+<text x="536" y="640.0" class="ref" text-anchor="start" >C105</text>
+<text x="536" y="653.0" class="val" text-anchor="start" >10 µF</text>
+<path d="M524,664 L524,671" class="w"/>
+<path d="M515,671 L533,671" class="w"/>
+<path d="M518,675 L530,675" class="w"/>
+<path d="M521,679 L527,679" class="w"/>
+<rect x="338.4" y="721" width="41.6" height="18" rx="3" class="lab_p"/>
+<text x="359.2" y="734.5" class="lp" text-anchor="middle" >VBAT</text>
+<path d="M380,730 L400,730" class="w"/>
+<path d="M400,730 L400,749.0" class="w"/>
+<path d="M400,755.0 L400,774" class="w"/>
+<path d="M391,749.0 L409,749.0" class="plate"/>
+<path d="M391,755.0 L409,755.0" class="plate"/>
+<text x="412" y="750.0" class="ref" text-anchor="start" >C106</text>
+<text x="412" y="763.0" class="val" text-anchor="start" >2,2 µF 16 V</text>
+<path d="M400,774 L400,781" class="w"/>
+<path d="M391,781 L409,781" class="w"/>
+<path d="M394,785 L406,785" class="w"/>
+<path d="M397,789 L403,789" class="w"/>
+<rect x="345.8" y="831" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="362.90000000000003" y="844.5" class="lp" text-anchor="middle" >3V3</text>
+<path d="M380,840 L400,840" class="w"/>
+<path d="M400,840 L400,859.0" class="w"/>
+<path d="M400,865.0 L400,884" class="w"/>
+<path d="M391,859.0 L409,859.0" class="plate"/>
+<path d="M391,865.0 L409,865.0" class="plate"/>
+<text x="412" y="860.0" class="ref" text-anchor="start" >C110</text>
+<text x="412" y="873.0" class="val" text-anchor="start" >100 nF</text>
+<path d="M400,884 L400,891" class="w"/>
+<path d="M391,891 L409,891" class="w"/>
+<path d="M394,895 L406,895" class="w"/>
+<path d="M397,899 L403,899" class="w"/>
+<text x="36" y="836" class="ts" text-anchor="start" >C101/C102 junto a VBUS/VBUSOUT; C103-C105</text>
+<text x="36" y="851" class="ts" text-anchor="start" >repartidos entre VSYS (20) y PVDD (4);</text>
+<text x="36" y="866" class="ts" text-anchor="start" >C110 en VDDIO (12). VBUS_MCU = VBUSOUT (OVP,</text>
+<text x="36" y="881" class="ts" text-anchor="start" >7,5 Ω) → VBUS del ME54BS13: sólo PHY USB.</text>
+<rect x="640" y="810" width="600" height="110" rx="7" class="frame"/>
+<text x="652" y="830" class="ft" text-anchor="start" >H · Puntos de prueba</text>
+<circle cx="668" cy="856" r="5" fill="#fff" stroke="#263238" stroke-width="1.6"/>
+<text x="677" y="860" class="ref" text-anchor="start" >TP101</text>
+<rect x="720" y="847" width="41.6" height="18" rx="3" class="lab_p"/>
+<text x="740.8" y="860.5" class="lp" text-anchor="middle" >VBUS</text>
+<circle cx="858" cy="856" r="5" fill="#fff" stroke="#263238" stroke-width="1.6"/>
+<text x="867" y="860" class="ref" text-anchor="start" >TP102</text>
+<rect x="910" y="847" width="41.6" height="18" rx="3" class="lab_p"/>
+<text x="930.8" y="860.5" class="lp" text-anchor="middle" >VBAT</text>
+<circle cx="1048" cy="856" r="5" fill="#fff" stroke="#263238" stroke-width="1.6"/>
+<text x="1057" y="860" class="ref" text-anchor="start" >TP103</text>
+<rect x="1100" y="847" width="41.6" height="18" rx="3" class="lab_p"/>
+<text x="1120.8" y="860.5" class="lp" text-anchor="middle" >VSYS</text>
+<circle cx="668" cy="892" r="5" fill="#fff" stroke="#263238" stroke-width="1.6"/>
+<text x="677" y="896" class="ref" text-anchor="start" >TP104</text>
+<rect x="720" y="883" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="737.1" y="896.5" class="lp" text-anchor="middle" >3V3</text>
+<circle cx="858" cy="892" r="5" fill="#fff" stroke="#263238" stroke-width="1.6"/>
+<text x="867" y="896" class="ref" text-anchor="start" >TP105</text>
+<rect x="910" y="883" width="56.400000000000006" height="18" rx="3" class="lab_p"/>
+<text x="938.2" y="896.5" class="lp" text-anchor="middle" >V_GNSS</text>
+<circle cx="1048" cy="892" r="5" fill="#fff" stroke="#263238" stroke-width="1.6"/>
+<text x="1057" y="896" class="ref" text-anchor="start" >TP106</text>
+<rect x="1100" y="883" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="1117.1" y="896.5" class="lp" text-anchor="middle" >GND</text>
+<rect x="640" y="934" width="1060" height="250" rx="7" class="frame"/>
+<text x="652" y="954" class="ft" text-anchor="start" >F · Batería LiPo 1S (JST PH 2.0) · NTC · medida de VBAT</text>
+<rect x="670" y="1004" width="110" height="66" rx="3" class="sym"/>
+<text x="725.0" y="982" class="icref" text-anchor="middle" >J102</text>
+<text x="725.0" y="996" class="val" text-anchor="middle" >JST PH 2.0 SMD 2p</text>
+<path d="M780,1024 L800,1024" class="w"/>
+<text x="784" y="1020" class="pn" text-anchor="start" >1</text>
+<text x="774" y="1028" class="pname" text-anchor="end" >+</text>
+<path d="M780,1050 L800,1050" class="w"/>
+<text x="784" y="1046" class="pn" text-anchor="start" >2</text>
+<text x="774" y="1054" class="pname" text-anchor="end" >−</text>
+<rect x="800" y="1015" width="41.6" height="18" rx="3" class="lab_p"/>
+<text x="820.8" y="1028.5" class="lp" text-anchor="middle" >VBAT</text>
+<path d="M800,1050 L812,1050" class="w"/>
+<path d="M812,1050 L812,1057" class="w"/>
+<path d="M803,1057 L821,1057" class="w"/>
+<path d="M806,1061 L818,1061" class="w"/>
+<path d="M809,1065 L815,1065" class="w"/>
+<text x="660" y="1096" class="tw" text-anchor="start" >🚨 La polaridad de los packs PH 2.0 NO es estándar:</text>
+<text x="660" y="1111" class="ts" text-anchor="start" >comprobarla antes de enchufar (pata 1 = +).</text>
+<text x="660" y="1126" class="ts" text-anchor="start" >El pack debe llevar su protección (PCM): el nPM1300</text>
+<text x="660" y="1141" class="ts" text-anchor="start" >no corta por sobredescarga ni sobrecorriente.</text>
+<rect x="1055.8" y="981" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="1072.8999999999999" y="994.5" class="ll" text-anchor="middle" >NTC</text>
+<path d="M1090,990 L1110,990" class="w"/>
+<path d="M1110,990 L1110,1002.0" class="w"/>
+<path d="M1110,1028.0 L1110,1040" class="w"/>
+<rect x="1105" y="1002.0" width="10" height="26" class="sym"/>
+<text x="1119" y="1013.0" class="ref" text-anchor="start" >RT101</text>
+<text x="1119" y="1026.0" class="val" text-anchor="start" >NTC 10k B3380</text>
+<path d="M1110,1040 L1110,1047" class="w"/>
+<path d="M1101,1047 L1119,1047" class="w"/>
+<path d="M1104,1051 L1116,1051" class="w"/>
+<path d="M1107,1055 L1113,1055" class="w"/>
+<text x="1040" y="1088" class="ts" text-anchor="start" >NCP15XH103F0SRC (cajón): 10 kΩ ±1 %,</text>
+<text x="1040" y="1103" class="ts" text-anchor="start" >B25/50 3380 K = tabla 11 del nPM1300.</text>
+<text x="1040" y="1118" class="ts" text-anchor="start" >Junto al conector de batería (el pack</text>
+<text x="1040" y="1133" class="ts" text-anchor="start" >no trae NTC).</text>
+<rect x="1358.4" y="981" width="41.6" height="18" rx="3" class="lab_p"/>
+<text x="1379.2" y="994.5" class="lp" text-anchor="middle" >VBAT</text>
+<path d="M1400,990 L1420,990" class="w"/>
+<path d="M1420,990 L1420,1000.0" class="w"/>
+<path d="M1420,1026.0 L1420,1036" class="w"/>
+<rect x="1415" y="1000.0" width="10" height="26" class="sym"/>
+<text x="1429" y="1011.0" class="ref" text-anchor="start" >R103</text>
+<text x="1429" y="1024.0" class="val" text-anchor="start" >1 MΩ</text>
+<circle cx="1420" cy="1036" r="3.2" fill="#263238"/>
+<path d="M1420,1036 L1440,1036" class="w"/>
+<rect x="1440" y="1027" width="86.0" height="18" rx="3" class="lab_s"/>
+<text x="1483.0" y="1040.5" class="lsb" text-anchor="middle" >VBAT_SENSE</text>
+<path d="M1420,1036 L1420,1046.0" class="w"/>
+<path d="M1420,1072.0 L1420,1082" class="w"/>
+<rect x="1415" y="1046.0" width="10" height="26" class="sym"/>
+<text x="1411" y="1057.0" class="ref" text-anchor="end" >R104</text>
+<text x="1411" y="1070.0" class="val" text-anchor="end" >1 MΩ</text>
+<path d="M1420,1082 L1420,1089" class="w"/>
+<path d="M1411,1089 L1429,1089" class="w"/>
+<path d="M1414,1093 L1426,1093" class="w"/>
+<path d="M1417,1097 L1423,1097" class="w"/>
+<path d="M1540,1036 L1600,1036" class="w"/>
+<circle cx="1600" cy="1036" r="3.2" fill="#263238"/>
+<path d="M1600,1036 L1600,1053.0" class="w"/>
+<path d="M1600,1059.0 L1600,1076" class="w"/>
+<path d="M1591,1053.0 L1609,1053.0" class="plate"/>
+<path d="M1591,1059.0 L1609,1059.0" class="plate"/>
+<text x="1612" y="1054.0" class="ref" text-anchor="start" >C111</text>
+<text x="1612" y="1067.0" class="val" text-anchor="start" >100 nF</text>
+<path d="M1600,1076 L1600,1083" class="w"/>
+<path d="M1591,1083 L1609,1083" class="w"/>
+<path d="M1594,1087 L1606,1087" class="w"/>
+<path d="M1597,1091 L1603,1091" class="w"/>
+<text x="1330" y="1120" class="ts" text-anchor="start" >VBAT/2 → AIN2 (P1.30); 2 µA de consumo.</text>
+<text x="1330" y="1135" class="ts" text-anchor="start" >Respaldo para BATTERY_PIN si no hay driver.</text>
+<rect x="20" y="954" width="600" height="250" rx="7" class="framep"/>
+<text x="32" y="974" class="ft" text-anchor="start" >I · Lo que tiene que hacer el firmware (driver nPM1300)</text>
+<text x="36" y="992" class="ts" text-anchor="start" >Tras un reset: cargador APAGADO, VTERM 3,60 V, ICHG 32 mA, VBUS 100 mA, BUCK1 apagado.</text>
+<text x="36" y="1011" class="ts" text-anchor="start" >1. VBUSINILIM0 = 500 mA tras leer CC (USBCDETECTSTATUS) + TASK.UPDATE.ILIMSW.</text>
+<text x="36" y="1030" class="ts" text-anchor="start" >2. ADCNTCRSEL = 10 k · BCHGVTERM = 4,20 V · BCHGISET = 0,5 C · BCHGENABLESET = 1.</text>
+<text x="36" y="1049" class="ts" text-anchor="start" >3. BUCK1NORMVOUT = 3,3 V + BUCKSWCTRLSEL · BUCKENCTRL: GPIO0 → BUCK1.</text>
+<text x="36" y="1068" class="ts" text-anchor="start" >4. GPIOMODE1 = salida de IRQ (→ PMIC_INT): VBUS, carga y SHPHLD.</text>
+<text x="36" y="1087" class="ts" text-anchor="start" >5. Batería: ADC del nPM1300 por I²C, o VBAT_SENSE con BATTERY_PIN.</text>
+<text x="36" y="1106" class="tw" text-anchor="start" >🚨 Sin driver: LoRa y BLE van (3V3 arranca solo); NO carga y el GNSS no enciende.</text>
+<text x="36" y="1125" class="tw" text-anchor="start" >🚨 Sólo USB, sin batería: 100 mA de VBUS no dan para TX LoRa hasta subir el límite.</text>
+<rect x="20" y="1218" width="600" height="456" rx="7" class="frame"/>
+<text x="32" y="1238" class="ft" text-anchor="start" >Notas de diseño</text>
+<text x="36" y="1250" class="ts" text-anchor="start" >• nPM1300 a ≥ 20 mm del ME54BS13 (Minew §7.2: DC-DC lejos).</text>
+<text x="36" y="1271" class="ts" text-anchor="start" >• Bucles SW–L–C mínimos; inductores blindados; PVSS con su vía.</text>
+<text x="36" y="1292" class="ts" text-anchor="start" >• VBUS_MCU sólo para el PHY USB del módulo: no es una fuente.</text>
+<text x="36" y="1313" class="ts" text-anchor="start" >• 3V3 = raíl de E/S de todo lo digital ⇒ sin problemas de niveles.</text>
+<text x="36" y="1334" class="ts" text-anchor="start" >• OLED y Qwiic SIEMPRE en 3V3: sus pull-ups hundirían el I²C del PMIC</text>
+<text x="36" y="1355" class="ts" text-anchor="start" >  si se les cortara la alimentación.</text>
+<text x="36" y="1376" class="ts" text-anchor="start" >• Huellas: J102 = Connector_JST:JST_PH_S2B-PH-SM4-TB (KiCad,</text>
+<text x="36" y="1397" class="ts" text-anchor="start" >  pads MP sin conectar); D101 = SOD-523 easyeda (1 = cátodo).</text>
+<rect x="640" y="1198" width="1060" height="476" rx="7" class="frame"/>
+<text x="652" y="1218" class="ft" text-anchor="start" >Piezas de la hoja</text>
+<text x="660" y="1238" class="th" text-anchor="start" >Ref.</text>
+<text x="830" y="1238" class="th" text-anchor="start" >Qué es</text>
+<text x="960" y="1238" class="th" text-anchor="start" >Pieza</text>
+<text x="1210" y="1238" class="th" text-anchor="start" >Encapsulado</text>
+<text x="1320" y="1238" class="th" text-anchor="start" >LCSC</text>
+<text x="1430" y="1238" class="th" text-anchor="start" >Stock</text>
+<path d="M650,1244 L1690,1244" class="thin"/>
+<text x="660" y="1262" class="tdm" text-anchor="start" >J101</text>
+<text x="830" y="1262" class="td" text-anchor="start" >USB-C 16P</text>
+<text x="960" y="1262" class="td" text-anchor="start" >Kinghelm KH-TYPE-C-16P</text>
+<text x="1210" y="1262" class="td" text-anchor="start" >SMD</text>
+<text x="1320" y="1262" class="tdm" text-anchor="start" >C709357</text>
+<text x="1430" y="1262" class="td" text-anchor="start" >cajón #112</text>
+<rect x="648" y="1273" width="1044" height="24" fill="#f1f5f9"/>
+<text x="660" y="1286" class="tdm" text-anchor="start" >U101</text>
+<text x="830" y="1286" class="td" text-anchor="start" >PMIC</text>
+<text x="960" y="1286" class="td" text-anchor="start" >Nordic nPM1300-QEAA</text>
+<text x="1210" y="1286" class="td" text-anchor="start" >QFN32 5×5</text>
+<text x="1320" y="1286" class="tdm" text-anchor="start" >C7501206</text>
+<text x="1430" y="1286" class="td" text-anchor="start" >COMPRAR</text>
+<text x="660" y="1310" class="tdm" text-anchor="start" >U102</text>
+<text x="830" y="1310" class="td" text-anchor="start" >ESD 4 líneas</text>
+<text x="960" y="1310" class="td" text-anchor="start" >TPD4E05U06DQAR (DOWO)</text>
+<text x="1210" y="1310" class="td" text-anchor="start" >DFN2510-10</text>
+<text x="1320" y="1310" class="tdm" text-anchor="start" >C22390021</text>
+<text x="1430" y="1310" class="td" text-anchor="start" >cajón #20</text>
+<rect x="648" y="1321" width="1044" height="24" fill="#f1f5f9"/>
+<text x="660" y="1334" class="tdm" text-anchor="start" >D101</text>
+<text x="830" y="1334" class="td" text-anchor="start" >ESD de VBUS</text>
+<text x="960" y="1334" class="td" text-anchor="start" >onsemi ESD5Z6.0T1G</text>
+<text x="1210" y="1334" class="td" text-anchor="start" >SOD-523</text>
+<text x="1320" y="1334" class="tdm" text-anchor="start" >C82323</text>
+<text x="1430" y="1334" class="td" text-anchor="start" >cajón #205</text>
+<text x="660" y="1358" class="tdm" text-anchor="start" >L101 L102</text>
+<text x="830" y="1358" class="td" text-anchor="start" >2,2 µH 130 mΩ 2,8 A</text>
+<text x="960" y="1358" class="td" text-anchor="start" >APV APH201610C2R2MP01</text>
+<text x="1210" y="1358" class="td" text-anchor="start" >0806 (2016)</text>
+<text x="1320" y="1358" class="tdm" text-anchor="start" >C42455301</text>
+<text x="1430" y="1358" class="td" text-anchor="start" >COMPRAR</text>
+<rect x="648" y="1369" width="1044" height="24" fill="#f1f5f9"/>
+<text x="660" y="1382" class="tdm" text-anchor="start" >C101 C102</text>
+<text x="830" y="1382" class="td" text-anchor="start" >1 µF 25 V X5R</text>
+<text x="960" y="1382" class="td" text-anchor="start" >Samsung CL05A105KA5NQNC</text>
+<text x="1210" y="1382" class="td" text-anchor="start" >0402</text>
+<text x="1320" y="1382" class="tdm" text-anchor="start" >C52923</text>
+<text x="1430" y="1382" class="td" text-anchor="start" >cajón #23</text>
+<text x="660" y="1406" class="tdm" text-anchor="start" >C103-105 C107 C108</text>
+<text x="830" y="1406" class="td" text-anchor="start" >10 µF 10 V X7R</text>
+<text x="960" y="1406" class="td" text-anchor="start" >—</text>
+<text x="1210" y="1406" class="td" text-anchor="start" >0603</text>
+<text x="1320" y="1406" class="tdm" text-anchor="start" >—</text>
+<text x="1430" y="1406" class="td" text-anchor="start" >cajón #147</text>
+<rect x="648" y="1417" width="1044" height="24" fill="#f1f5f9"/>
+<text x="660" y="1430" class="tdm" text-anchor="start" >C106</text>
+<text x="830" y="1430" class="td" text-anchor="start" >2,2 µF 16 V X5R</text>
+<text x="960" y="1430" class="td" text-anchor="start" >Samsung CL10A225KO8NNNC</text>
+<text x="1210" y="1430" class="td" text-anchor="start" >0603</text>
+<text x="1320" y="1430" class="tdm" text-anchor="start" >C23630</text>
+<text x="1430" y="1430" class="td" text-anchor="start" >cajón #60</text>
+<text x="660" y="1454" class="tdm" text-anchor="start" >C110 C111</text>
+<text x="830" y="1454" class="td" text-anchor="start" >100 nF 16 V X7R</text>
+<text x="960" y="1454" class="td" text-anchor="start" >Samsung CL05B104KO5NNNC</text>
+<text x="1210" y="1454" class="td" text-anchor="start" >0402</text>
+<text x="1320" y="1454" class="tdm" text-anchor="start" >C1525</text>
+<text x="1430" y="1454" class="td" text-anchor="start" >cajón #22</text>
+<rect x="648" y="1465" width="1044" height="24" fill="#f1f5f9"/>
+<text x="660" y="1478" class="tdm" text-anchor="start" >R101</text>
+<text x="830" y="1478" class="td" text-anchor="start" >0 Ω</text>
+<text x="960" y="1478" class="td" text-anchor="start" >Yageo RC0402FR-070RL</text>
+<text x="1210" y="1478" class="td" text-anchor="start" >0402</text>
+<text x="1320" y="1478" class="tdm" text-anchor="start" >C106231</text>
+<text x="1430" y="1478" class="td" text-anchor="start" >cajón #10</text>
+<text x="660" y="1502" class="tdm" text-anchor="start" >R102</text>
+<text x="830" y="1502" class="td" text-anchor="start" >330 kΩ 5 %</text>
+<text x="960" y="1502" class="td" text-anchor="start" >Yageo RC0402JR-07330KL</text>
+<text x="1210" y="1502" class="td" text-anchor="start" >0402</text>
+<text x="1320" y="1502" class="tdm" text-anchor="start" >C137882</text>
+<text x="1430" y="1502" class="td" text-anchor="start" >COMPRAR</text>
+<rect x="648" y="1513" width="1044" height="24" fill="#f1f5f9"/>
+<text x="660" y="1526" class="tdm" text-anchor="start" >R103 R104</text>
+<text x="830" y="1526" class="td" text-anchor="start" >1 MΩ 1 %</text>
+<text x="960" y="1526" class="td" text-anchor="start" >Yageo RC0402FR-071ML</text>
+<text x="1210" y="1526" class="td" text-anchor="start" >0402</text>
+<text x="1320" y="1526" class="tdm" text-anchor="start" >C138033</text>
+<text x="1430" y="1526" class="td" text-anchor="start" >cajón #13</text>
+<text x="660" y="1550" class="tdm" text-anchor="start" >RT101</text>
+<text x="830" y="1550" class="td" text-anchor="start" >NTC 10k B3380</text>
+<text x="960" y="1550" class="td" text-anchor="start" >Murata NCP15XH103F0SRC</text>
+<text x="1210" y="1550" class="td" text-anchor="start" >0402</text>
+<text x="1320" y="1550" class="tdm" text-anchor="start" >C91636</text>
+<text x="1430" y="1550" class="td" text-anchor="start" >cajón #61</text>
+<rect x="648" y="1561" width="1044" height="24" fill="#f1f5f9"/>
+<text x="660" y="1574" class="tdm" text-anchor="start" >J102</text>
+<text x="830" y="1574" class="td" text-anchor="start" >batería</text>
+<text x="960" y="1574" class="td" text-anchor="start" >JST S2B-PH-SM4-TB</text>
+<text x="1210" y="1574" class="td" text-anchor="start" >SMD</text>
+<text x="1320" y="1574" class="tdm" text-anchor="start" >C295747</text>
+<text x="1430" y="1574" class="td" text-anchor="start" >COMPRAR</text>
+<text x="660" y="1598" class="tdm" text-anchor="start" >SW101</text>
+<text x="830" y="1598" class="td" text-anchor="start" >pulsador lateral</text>
+<text x="960" y="1598" class="td" text-anchor="start" >Hanxia HX TS35CA 160gf</text>
+<text x="1210" y="1598" class="td" text-anchor="start" >SMD á. recto</text>
+<text x="1320" y="1598" class="tdm" text-anchor="start" >C25168837</text>
+<text x="1430" y="1598" class="td" text-anchor="start" >cajón #65</text>
+<rect x="648" y="1609" width="1044" height="24" fill="#f1f5f9"/>
+<text x="660" y="1622" class="tdm" text-anchor="start" >D102 / D103</text>
+<text x="830" y="1622" class="td" text-anchor="start" >LED azul / verde</text>
+<text x="960" y="1622" class="td" text-anchor="start" >XL-1608UBC-06A / UGC-06A</text>
+<text x="1210" y="1622" class="td" text-anchor="start" >0603</text>
+<text x="1320" y="1622" class="tdm" text-anchor="start" >C7371904/03</text>
+<text x="1430" y="1622" class="td" text-anchor="start" >cajón #41 / #42</text>
+<text x="660" y="1646" class="tdm" text-anchor="start" >TP101-106</text>
+<text x="830" y="1646" class="td" text-anchor="start" >punto de prueba</text>
+<text x="960" y="1646" class="td" text-anchor="start" >TestPoint_Pad_D1.0mm</text>
+<text x="1210" y="1646" class="td" text-anchor="start" >Ø1 mm</text>
+<text x="1320" y="1646" class="tdm" text-anchor="start" >—</text>
+<text x="1430" y="1646" class="td" text-anchor="start" >—</text>
+</svg>

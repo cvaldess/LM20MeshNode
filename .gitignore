@@ -1,0 +1,23 @@
+# Claude Code local permissions (may contain approved commands with secrets)
+.claude/settings.local.json
+
+# Editor history
+.history/
+
+# KiCad local and temporary files
+*.lck
+*.kicad_prl
+*.bak
+fp-info-cache
+*-backups/
+_autosave-*
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Third-party datasheets and vendor archives (not redistributed)
+datasheets/
+
+# Downloaded 3D model of a different module (ME54BS01), not used by the design
+libs/meshnode.3dshapes/ME54BS01-1Y15TI--3DModel-STEP-381242.STEP

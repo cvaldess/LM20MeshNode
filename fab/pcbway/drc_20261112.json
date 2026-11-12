@@ -1,0 +1,337 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-12T15:48:59",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "nrflm20-meshnode.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2475 mm)",
+            "items": [
+                {
+                    "description": "Pad A4 [VBUS] of J101 on F.Cu",
+                    "pos": {
+                        "x": 118.32,
+                        "y": 138.5975
+                    },
+                    "uuid": "a68f6bfa-aee1-484b-a34c-a1e0458840fe"
+                },
+                {
+                    "description": "NPTH pad of J101",
+                    "pos": {
+                        "x": 117.98,
+                        "y": 139.7875
+                    },
+                    "uuid": "176f342f-6f11-49d8-9244-2edb6283c24c"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2151 mm)",
+            "items": [
+                {
+                    "description": "Pad B12 [GND] of J101 on F.Cu",
+                    "pos": {
+                        "x": 117.82,
+                        "y": 138.5975
+                    },
+                    "uuid": "2b199e78-b46c-47e4-819c-bcad42bceeac"
+                },
+                {
+                    "description": "NPTH pad of J101",
+                    "pos": {
+                        "x": 117.98,
+                        "y": 139.7875
+                    },
+                    "uuid": "176f342f-6f11-49d8-9244-2edb6283c24c"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2151 mm)",
+            "items": [
+                {
+                    "description": "Pad B1 [GND] of J101 on F.Cu",
+                    "pos": {
+                        "x": 123.92,
+                        "y": 138.5975
+                    },
+                    "uuid": "e6224903-14cf-4080-b3a6-953469c37a01"
+                },
+                {
+                    "description": "NPTH pad of J101",
+                    "pos": {
+                        "x": 123.76,
+                        "y": 139.7875
+                    },
+                    "uuid": "d4a2d0f3-b0b1-4266-aa92-7be155ba15a2"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2475 mm)",
+            "items": [
+                {
+                    "description": "Pad A9 [VBUS] of J101 on F.Cu",
+                    "pos": {
+                        "x": 123.42,
+                        "y": 138.5975
+                    },
+                    "uuid": "b6b271d7-6910-4870-b999-3b0f8dc5e7eb"
+                },
+                {
+                    "description": "NPTH pad of J101",
+                    "pos": {
+                        "x": 123.76,
+                        "y": 139.7875
+                    },
+                    "uuid": "d4a2d0f3-b0b1-4266-aa92-7be155ba15a2"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'GND_F' [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 60.0
+                    },
+                    "uuid": "cf0aa06f-4153-439b-9e36-a698afd49e1b"
+                },
+                {
+                    "description": "Pad A12 [GND] of J101 on F.Cu",
+                    "pos": {
+                        "x": 124.22,
+                        "y": 138.5975
+                    },
+                    "uuid": "fd8aef7e-b092-4017-9ff8-171567dd581b"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'GND_F' [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 60.0
+                    },
+                    "uuid": "cf0aa06f-4153-439b-9e36-a698afd49e1b"
+                },
+                {
+                    "description": "Pad B1 [GND] of J101 on F.Cu",
+                    "pos": {
+                        "x": 123.92,
+                        "y": 138.5975
+                    },
+                    "uuid": "e6224903-14cf-4080-b3a6-953469c37a01"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'GND_F' [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 60.0
+                    },
+                    "uuid": "cf0aa06f-4153-439b-9e36-a698afd49e1b"
+                },
+                {
+                    "description": "Pad 2 [GND] of U101 on F.Cu",
+                    "pos": {
+                        "x": 122.72,
+                        "y": 128.16
+                    },
+                    "uuid": "88ae402a-bda2-45bb-a920-0147487e2b63"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'GND_F' [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 60.0
+                    },
+                    "uuid": "cf0aa06f-4153-439b-9e36-a698afd49e1b"
+                },
+                {
+                    "description": "Pad 6 [GND] of U101 on F.Cu",
+                    "pos": {
+                        "x": 122.72,
+                        "y": 130.16
+                    },
+                    "uuid": "0f183369-5074-49df-b670-e4442143af72"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'GND_F' [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 60.0
+                    },
+                    "uuid": "cf0aa06f-4153-439b-9e36-a698afd49e1b"
+                },
+                {
+                    "description": "Pad 31 [GND] of U101 on F.Cu",
+                    "pos": {
+                        "x": 123.97,
+                        "y": 126.91
+                    },
+                    "uuid": "e8a8904c-e5e9-457e-866d-567e3f362f55"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'GND_F' [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 60.0
+                    },
+                    "uuid": "cf0aa06f-4153-439b-9e36-a698afd49e1b"
+                },
+                {
+                    "description": "Pad 2 [GND] of C201 on F.Cu",
+                    "pos": {
+                        "x": 127.8,
+                        "y": 61.34
+                    },
+                    "uuid": "bb4d0eea-5f06-4d33-9846-d20d71efe28a"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'GND_F' [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 60.0
+                    },
+                    "uuid": "cf0aa06f-4153-439b-9e36-a698afd49e1b"
+                },
+                {
+                    "description": "Pad 2 [GND] of C403 on F.Cu",
+                    "pos": {
+                        "x": 128.82,
+                        "y": 95.06
+                    },
+                    "uuid": "6abb734c-7a25-4f14-b5c5-21e55276cf2f"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'GND_F' [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 60.0
+                    },
+                    "uuid": "cf0aa06f-4153-439b-9e36-a698afd49e1b"
+                },
+                {
+                    "description": "Pad 2 [GND] of C101 on F.Cu",
+                    "pos": {
+                        "x": 130.87,
+                        "y": 129.28
+                    },
+                    "uuid": "931ac8f4-4ee7-4594-a2de-b5886115a0a5"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        },
+        {
+            "description": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
+            "items": [
+                {
+                    "description": "Zone 'GND_F' [GND] on F.Cu, priority 0",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 60.0
+                    },
+                    "uuid": "cf0aa06f-4153-439b-9e36-a698afd49e1b"
+                },
+                {
+                    "description": "Pad 2 [GND] of R102 on F.Cu",
+                    "pos": {
+                        "x": 126.98,
+                        "y": 134.35
+                    },
+                    "uuid": "ec7a3687-ca87-44b4-98b6-aab99f679925"
+                }
+            ],
+            "severity": "error",
+            "type": "starved_thermal"
+        }
+    ]
+}

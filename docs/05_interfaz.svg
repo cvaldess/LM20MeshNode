@@ -1,0 +1,632 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="1440" viewBox="0 0 1720 1440" font-family="Segoe UI, Arial, sans-serif">
+<defs><style>
+ .frame { fill:#fbfcfe; stroke:#90a4ae; stroke-width:1.3; }
+ .framep { fill:#fffaf0; stroke:#b7791f; stroke-width:1.5; stroke-dasharray:6 4; }
+ .ft { font-size:13.5px; font-weight:700; fill:#102a43; }
+ .sym { fill:#ffffff; stroke:#263238; stroke-width:1.6; }
+ .symp { fill:#fff4d6; stroke:#b7791f; stroke-width:1.6; stroke-dasharray:5 3; }
+ .dnp { fill:#ffffff; stroke:#90a4ae; stroke-width:1.4; stroke-dasharray:4 3; }
+ .w { stroke:#263238; stroke-width:1.5; fill:none; }
+ .thin { stroke:#90a4ae; stroke-width:1.2; fill:none; }
+ .pw { stroke:#c62828; stroke-width:2.4; fill:none; }
+ .sg { stroke:#1565c0; stroke-width:1.8; fill:none; }
+ .rf { stroke:#2e7d32; stroke-width:2.6; fill:none; }
+ .df { stroke:#6a1b9a; stroke-width:2.0; fill:none; }
+ .gn { stroke:#ef6c00; stroke-width:2.2; fill:none; }
+ .ah_sg { fill:#1565c0; } .ah_pw { fill:#c62828; } .ah_rf { fill:#2e7d32; } .ah_df { fill:#6a1b9a; } .ah_gn { fill:#ef6c00; }
+ .plate { stroke:#263238; stroke-width:2.4; fill:none; }
+ .plated { stroke:#90a4ae; stroke-width:2.4; fill:none; stroke-dasharray:3 2; }
+ .nc { stroke:#c62828; stroke-width:1.8; }
+ .blk { fill:#eef4fb; stroke:#5c7a99; stroke-width:1.6; }
+ .blkp { fill:#fdecea; stroke:#c62828; stroke-width:1.6; }
+ .blkr { fill:#e8f5e9; stroke:#2e7d32; stroke-width:1.6; }
+ .blkg { fill:#fff3e0; stroke:#ef6c00; stroke-width:1.6; }
+ .bt { font-size:14px; font-weight:700; fill:#102a43; }
+ .bs { font-size:11.5px; fill:#37474f; }
+ .al { font-size:11px; fill:#102a43; font-weight:600; }
+ .t { font-size:13px; fill:#212121; }
+ .ts { font-size:11.5px; fill:#455a64; }
+ .tp { font-size:11.5px; fill:#8a5a00; font-weight:600; }
+ .tw { font-size:11.5px; fill:#b71c1c; font-weight:600; }
+ .tb { font-size:13px; font-weight:700; fill:#102a43; }
+ .h1 { font-size:22px; font-weight:700; fill:#102a43; }
+ .h2 { font-size:13px; fill:#455a64; }
+ .ref { font-size:11.5px; font-weight:700; fill:#102a43; }
+ .val { font-size:11px; fill:#37474f; }
+ .icref { font-size:13px; font-weight:700; fill:#102a43; }
+ .pn { font-size:10px; fill:#8d6e63; font-weight:600; }
+ .pname { font-size:11px; fill:#102a43; }
+ .lp { font-size:11.5px; fill:#c62828; font-weight:700; }
+ .lsb { font-size:11.5px; fill:#1565c0; font-weight:700; }
+ .ll { font-size:11.5px; fill:#4e342e; font-weight:700; }
+ .lab_p { fill:#ffebee; stroke:#c62828; stroke-width:1.2; }
+ .lab_s { fill:#e3f2fd; stroke:#1565c0; stroke-width:1.2; }
+ .lab_l { fill:#efebe9; stroke:#8d6e63; stroke-width:1.2; }
+ .th { font-size:11.5px; font-weight:700; fill:#102a43; }
+ .td { font-size:11px; fill:#263238; }
+ .tdm { font-size:11px; fill:#263238; font-family:Consolas, monospace; }
+</style></defs>
+<rect width="1720" height="1440" fill="#ffffff"/>
+<text x="24" y="36" class="h1" text-anchor="start" >05 · Interfaz — sensores, IMU, pantalla, botones, LED y zumbador</text>
+<text x="24" y="56" class="h2" text-anchor="start" >nrf54lm20-meshnode · hoja 5 · referencias 5xx · intención de 05_interfaz.kicad_sch</text>
+<rect x="760" y="31" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="777.1" y="44.5" class="lp" text-anchor="middle" >3V3</text>
+<text x="806" y="44" class="ts" text-anchor="start" >alimentación global</text>
+<rect x="945" y="31" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="976.9" y="44.5" class="lsb" text-anchor="middle" >I2C_SDA</text>
+<text x="1020" y="44" class="ts" text-anchor="start" >jerárquica (otra hoja)</text>
+<rect x="1165" y="31" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="1182.1" y="44.5" class="ll" text-anchor="middle" >SW1</text>
+<text x="1208" y="44" class="ts" text-anchor="start" >local de la hoja</text>
+<rect x="1320" y="31" width="34" height="18" rx="3" class="dnp"/>
+<text x="1360" y="44" class="ts" text-anchor="start" >DNP / opcional</text>
+<rect x="1465" y="31" width="34" height="18" rx="3" class="symp"/>
+<text x="1505" y="44" class="ts" text-anchor="start" >pendiente de confirmar</text>
+<rect x="20" y="76" width="540" height="300" rx="7" class="frame"/>
+<text x="32" y="96" class="ft" text-anchor="start" >A · Bus I²C (TWIM30, 400 kHz)</text>
+<rect x="102.9" y="121" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="120.0" y="134.5" class="lp" text-anchor="middle" >3V3</text>
+<path d="M120,139 L120,150" class="w"/>
+<path d="M120,150 L120,162.0" class="w"/>
+<path d="M120,188.0 L120,200" class="w"/>
+<rect x="115" y="162.0" width="10" height="26" class="sym"/>
+<text x="129" y="173.0" class="ref" text-anchor="start" >R501</text>
+<text x="129" y="186.0" class="val" text-anchor="start" >4,7 kΩ</text>
+<path d="M120,200 L120,215" class="w"/>
+<rect x="88.1" y="215" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="120.0" y="228.5" class="lsb" text-anchor="middle" >I2C_SDA</text>
+<rect x="282.9" y="121" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="300.0" y="134.5" class="lp" text-anchor="middle" >3V3</text>
+<path d="M300,139 L300,150" class="w"/>
+<path d="M300,150 L300,162.0" class="w"/>
+<path d="M300,188.0 L300,200" class="w"/>
+<rect x="295" y="162.0" width="10" height="26" class="sym"/>
+<text x="309" y="173.0" class="ref" text-anchor="start" >R502</text>
+<text x="309" y="186.0" class="val" text-anchor="start" >4,7 kΩ</text>
+<path d="M300,200 L300,215" class="w"/>
+<rect x="268.1" y="215" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="300.0" y="228.5" class="lsb" text-anchor="middle" >I2C_SCL</text>
+<text x="40" y="248" class="th" text-anchor="start" >Dir.</text>
+<text x="120" y="248" class="th" text-anchor="start" >Dispositivo</text>
+<text x="260" y="248" class="th" text-anchor="start" >Nota</text>
+<path d="M30,254 L550,254" class="thin"/>
+<text x="40" y="272" class="tdm" text-anchor="start" >0x6B</text>
+<text x="120" y="272" class="td" text-anchor="start" >nPM1300 (hoja 01)</text>
+<text x="260" y="272" class="td" text-anchor="start" >PMIC; el firmware lo configura al arrancar</text>
+<rect x="28" y="279" width="524" height="20" fill="#f1f5f9"/>
+<text x="40" y="292" class="tdm" text-anchor="start" >0x6A</text>
+<text x="120" y="292" class="td" text-anchor="start" >LSM6DS3TR-C (U502)</text>
+<text x="260" y="292" class="td" text-anchor="start" >IMU · SA0 a GND (0x6B está ocupada)</text>
+<text x="40" y="312" class="tdm" text-anchor="start" >0x44</text>
+<text x="120" y="312" class="td" text-anchor="start" >SHT41-P-NF (U501)</text>
+<text x="260" y="312" class="td" text-anchor="start" >temperatura y humedad</text>
+<rect x="28" y="319" width="524" height="20" fill="#f1f5f9"/>
+<text x="40" y="332" class="tdm" text-anchor="start" >0x3C</text>
+<text x="120" y="332" class="td" text-anchor="start" >OLED HS91L02W2C01</text>
+<text x="260" y="332" class="td" text-anchor="start" >SSD1306 128×32 (0x78 en 8 bits)</text>
+<text x="40" y="352" class="tdm" text-anchor="start" >—</text>
+<text x="120" y="352" class="td" text-anchor="start" >Qwiic J501</text>
+<text x="260" y="352" class="td" text-anchor="start" >sensores externos</text>
+<rect x="580" y="76" width="540" height="300" rx="7" class="frame"/>
+<text x="592" y="96" class="ft" text-anchor="start" >B · Temperatura y humedad — SHT41-P-NF</text>
+<rect x="760" y="140" width="110" height="66" rx="3" class="sym"/>
+<text x="815.0" y="118" class="icref" text-anchor="middle" >U501</text>
+<text x="815.0" y="132" class="val" text-anchor="middle" >SHT41-P-NF · DFN-4</text>
+<path d="M740,160 L760,160" class="w"/>
+<text x="756" y="156" class="pn" text-anchor="end" >3</text>
+<text x="766" y="164" class="pname" text-anchor="start" >VDD</text>
+<path d="M740,186 L760,186" class="w"/>
+<text x="756" y="182" class="pn" text-anchor="end" >4</text>
+<text x="766" y="190" class="pname" text-anchor="start" >VSS</text>
+<path d="M870,160 L890,160" class="w"/>
+<text x="874" y="156" class="pn" text-anchor="start" >1</text>
+<text x="864" y="164" class="pname" text-anchor="end" >SDA</text>
+<path d="M870,186 L890,186" class="w"/>
+<text x="874" y="182" class="pn" text-anchor="start" >2</text>
+<text x="864" y="190" class="pname" text-anchor="end" >SCL</text>
+<rect x="705.8" y="151" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="722.9" y="164.5" class="lp" text-anchor="middle" >3V3</text>
+<path d="M740,186 L730,186" class="w"/>
+<path d="M730,186 L730,193" class="w"/>
+<path d="M721,193 L739,193" class="w"/>
+<path d="M724,197 L736,197" class="w"/>
+<path d="M727,201 L733,201" class="w"/>
+<rect x="890" y="151" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="921.9" y="164.5" class="lsb" text-anchor="middle" >I2C_SDA</text>
+<rect x="890" y="177" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="921.9" y="190.5" class="lsb" text-anchor="middle" >I2C_SCL</text>
+<rect x="665.8" y="241" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="682.9" y="254.5" class="lp" text-anchor="middle" >3V3</text>
+<path d="M700,250 L720,250" class="w"/>
+<path d="M720,250 L720,269.0" class="w"/>
+<path d="M720,275.0 L720,294" class="w"/>
+<path d="M711,269.0 L729,269.0" class="plate"/>
+<path d="M711,275.0 L729,275.0" class="plate"/>
+<text x="732" y="270.0" class="ref" text-anchor="start" >C501</text>
+<text x="732" y="283.0" class="val" text-anchor="start" >100 nF</text>
+<path d="M720,294 L720,301" class="w"/>
+<path d="M711,301 L729,301" class="w"/>
+<path d="M714,305 L726,305" class="w"/>
+<path d="M717,309 L723,309" class="w"/>
+<text x="600" y="330" class="ts" text-anchor="start" >En un canto, con ranura de aislamiento térmico; lejos del nPM1300, LEDs y E22.</text>
+<text x="600" y="345" class="ts" text-anchor="start" >Hueco en la caja frente al sensor. Meshtastic lo detecta solo (SHT4x).</text>
+<rect x="1140" y="76" width="560" height="300" rx="7" class="frame"/>
+<text x="1152" y="96" class="ft" text-anchor="start" >C · Pantalla OLED 0,91" y conector Qwiic</text>
+<rect x="1270" y="140" width="100" height="66" rx="3" class="sym"/>
+<text x="1320.0" y="118" class="icref" text-anchor="middle" >DS501</text>
+<text x="1320.0" y="132" class="val" text-anchor="middle" >HS91L02W2C01</text>
+<path d="M1250,160 L1270,160" class="w"/>
+<text x="1266" y="156" class="pn" text-anchor="end" >2</text>
+<text x="1276" y="164" class="pname" text-anchor="start" >VCC</text>
+<path d="M1250,186 L1270,186" class="w"/>
+<text x="1266" y="182" class="pn" text-anchor="end" >1</text>
+<text x="1276" y="190" class="pname" text-anchor="start" >GND</text>
+<path d="M1370,160 L1390,160" class="w"/>
+<text x="1374" y="156" class="pn" text-anchor="start" >4</text>
+<text x="1364" y="164" class="pname" text-anchor="end" >SDA</text>
+<path d="M1370,186 L1390,186" class="w"/>
+<text x="1374" y="182" class="pn" text-anchor="start" >3</text>
+<text x="1364" y="190" class="pname" text-anchor="end" >SCL</text>
+<rect x="1215.8" y="151" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="1232.8999999999999" y="164.5" class="lp" text-anchor="middle" >3V3</text>
+<path d="M1250,186 L1240,186" class="w"/>
+<path d="M1240,186 L1240,193" class="w"/>
+<path d="M1231,193 L1249,193" class="w"/>
+<path d="M1234,197 L1246,197" class="w"/>
+<path d="M1237,201 L1243,201" class="w"/>
+<rect x="1390" y="151" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="1421.9" y="164.5" class="lsb" text-anchor="middle" >I2C_SDA</text>
+<rect x="1390" y="177" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="1421.9" y="190.5" class="lsb" text-anchor="middle" >I2C_SCL</text>
+<rect x="1165.8" y="241" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="1182.8999999999999" y="254.5" class="lp" text-anchor="middle" >3V3</text>
+<path d="M1200,250 L1220,250" class="w"/>
+<path d="M1220,250 L1220,269.0" class="w"/>
+<path d="M1220,275.0 L1220,294" class="w"/>
+<path d="M1211,269.0 L1229,269.0" class="plate"/>
+<path d="M1211,275.0 L1229,275.0" class="plate"/>
+<text x="1232" y="270.0" class="ref" text-anchor="start" >C502</text>
+<text x="1232" y="283.0" class="val" text-anchor="start" >1 µF</text>
+<path d="M1220,294 L1220,301" class="w"/>
+<path d="M1211,301 L1229,301" class="w"/>
+<path d="M1214,305 L1226,305" class="w"/>
+<path d="M1217,309 L1223,309" class="w"/>
+<rect x="1560" y="230" width="70" height="106" rx="3" class="sym"/>
+<text x="1595.0" y="208" class="icref" text-anchor="middle" >J501</text>
+<text x="1595.0" y="222" class="val" text-anchor="middle" >1.0T-4P · Qwiic</text>
+<path d="M1544,250 L1560,250" class="w"/>
+<text x="1556" y="246" class="pn" text-anchor="end" >1</text>
+<text x="1566" y="254" class="pname" text-anchor="start" >GND</text>
+<path d="M1544,272 L1560,272" class="w"/>
+<text x="1556" y="268" class="pn" text-anchor="end" >2</text>
+<text x="1566" y="276" class="pname" text-anchor="start" >3V3</text>
+<path d="M1544,294 L1560,294" class="w"/>
+<text x="1556" y="290" class="pn" text-anchor="end" >3</text>
+<text x="1566" y="298" class="pname" text-anchor="start" >SDA</text>
+<path d="M1544,316 L1560,316" class="w"/>
+<text x="1556" y="312" class="pn" text-anchor="end" >4</text>
+<text x="1566" y="320" class="pname" text-anchor="start" >SCL</text>
+<path d="M1544,250 L1534,250" class="w"/>
+<path d="M1534,250 L1534,257" class="w"/>
+<path d="M1525,257 L1543,257" class="w"/>
+<path d="M1528,261 L1540,261" class="w"/>
+<path d="M1531,265 L1537,265" class="w"/>
+<rect x="1509.8" y="263" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="1526.8999999999999" y="276.5" class="lp" text-anchor="middle" >3V3</text>
+<rect x="1480.2" y="285" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="1512.1000000000001" y="298.5" class="lsb" text-anchor="middle" >I2C_SDA</text>
+<rect x="1480.2" y="307" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="1512.1000000000001" y="320.5" class="lsb" text-anchor="middle" >I2C_SCL</text>
+<text x="1156" y="345" class="ts" text-anchor="start" >OLED en tira de 4 pines a 2,54 (38×12 mm): sus pull-ups de 4k7 van a su LDO.</text>
+<text x="1156" y="360" class="tw" text-anchor="start" >🚨 Siempre alimentados: si se cortara 3V3, hundirían el I²C del PMIC.</text>
+<rect x="20" y="390" width="540" height="300" rx="7" class="frame"/>
+<text x="32" y="410" class="ft" text-anchor="start" >D · Botones laterales (HX TS35CA, ángulo recto)</text>
+<rect x="81.8" y="436" width="56.400000000000006" height="18" rx="3" class="lab_s"/>
+<text x="110.0" y="449.5" class="lsb" text-anchor="middle" >BTN_UP</text>
+<path d="M110,454 L110,466" class="w"/>
+<path d="M110,466 L110,485.0" class="w"/>
+<path d="M110,503.0 L110,522" class="w"/>
+<circle cx="110" cy="485.0" r="2.6" fill="#fff" stroke="#263238" stroke-width="1.5"/>
+<circle cx="110" cy="503.0" r="2.6" fill="#fff" stroke="#263238" stroke-width="1.5"/>
+<path d="M100,481.0 L100,507.0" class="plate"/>
+<path d="M100,494.0 L91,494.0" class="w"/>
+<path d="M91,488.0 L91,500.0" class="w"/>
+<text x="122" y="492.0" class="ref" text-anchor="start" >SW501</text>
+<text x="122" y="505.0" class="val" text-anchor="start" >↑</text>
+<path d="M110,522 L110,529" class="w"/>
+<path d="M101,529 L119,529" class="w"/>
+<path d="M104,533 L116,533" class="w"/>
+<path d="M107,537 L113,537" class="w"/>
+<rect x="241.8" y="436" width="56.400000000000006" height="18" rx="3" class="lab_s"/>
+<text x="270.0" y="449.5" class="lsb" text-anchor="middle" >BTN_OK</text>
+<path d="M270,454 L270,466" class="w"/>
+<path d="M270,466 L270,485.0" class="w"/>
+<path d="M270,503.0 L270,522" class="w"/>
+<circle cx="270" cy="485.0" r="2.6" fill="#fff" stroke="#263238" stroke-width="1.5"/>
+<circle cx="270" cy="503.0" r="2.6" fill="#fff" stroke="#263238" stroke-width="1.5"/>
+<path d="M260,481.0 L260,507.0" class="plate"/>
+<path d="M260,494.0 L251,494.0" class="w"/>
+<path d="M251,488.0 L251,500.0" class="w"/>
+<text x="282" y="492.0" class="ref" text-anchor="start" >SW502</text>
+<text x="282" y="505.0" class="val" text-anchor="start" >OK</text>
+<path d="M270,522 L270,529" class="w"/>
+<path d="M261,529 L279,529" class="w"/>
+<path d="M264,533 L276,533" class="w"/>
+<path d="M267,537 L273,537" class="w"/>
+<rect x="394.4" y="436" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="430.0" y="449.5" class="lsb" text-anchor="middle" >BTN_DOWN</text>
+<path d="M430,454 L430,466" class="w"/>
+<path d="M430,466 L430,485.0" class="w"/>
+<path d="M430,503.0 L430,522" class="w"/>
+<circle cx="430" cy="485.0" r="2.6" fill="#fff" stroke="#263238" stroke-width="1.5"/>
+<circle cx="430" cy="503.0" r="2.6" fill="#fff" stroke="#263238" stroke-width="1.5"/>
+<path d="M420,481.0 L420,507.0" class="plate"/>
+<path d="M420,494.0 L411,494.0" class="w"/>
+<path d="M411,488.0 L411,500.0" class="w"/>
+<text x="442" y="492.0" class="ref" text-anchor="start" >SW503</text>
+<text x="442" y="505.0" class="val" text-anchor="start" >↓</text>
+<path d="M430,522 L430,529" class="w"/>
+<path d="M421,529 L439,529" class="w"/>
+<path d="M424,533 L436,533" class="w"/>
+<path d="M427,537 L433,537" class="w"/>
+<text x="40" y="580" class="ts" text-anchor="start" >Pata 2 = señal; 1, 3 y 4 (pestañas) a GND, como en ai_instruments.</text>
+<text x="40" y="598" class="ts" text-anchor="start" >Pull-up interno del nRF54 (BUTTON_NEED_PULLUP); antirrebote por software.</text>
+<text x="40" y="616" class="ts" text-anchor="start" >OK = BUTTON1 de Meshtastic (corta: siguiente pantalla · larga: menú);</text>
+<text x="40" y="634" class="ts" text-anchor="start" >↑/↓ = entrada de navegación (menús y canned messages).</text>
+<text x="40" y="652" class="ts" text-anchor="start" >En el canto opuesto a las antenas; el botón PWR (hoja 01) aparte.</text>
+<rect x="580" y="390" width="360" height="300" rx="7" class="frame"/>
+<text x="592" y="410" class="ft" text-anchor="start" >E · LED de estado del MCU</text>
+<rect x="664.4" y="436" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="700.0" y="449.5" class="lsb" text-anchor="middle" >LED_STAT</text>
+<path d="M700,454 L700,466" class="w"/>
+<path d="M700,466 L700,478.0" class="w"/>
+<path d="M700,504.0 L700,516" class="w"/>
+<rect x="695" y="478.0" width="10" height="26" class="sym"/>
+<text x="709" y="489.0" class="ref" text-anchor="start" >R503</text>
+<text x="709" y="502.0" class="val" text-anchor="start" >470 Ω</text>
+<path d="M700,516 L700,531.0" class="w"/>
+<path d="M700,545.0 L700,560" class="w"/>
+<path d="M692,531.0 L708,531.0 L700,545.0 Z" class="sym"/>
+<path d="M692,545.0 L708,545.0" class="w"/>
+<path d="M710,535.0 L717,528.0" class="w"/>
+<path d="M713,528.0 L717,528.0 L717,532.0" class="w"/>
+<path d="M710,542.0 L717,535.0" class="w"/>
+<path d="M713,535.0 L717,535.0 L717,539.0" class="w"/>
+<text x="722" y="536.0" class="ref" text-anchor="start" >D501</text>
+<text x="722" y="549.0" class="val" text-anchor="start" >verde XL-1608UGC</text>
+<path d="M700,560 L700,567" class="w"/>
+<path d="M691,567 L709,567" class="w"/>
+<path d="M694,571 L706,571" class="w"/>
+<path d="M697,575 L703,575" class="w"/>
+<text x="596" y="610" class="ts" text-anchor="start" >Activo alto desde P2.00 (PIN_LED1, LED_STATE_ON 1).</text>
+<text x="596" y="625" class="ts" text-anchor="start" >Vf 2,4–3,0 V a 20 mA (≈ 2,4 V a 2 mA) ⇒ (3,3−2,4)/470</text>
+<text x="596" y="640" class="ts" text-anchor="start" >≈ 1,9 mA: se ve y gasta poco.</text>
+<rect x="960" y="390" width="740" height="300" rx="7" class="frame"/>
+<text x="972" y="410" class="ft" text-anchor="start" >F · Zumbador magnético HYG-5020A (PWM)</text>
+<rect x="1159.2" y="423" width="41.6" height="18" rx="3" class="lab_p"/>
+<text x="1180.0" y="436.5" class="lp" text-anchor="middle" >VSYS</text>
+<path d="M1180,441 L1180,452" class="w"/>
+<circle cx="1180" cy="452" r="3.2" fill="#263238"/>
+<path d="M1158,452 L1202,452" class="w"/>
+<path d="M1158,488 L1202,488" class="w"/>
+<circle cx="1180" cy="488" r="3.2" fill="#263238"/>
+<path d="M1158,452 L1158,457.0" class="w"/>
+<path d="M1158,483.0 L1158,488" class="w"/>
+<rect x="1153" y="457.0" width="10" height="26" class="sym"/>
+<text x="1149" y="468.0" class="ref" text-anchor="end" >R506</text>
+<text x="1149" y="481.0" class="val" text-anchor="end" >10 Ω</text>
+<path d="M1202,452 L1202,457.0" class="w"/>
+<path d="M1202,483.0 L1202,488" class="w"/>
+<rect x="1197" y="457.0" width="10" height="26" class="sym"/>
+<text x="1211" y="468.0" class="ref" text-anchor="start" >R507</text>
+<text x="1211" y="481.0" class="val" text-anchor="start" >10 Ω</text>
+<path d="M1180,488 L1180,498" class="w"/>
+<circle cx="1180" cy="498" r="3.2" fill="#263238"/>
+<path d="M1180,498 L1180,512" class="w"/>
+<path d="M1180,538 L1180,552" class="w"/>
+<rect x="1166" y="512" width="28" height="26" rx="13" class="sym"/>
+<path d="M1173,531 a7,7 0 0 1 14,0" class="w"/>
+<text x="1174" y="509" class="pn" text-anchor="end" >+</text>
+<text x="1200" y="523" class="ref" text-anchor="start" >BZ501</text>
+<text x="1200" y="536" class="val" text-anchor="start" >HYG-5020A</text>
+<text x="1200" y="549" class="pn" text-anchor="start" >pata 3 NC</text>
+<path d="M1180,498 L1290,498" class="w"/>
+<path d="M1290,498 L1290,518.0" class="w"/>
+<path d="M1290,532.0 L1290,552" class="w"/>
+<path d="M1282,532.0 L1298,532.0 L1290,518.0 Z" class="sym"/>
+<path d="M1282,518.0 L1298,518.0" class="plate"/>
+<text x="1304" y="523.0" class="ref" text-anchor="start" >D502</text>
+<text x="1304" y="536.0" class="val" text-anchor="start" >1N4148W</text>
+<path d="M1180,552 L1290,552" class="w"/>
+<circle cx="1180" cy="552" r="3.2" fill="#263238"/>
+<path d="M1180,552 L1180,562" class="w"/>
+<path d="M1180,562 L1180,580 L1168,580" class="w"/>
+<path d="M1180,622 L1180,604 L1168,604" class="w"/>
+<path d="M1168,576 L1168,608" class="plate"/>
+<path d="M1162,580 L1162,604" class="plate"/>
+<path d="M1146,592 L1162,592" class="w"/>
+<path d="M1168,604 l7,-4 v8 z" fill="#263238"/>
+<text x="1188" y="586" class="ref" text-anchor="start" >Q501</text>
+<text x="1188" y="599" class="val" text-anchor="start" >BSS138</text>
+<text x="1184" y="572" class="pn" text-anchor="start" >D</text>
+<text x="1184" y="618" class="pn" text-anchor="start" >S</text>
+<text x="1146" y="587" class="pn" text-anchor="start" >G</text>
+<path d="M1180,622 L1180,629" class="w"/>
+<path d="M1171,629 L1189,629" class="w"/>
+<path d="M1174,633 L1186,633" class="w"/>
+<path d="M1177,637 L1183,637" class="w"/>
+<rect x="1003.6" y="583" width="56.400000000000006" height="18" rx="3" class="lab_s"/>
+<text x="1031.8" y="596.5" class="lsb" text-anchor="middle" >BUZZER</text>
+<path d="M1060,592 L1073.0,592" class="w"/>
+<path d="M1099.0,592 L1112,592" class="w"/>
+<rect x="1073.0" y="587" width="26" height="10" class="sym"/>
+<text x="1086.0" y="583" class="ref" text-anchor="middle" >R504 220 Ω</text>
+<path d="M1112,592 L1146,592" class="w"/>
+<circle cx="1126" cy="592" r="3.2" fill="#263238"/>
+<path d="M1126,592 L1126,597.0" class="w"/>
+<path d="M1126,623.0 L1126,628" class="w"/>
+<rect x="1121" y="597.0" width="10" height="26" class="sym"/>
+<text x="1117" y="608.0" class="ref" text-anchor="end" >R505</text>
+<text x="1117" y="621.0" class="val" text-anchor="end" >100 kΩ</text>
+<path d="M1126,628 L1126,635" class="w"/>
+<path d="M1117,635 L1135,635" class="w"/>
+<path d="M1120,639 L1132,639" class="w"/>
+<path d="M1123,643 L1129,643" class="w"/>
+<text x="1372" y="436" class="ts" text-anchor="start" >Magnético, resuena a 4 kHz; bobina 12 ± 5 Ω;</text>
+<text x="1372" y="454" class="ts" text-anchor="start" >2–4 Vp-p (3 V nominal ⇒ 110 mA a 50 %).</text>
+<text x="1372" y="472" class="ts" text-anchor="start" >Desde VSYS (batería 3,0–4,2 V; ≈ 5 V con USB):</text>
+<text x="1372" y="490" class="ts" text-anchor="start" >los bucks dan 200 mA y el E22 ya pide 140 en TX.</text>
+<text x="1372" y="508" class="ts" text-anchor="start" >R506 ∥ R507 = 5 Ω: con 5 V la bobina ve 3,2 V</text>
+<text x="1372" y="526" class="ts" text-anchor="start" >(0,27 A de pico); con 3,6 V, 2,3 V. ≈ 0,1 W en</text>
+<text x="1372" y="544" class="ts" text-anchor="start" >cada 0603 sólo mientras suena.</text>
+<text x="1372" y="562" class="ts" text-anchor="start" >D502 libre circulación · R505 corta Q501 con</text>
+<text x="1372" y="580" class="ts" text-anchor="start" >el pin en alta impedancia · PIN_BUZZER P1.09.</text>
+<text x="1372" y="622" class="ts" text-anchor="start" >BSS138 (HT): 0,34 A cont., 1,5 Ω típ. a 4,5 V;</text>
+<text x="1372" y="640" class="ts" text-anchor="start" >1N4148W: 300 mA cont. ⇒ los dos aguantan 0,27 A.</text>
+<rect x="20" y="704" width="1680" height="300" rx="7" class="frame"/>
+<text x="32" y="724" class="ft" text-anchor="start" >G · IMU LSM6DS3TR-C — despertar al mover la placa</text>
+<rect x="330" y="770" width="130" height="221" rx="3" class="sym"/>
+<text x="395.0" y="748" class="icref" text-anchor="middle" >U502</text>
+<text x="395.0" y="762" class="val" text-anchor="middle" >LSM6DS3TR-C · LGA-14</text>
+<path d="M310,786 L330,786" class="w"/>
+<text x="326" y="782" class="pn" text-anchor="end" >8</text>
+<text x="336" y="790" class="pname" text-anchor="start" >VDD</text>
+<path d="M310,807 L330,807" class="w"/>
+<text x="326" y="803" class="pn" text-anchor="end" >5</text>
+<text x="336" y="811" class="pname" text-anchor="start" >VDDIO</text>
+<path d="M310,828 L330,828" class="w"/>
+<text x="326" y="824" class="pn" text-anchor="end" >12</text>
+<text x="336" y="832" class="pname" text-anchor="start" >CS</text>
+<path d="M310,870 L330,870" class="w"/>
+<text x="326" y="866" class="pn" text-anchor="end" >1</text>
+<text x="336" y="874" class="pname" text-anchor="start" >SDO/SA0</text>
+<path d="M310,891 L330,891" class="w"/>
+<text x="326" y="887" class="pn" text-anchor="end" >2</text>
+<text x="336" y="895" class="pname" text-anchor="start" >SDx</text>
+<path d="M310,912 L330,912" class="w"/>
+<text x="326" y="908" class="pn" text-anchor="end" >3</text>
+<text x="336" y="916" class="pname" text-anchor="start" >SCx</text>
+<path d="M310,954 L330,954" class="w"/>
+<text x="326" y="950" class="pn" text-anchor="end" >6</text>
+<text x="336" y="958" class="pname" text-anchor="start" >GND</text>
+<path d="M310,975 L330,975" class="w"/>
+<text x="326" y="971" class="pn" text-anchor="end" >7</text>
+<text x="336" y="979" class="pname" text-anchor="start" >GND</text>
+<path d="M460,786 L480,786" class="w"/>
+<text x="464" y="782" class="pn" text-anchor="start" >14</text>
+<text x="454" y="790" class="pname" text-anchor="end" >SDA</text>
+<path d="M460,807 L480,807" class="w"/>
+<text x="464" y="803" class="pn" text-anchor="start" >13</text>
+<text x="454" y="811" class="pname" text-anchor="end" >SCL</text>
+<path d="M460,849 L480,849" class="w"/>
+<text x="464" y="845" class="pn" text-anchor="start" >4</text>
+<text x="454" y="853" class="pname" text-anchor="end" >INT1</text>
+<path d="M460,870 L480,870" class="w"/>
+<text x="464" y="866" class="pn" text-anchor="start" >9</text>
+<text x="454" y="874" class="pname" text-anchor="end" >INT2</text>
+<path d="M460,912 L480,912" class="w"/>
+<text x="464" y="908" class="pn" text-anchor="start" >10</text>
+<text x="454" y="916" class="pname" text-anchor="end" >NC</text>
+<path d="M460,933 L480,933" class="w"/>
+<text x="464" y="929" class="pn" text-anchor="start" >11</text>
+<text x="454" y="937" class="pname" text-anchor="end" >NC</text>
+<rect x="275.8" y="777" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="292.90000000000003" y="790.5" class="lp" text-anchor="middle" >3V3</text>
+<rect x="275.8" y="798" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="292.90000000000003" y="811.5" class="lp" text-anchor="middle" >3V3</text>
+<rect x="275.8" y="819" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="292.90000000000003" y="832.5" class="lp" text-anchor="middle" >3V3</text>
+<path d="M310,870 L300,870" class="w"/>
+<path d="M300,870 L300,877" class="w"/>
+<path d="M291,877 L309,877" class="w"/>
+<path d="M294,881 L306,881" class="w"/>
+<path d="M297,885 L303,885" class="w"/>
+<path d="M310,891 L300,891" class="w"/>
+<path d="M300,891 L300,898" class="w"/>
+<path d="M291,898 L309,898" class="w"/>
+<path d="M294,902 L306,902" class="w"/>
+<path d="M297,906 L303,906" class="w"/>
+<path d="M310,912 L300,912" class="w"/>
+<path d="M300,912 L300,919" class="w"/>
+<path d="M291,919 L309,919" class="w"/>
+<path d="M294,923 L306,923" class="w"/>
+<path d="M297,927 L303,927" class="w"/>
+<path d="M310,954 L300,954" class="w"/>
+<path d="M300,954 L300,961" class="w"/>
+<path d="M291,961 L309,961" class="w"/>
+<path d="M294,965 L306,965" class="w"/>
+<path d="M297,969 L303,969" class="w"/>
+<path d="M310,975 L300,975" class="w"/>
+<path d="M300,975 L300,982" class="w"/>
+<path d="M291,982 L309,982" class="w"/>
+<path d="M294,986 L306,986" class="w"/>
+<path d="M297,990 L303,990" class="w"/>
+<rect x="480" y="777" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="511.9" y="790.5" class="lsb" text-anchor="middle" >I2C_SDA</text>
+<rect x="480" y="798" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="511.9" y="811.5" class="lsb" text-anchor="middle" >I2C_SCL</text>
+<rect x="480" y="840" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="515.6" y="853.5" class="lsb" text-anchor="middle" >IMU_INT1</text>
+<rect x="480" y="861" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="515.6" y="874.5" class="lsb" text-anchor="middle" >IMU_INT2</text>
+<path d="M475,907 L485,917" class="nc"/>
+<path d="M475,917 L485,907" class="nc"/>
+<path d="M475,928 L485,938" class="nc"/>
+<path d="M475,938 L485,928" class="nc"/>
+<rect x="625.8" y="771" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="642.9" y="784.5" class="lp" text-anchor="middle" >3V3</text>
+<path d="M660,780 L760,780" class="w"/>
+<path d="M680,780 L680,799.0" class="w"/>
+<path d="M680,805.0 L680,824" class="w"/>
+<path d="M671,799.0 L689,799.0" class="plate"/>
+<path d="M671,805.0 L689,805.0" class="plate"/>
+<text x="692" y="800.0" class="ref" text-anchor="start" >C503</text>
+<text x="692" y="813.0" class="val" text-anchor="start" >100 nF</text>
+<path d="M680,824 L680,831" class="w"/>
+<path d="M671,831 L689,831" class="w"/>
+<path d="M674,835 L686,835" class="w"/>
+<path d="M677,839 L683,839" class="w"/>
+<circle cx="760" cy="780" r="3.2" fill="#263238"/>
+<path d="M760,780 L760,799.0" class="w"/>
+<path d="M760,805.0 L760,824" class="w"/>
+<path d="M751,799.0 L769,799.0" class="plate"/>
+<path d="M751,805.0 L769,805.0" class="plate"/>
+<text x="772" y="800.0" class="ref" text-anchor="start" >C504</text>
+<text x="772" y="813.0" class="val" text-anchor="start" >100 nF</text>
+<path d="M760,824 L760,831" class="w"/>
+<path d="M751,831 L769,831" class="w"/>
+<path d="M754,835 L766,835" class="w"/>
+<path d="M757,839 L763,839" class="w"/>
+<text x="600" y="880" class="ts" text-anchor="start" >C503 junto a VDD (8), C504 junto a VDDIO (5).</text>
+<text x="900" y="750" class="ts" text-anchor="start" >Uso principal: despertar el nodo al moverlo (wake-up del acelerómetro → INT1).</text>
+<text x="900" y="769" class="ts" text-anchor="start" >INT1 → P0.02: el puerto P0 tiene «sense» y despierta al nRF54LM20 de System OFF (P2 no).</text>
+<text x="900" y="788" class="ts" text-anchor="start" >INT2 → P0.05 (doble toque, orientación…). Salidas push-pull, activas a nivel alto y a 0</text>
+<text x="900" y="807" class="ts" text-anchor="start" >tras el reset ⇒ sin pull-ups. En 3V3 siempre vivo: acelerómetro a 12,5 Hz ≈ 9 µA.</text>
+<text x="900" y="826" class="ts" text-anchor="start" >SA0 a GND ⇒ 0x6A (0x6B es del nPM1300; Meshtastic busca el LSM6DS3 en 0x6A).</text>
+<text x="900" y="845" class="ts" text-anchor="start" >CS a 3V3 = modo I²C · SDx/SCx (maestro I²C auxiliar) a GND · 10 y 11 al aire, soldados.</text>
+<text x="900" y="864" class="ts" text-anchor="start" >Pegado al PCB, lejos del zumbador; la orientación da igual (la corrige el firmware).</text>
+<rect x="892" y="896" width="796" height="94" rx="4" class="symp"/>
+<text x="900" y="914" class="tp" text-anchor="start" >Firmware: el driver LSM6DS3 de Meshtastic sólo sondea shake() con el MCU despierto. Para</text>
+<text x="900" y="933" class="tp" text-anchor="start" >despertar: enrutar el wake-up a INT1 (configInt1 …, wakeup), enclavarla (LIR) y armar SENSE alto</text>
+<text x="900" y="952" class="tp" text-anchor="start" >en P0.02 antes de System OFF. Además, el escáner I²C toma 0x6B (nPM1300) por un «QMI8658»:</text>
+<text x="900" y="971" class="tp" text-anchor="start" >la variante debe evitarlo.</text>
+<rect x="20" y="1018" width="1680" height="400" rx="7" class="frame"/>
+<text x="32" y="1038" class="ft" text-anchor="start" >Piezas de la hoja</text>
+<text x="40" y="1058" class="th" text-anchor="start" >Ref.</text>
+<text x="200" y="1058" class="th" text-anchor="start" >Qué es</text>
+<text x="420" y="1058" class="th" text-anchor="start" >Pieza</text>
+<text x="760" y="1058" class="th" text-anchor="start" >Encapsulado</text>
+<text x="940" y="1058" class="th" text-anchor="start" >LCSC</text>
+<text x="1100" y="1058" class="th" text-anchor="start" >Stock</text>
+<path d="M30,1064 L1690,1064" class="thin"/>
+<text x="40" y="1082" class="tdm" text-anchor="start" >R501 R502</text>
+<text x="200" y="1082" class="td" text-anchor="start" >4,7 kΩ 1 %</text>
+<text x="420" y="1082" class="td" text-anchor="start" >Yageo RC0402FR-074K7L</text>
+<text x="760" y="1082" class="td" text-anchor="start" >0402</text>
+<text x="940" y="1082" class="tdm" text-anchor="start" >C105871</text>
+<text x="1100" y="1082" class="td" text-anchor="start" >cajón #39</text>
+<rect x="28" y="1089" width="1664" height="20" fill="#f1f5f9"/>
+<text x="40" y="1102" class="tdm" text-anchor="start" >U501</text>
+<text x="200" y="1102" class="td" text-anchor="start" >temp./humedad</text>
+<text x="420" y="1102" class="td" text-anchor="start" >Nyfea SHT41-P-NF</text>
+<text x="760" y="1102" class="td" text-anchor="start" >DFN-4 1,5×1,5</text>
+<text x="940" y="1102" class="tdm" text-anchor="start" >C55108905</text>
+<text x="1100" y="1102" class="td" text-anchor="start" >cajón #58 (3)</text>
+<text x="40" y="1122" class="tdm" text-anchor="start" >C501</text>
+<text x="200" y="1122" class="td" text-anchor="start" >100 nF</text>
+<text x="420" y="1122" class="td" text-anchor="start" >Samsung CL05B104KO5NNNC</text>
+<text x="760" y="1122" class="td" text-anchor="start" >0402</text>
+<text x="940" y="1122" class="tdm" text-anchor="start" >C1525</text>
+<text x="1100" y="1122" class="td" text-anchor="start" >cajón #22</text>
+<rect x="28" y="1129" width="1664" height="20" fill="#f1f5f9"/>
+<text x="40" y="1142" class="tdm" text-anchor="start" >DS501</text>
+<text x="200" y="1142" class="td" text-anchor="start" >OLED 0,91" 128×32</text>
+<text x="420" y="1142" class="td" text-anchor="start" >HS HS91L02W2C01</text>
+<text x="760" y="1142" class="td" text-anchor="start" >TH 4p 2,54</text>
+<text x="940" y="1142" class="tdm" text-anchor="start" >C5248081</text>
+<text x="1100" y="1142" class="td" text-anchor="start" >COMPRAR</text>
+<text x="40" y="1162" class="tdm" text-anchor="start" >C502</text>
+<text x="200" y="1162" class="td" text-anchor="start" >1 µF 25 V</text>
+<text x="420" y="1162" class="td" text-anchor="start" >Samsung CL05A105KA5NQNC</text>
+<text x="760" y="1162" class="td" text-anchor="start" >0402</text>
+<text x="940" y="1162" class="tdm" text-anchor="start" >C52923</text>
+<text x="1100" y="1162" class="td" text-anchor="start" >cajón #23</text>
+<rect x="28" y="1169" width="1664" height="20" fill="#f1f5f9"/>
+<text x="40" y="1182" class="tdm" text-anchor="start" >J501</text>
+<text x="200" y="1182" class="td" text-anchor="start" >Qwiic 1 mm (á. recto)</text>
+<text x="420" y="1182" class="td" text-anchor="start" >BOOMELE 1.0T-4P (clon SH)</text>
+<text x="760" y="1182" class="td" text-anchor="start" >SMD</text>
+<text x="940" y="1182" class="tdm" text-anchor="start" >C970137</text>
+<text x="1100" y="1182" class="td" text-anchor="start" >cajón #203</text>
+<text x="40" y="1202" class="tdm" text-anchor="start" >SW501-SW503</text>
+<text x="200" y="1202" class="td" text-anchor="start" >pulsador lateral</text>
+<text x="420" y="1202" class="td" text-anchor="start" >Hanxia HX TS35CA 160gf</text>
+<text x="760" y="1202" class="td" text-anchor="start" >SMD á. recto</text>
+<text x="940" y="1202" class="tdm" text-anchor="start" >C25168837</text>
+<text x="1100" y="1202" class="td" text-anchor="start" >cajón #65</text>
+<rect x="28" y="1209" width="1664" height="20" fill="#f1f5f9"/>
+<text x="40" y="1222" class="tdm" text-anchor="start" >R503</text>
+<text x="200" y="1222" class="td" text-anchor="start" >470 Ω</text>
+<text x="420" y="1222" class="td" text-anchor="start" >UNI-ROYAL 0402WGF4700TCE</text>
+<text x="760" y="1222" class="td" text-anchor="start" >0402</text>
+<text x="940" y="1222" class="tdm" text-anchor="start" >C25117</text>
+<text x="1100" y="1222" class="td" text-anchor="start" >cajón #35</text>
+<text x="40" y="1242" class="tdm" text-anchor="start" >D501</text>
+<text x="200" y="1242" class="td" text-anchor="start" >LED verde</text>
+<text x="420" y="1242" class="td" text-anchor="start" >XINGLIGHT XL-1608UGC-06A</text>
+<text x="760" y="1242" class="td" text-anchor="start" >0603</text>
+<text x="940" y="1242" class="tdm" text-anchor="start" >C7371903</text>
+<text x="1100" y="1242" class="td" text-anchor="start" >cajón #42</text>
+<rect x="28" y="1249" width="1664" height="20" fill="#f1f5f9"/>
+<text x="40" y="1262" class="tdm" text-anchor="start" >BZ501</text>
+<text x="200" y="1262" class="td" text-anchor="start" >zumbador magnético 4 kHz</text>
+<text x="420" y="1262" class="td" text-anchor="start" >Huayu HYG-5020A</text>
+<text x="760" y="1262" class="td" text-anchor="start" >SMD 5×5</text>
+<text x="940" y="1262" class="tdm" text-anchor="start" >C7544810</text>
+<text x="1100" y="1262" class="td" text-anchor="start" >COMPRAR</text>
+<text x="40" y="1282" class="tdm" text-anchor="start" >R506 R507</text>
+<text x="200" y="1282" class="td" text-anchor="start" >10 Ω 5 % (∥ = 5 Ω)</text>
+<text x="420" y="1282" class="td" text-anchor="start" >genérica 125 mW</text>
+<text x="760" y="1282" class="td" text-anchor="start" >0603</text>
+<text x="940" y="1282" class="tdm" text-anchor="start" >—</text>
+<text x="1100" y="1282" class="td" text-anchor="start" >cajón #139</text>
+<rect x="28" y="1289" width="1664" height="20" fill="#f1f5f9"/>
+<text x="40" y="1302" class="tdm" text-anchor="start" >Q501</text>
+<text x="200" y="1302" class="td" text-anchor="start" >N-MOS</text>
+<text x="420" y="1302" class="td" text-anchor="start" >HT BSS138</text>
+<text x="760" y="1302" class="td" text-anchor="start" >SOT-23</text>
+<text x="940" y="1302" class="tdm" text-anchor="start" >C27140738</text>
+<text x="1100" y="1302" class="td" text-anchor="start" >cajón #151</text>
+<text x="40" y="1322" class="tdm" text-anchor="start" >D502</text>
+<text x="200" y="1322" class="td" text-anchor="start" >diodo</text>
+<text x="420" y="1322" class="td" text-anchor="start" >JSMSEMI 1N4148W</text>
+<text x="760" y="1322" class="td" text-anchor="start" >SOD-123</text>
+<text x="940" y="1322" class="tdm" text-anchor="start" >C917030</text>
+<text x="1100" y="1322" class="td" text-anchor="start" >cajón #51</text>
+<rect x="28" y="1329" width="1664" height="20" fill="#f1f5f9"/>
+<text x="40" y="1342" class="tdm" text-anchor="start" >R504</text>
+<text x="200" y="1342" class="td" text-anchor="start" >220 Ω 1 %</text>
+<text x="420" y="1342" class="td" text-anchor="start" >UNI-ROYAL 0402WGF2200TCE</text>
+<text x="760" y="1342" class="td" text-anchor="start" >0402</text>
+<text x="940" y="1342" class="tdm" text-anchor="start" >C25091</text>
+<text x="1100" y="1342" class="td" text-anchor="start" >cajón #32</text>
+<text x="40" y="1362" class="tdm" text-anchor="start" >R505</text>
+<text x="200" y="1362" class="td" text-anchor="start" >100 kΩ 1 %</text>
+<text x="420" y="1362" class="td" text-anchor="start" >Yageo RC0402FR-07100KL</text>
+<text x="760" y="1362" class="td" text-anchor="start" >0402</text>
+<text x="940" y="1362" class="tdm" text-anchor="start" >C60491</text>
+<text x="1100" y="1362" class="td" text-anchor="start" >cajón #11</text>
+<rect x="28" y="1369" width="1664" height="20" fill="#f1f5f9"/>
+<text x="40" y="1382" class="tdm" text-anchor="start" >U502</text>
+<text x="200" y="1382" class="td" text-anchor="start" >IMU 6 ejes (acel. + giro)</text>
+<text x="420" y="1382" class="td" text-anchor="start" >ST LSM6DS3TR-C</text>
+<text x="760" y="1382" class="td" text-anchor="start" >LGA-14 2,5×3</text>
+<text x="940" y="1382" class="tdm" text-anchor="start" >C967633</text>
+<text x="1100" y="1382" class="td" text-anchor="start" >COMPRAR</text>
+<text x="40" y="1402" class="tdm" text-anchor="start" >C503 C504</text>
+<text x="200" y="1402" class="td" text-anchor="start" >100 nF 16 V X7R</text>
+<text x="420" y="1402" class="td" text-anchor="start" >Samsung CL05B104KO5NNNC</text>
+<text x="760" y="1402" class="td" text-anchor="start" >0402</text>
+<text x="940" y="1402" class="tdm" text-anchor="start" >C1525</text>
+<text x="1100" y="1402" class="td" text-anchor="start" >cajón #22</text>
+</svg>

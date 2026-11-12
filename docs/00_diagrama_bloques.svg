@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="1240" viewBox="0 0 1720 1240" font-family="Segoe UI, Arial, sans-serif">
+<defs><style>
+ .frame { fill:#fbfcfe; stroke:#90a4ae; stroke-width:1.3; }
+ .framep { fill:#fffaf0; stroke:#b7791f; stroke-width:1.5; stroke-dasharray:6 4; }
+ .ft { font-size:13.5px; font-weight:700; fill:#102a43; }
+ .sym { fill:#ffffff; stroke:#263238; stroke-width:1.6; }
+ .symp { fill:#fff4d6; stroke:#b7791f; stroke-width:1.6; stroke-dasharray:5 3; }
+ .dnp { fill:#ffffff; stroke:#90a4ae; stroke-width:1.4; stroke-dasharray:4 3; }
+ .w { stroke:#263238; stroke-width:1.5; fill:none; }
+ .thin { stroke:#90a4ae; stroke-width:1.2; fill:none; }
+ .pw { stroke:#c62828; stroke-width:2.4; fill:none; }
+ .sg { stroke:#1565c0; stroke-width:1.8; fill:none; }
+ .rf { stroke:#2e7d32; stroke-width:2.6; fill:none; }
+ .df { stroke:#6a1b9a; stroke-width:2.0; fill:none; }
+ .gn { stroke:#ef6c00; stroke-width:2.2; fill:none; }
+ .ah_sg { fill:#1565c0; } .ah_pw { fill:#c62828; } .ah_rf { fill:#2e7d32; } .ah_df { fill:#6a1b9a; } .ah_gn { fill:#ef6c00; }
+ .plate { stroke:#263238; stroke-width:2.4; fill:none; }
+ .plated { stroke:#90a4ae; stroke-width:2.4; fill:none; stroke-dasharray:3 2; }
+ .nc { stroke:#c62828; stroke-width:1.8; }
+ .blk { fill:#eef4fb; stroke:#5c7a99; stroke-width:1.6; }
+ .blkp { fill:#fdecea; stroke:#c62828; stroke-width:1.6; }
+ .blkr { fill:#e8f5e9; stroke:#2e7d32; stroke-width:1.6; }
+ .blkg { fill:#fff3e0; stroke:#ef6c00; stroke-width:1.6; }
+ .bt { font-size:14px; font-weight:700; fill:#102a43; }
+ .bs { font-size:11.5px; fill:#37474f; }
+ .al { font-size:11px; fill:#102a43; font-weight:600; }
+ .t { font-size:13px; fill:#212121; }
+ .ts { font-size:11.5px; fill:#455a64; }
+ .tp { font-size:11.5px; fill:#8a5a00; font-weight:600; }
+ .tw { font-size:11.5px; fill:#b71c1c; font-weight:600; }
+ .tb { font-size:13px; font-weight:700; fill:#102a43; }
+ .h1 { font-size:22px; font-weight:700; fill:#102a43; }
+ .h2 { font-size:13px; fill:#455a64; }
+ .ref { font-size:11.5px; font-weight:700; fill:#102a43; }
+ .val { font-size:11px; fill:#37474f; }
+ .icref { font-size:13px; font-weight:700; fill:#102a43; }
+ .pn { font-size:10px; fill:#8d6e63; font-weight:600; }
+ .pname { font-size:11px; fill:#102a43; }
+ .lp { font-size:11.5px; fill:#c62828; font-weight:700; }
+ .lsb { font-size:11.5px; fill:#1565c0; font-weight:700; }
+ .ll { font-size:11.5px; fill:#4e342e; font-weight:700; }
+ .lab_p { fill:#ffebee; stroke:#c62828; stroke-width:1.2; }
+ .lab_s { fill:#e3f2fd; stroke:#1565c0; stroke-width:1.2; }
+ .lab_l { fill:#efebe9; stroke:#8d6e63; stroke-width:1.2; }
+ .th { font-size:11.5px; font-weight:700; fill:#102a43; }
+ .td { font-size:11px; fill:#263238; }
+ .tdm { font-size:11px; fill:#263238; font-family:Consolas, monospace; }
+</style></defs>
+<rect width="1720" height="1240" fill="#ffffff"/>
+<text x="24" y="36" class="h1" text-anchor="start" >00 · nrf54lm20-meshnode — diagrama de bloques</text>
+<text x="24" y="56" class="h2" text-anchor="start" >Nodo Meshtastic de bolsillo: nRF54LM20A (BLE al móvil) + LoRa 868 + GNSS + OLED · LiPo 1S · USB-C · 4 capas</text>
+<path d="M960,40 L994,40" class="pw"/>
+<text x="1000" y="44" class="ts" text-anchor="start" >alimentación</text>
+<path d="M1110,40 L1144,40" class="sg"/>
+<text x="1150" y="44" class="ts" text-anchor="start" >señales</text>
+<path d="M1260,40 L1294,40" class="df"/>
+<text x="1300" y="44" class="ts" text-anchor="start" >USB</text>
+<path d="M1410,40 L1444,40" class="rf"/>
+<text x="1450" y="44" class="ts" text-anchor="start" >RF 50 Ω</text>
+<path d="M1560,40 L1594,40" class="gn"/>
+<text x="1600" y="44" class="ts" text-anchor="start" >conmutada por firmware</text>
+<rect x="40" y="110" width="200" height="90" rx="8" class="blkp"/>
+<text x="140.0" y="130" class="bt" text-anchor="middle" >USB-C  J101</text>
+<text x="140.0" y="148" class="bs" text-anchor="middle" >KH-TYPE-C-16P · ESD U102/D101</text>
+<text x="140.0" y="163" class="bs" text-anchor="middle" >hoja 01</text>
+<rect x="40" y="270" width="200" height="80" rx="8" class="blkp"/>
+<text x="140.0" y="290" class="bt" text-anchor="middle" >LiPo 1S  J102</text>
+<text x="140.0" y="308" class="bs" text-anchor="middle" >JST PH 2.0 · NTC RT101</text>
+<text x="140.0" y="323" class="bs" text-anchor="middle" >hoja 01</text>
+<rect x="330" y="110" width="270" height="300" rx="8" class="blkp"/>
+<text x="465.0" y="130" class="bt" text-anchor="middle" >PMIC nPM1300  U101</text>
+<text x="465.0" y="148" class="bs" text-anchor="middle" >cargador 32–800 mA (JEITA)</text>
+<text x="465.0" y="163" class="bs" text-anchor="middle" >BUCK2 → 3V3 (arranque)</text>
+<text x="465.0" y="178" class="bs" text-anchor="middle" >BUCK1 → V_GNSS (firmware)</text>
+<text x="465.0" y="193" class="bs" text-anchor="middle" >VBUSOUT con OVP → VBUS_MCU</text>
+<text x="465.0" y="208" class="bs" text-anchor="middle" >CC de USB-C (Rd interno)</text>
+<text x="465.0" y="223" class="bs" text-anchor="middle" >ship mode · botón PWR SW101</text>
+<text x="465.0" y="238" class="bs" text-anchor="middle" >LEDs carga D102/D103</text>
+<text x="465.0" y="253" class="bs" text-anchor="middle" >I²C 0x6B · IRQ → MCU</text>
+<text x="465.0" y="268" class="bs" text-anchor="middle" >hoja 01</text>
+<rect x="700" y="470" width="300" height="300" rx="8" class="blk"/>
+<text x="850.0" y="490" class="bt" text-anchor="middle" >MCU ME54BS13  U201</text>
+<text x="850.0" y="508" class="bs" text-anchor="middle" >nRF54LM20A · M33 128 MHz</text>
+<text x="850.0" y="523" class="bs" text-anchor="middle" >2 MB RRAM · 512 KB RAM</text>
+<text x="850.0" y="538" class="bs" text-anchor="middle" >BLE 6.0 antena PCB (al canto)</text>
+<text x="850.0" y="553" class="bs" text-anchor="middle" >USB 2.0 HS nativo (CDC/UF2)</text>
+<text x="850.0" y="568" class="bs" text-anchor="middle" >SPIM22 · UARTE20 · TWIM30</text>
+<text x="850.0" y="583" class="bs" text-anchor="middle" >SWD J201 2×5 · UART TP201/202</text>
+<text x="850.0" y="598" class="bs" text-anchor="middle" >VBAT_SENSE → AIN2</text>
+<text x="850.0" y="613" class="bs" text-anchor="middle" >π FB201 en VCC</text>
+<text x="850.0" y="628" class="bs" text-anchor="middle" >hoja 02</text>
+<rect x="1130" y="110" width="260" height="150" rx="8" class="blkr"/>
+<text x="1260.0" y="130" class="bt" text-anchor="middle" >LoRa E22-900MM22S  U301</text>
+<text x="1260.0" y="148" class="bs" text-anchor="middle" >SX1262 · 22 dBm · cristal pasivo</text>
+<text x="1260.0" y="163" class="bs" text-anchor="middle" >RXEN por MCU, TXEN = DIO2</text>
+<text x="1260.0" y="178" class="bs" text-anchor="middle" >π + U.FL J301</text>
+<text x="1260.0" y="193" class="bs" text-anchor="middle" >hoja 03</text>
+<rect x="1130" y="330" width="260" height="150" rx="8" class="blkg"/>
+<text x="1260.0" y="350" class="bt" text-anchor="middle" >GNSS E108-GN04S  U401</text>
+<text x="1260.0" y="368" class="bs" text-anchor="middle" >BDS/GPS/GLO/GAL · 25 mA</text>
+<text x="1260.0" y="383" class="bs" text-anchor="middle" >UART 38400 · PPS</text>
+<text x="1260.0" y="398" class="bs" text-anchor="middle" >U.FL J401 activa/pasiva</text>
+<text x="1260.0" y="413" class="bs" text-anchor="middle" >hoja 04</text>
+<rect x="1130" y="560" width="260" height="165" rx="8" class="blk"/>
+<text x="1260.0" y="580" class="bt" text-anchor="middle" >Interfaz</text>
+<text x="1260.0" y="598" class="bs" text-anchor="middle" >SHT41 U501 (0x44) · OLED DS501 (0x3C)</text>
+<text x="1260.0" y="613" class="bs" text-anchor="middle" >IMU U502 (0x6A): despertar al moverlo</text>
+<text x="1260.0" y="628" class="bs" text-anchor="middle" >Qwiic J501 · botones ↑ OK ↓ · LED D501</text>
+<text x="1260.0" y="643" class="bs" text-anchor="middle" >zumbador BZ501 (desde VSYS)</text>
+<text x="1260.0" y="658" class="bs" text-anchor="middle" >hoja 05</text>
+<rect x="1480" y="145" width="200" height="70" rx="8" class="blkr"/>
+<text x="1580.0" y="165" class="bt" text-anchor="middle" >Antena 868 MHz</text>
+<text x="1580.0" y="183" class="bs" text-anchor="middle" >U.FL</text>
+<rect x="1480" y="365" width="200" height="70" rx="8" class="blkg"/>
+<text x="1580.0" y="385" class="bt" text-anchor="middle" >Antena GNSS</text>
+<text x="1580.0" y="403" class="bs" text-anchor="middle" >U.FL (activa o pasiva)</text>
+<rect x="1480" y="600" width="200" height="70" rx="8" class="blk"/>
+<text x="1580.0" y="620" class="bt" text-anchor="middle" >Móvil (BLE)</text>
+<text x="1580.0" y="638" class="bs" text-anchor="middle" >app Meshtastic</text>
+<path d="M240,140 L330,140" class="pw"/>
+<path d="M330,140 l-9,-5 v10 z" class="ah_pw"/>
+<text x="285" y="132" class="al" text-anchor="middle" >VBUS</text>
+<path d="M330,175 L240,175" class="sg"/>
+<path d="M240,175 l9,-5 v10 z" class="ah_sg"/>
+<text x="285" y="192" class="al" text-anchor="middle" >CC1/CC2</text>
+<path d="M240,310 L330,310" class="pw"/>
+<path d="M330,310 l-9,-5 v10 z" class="ah_pw"/>
+<text x="285" y="302" class="al" text-anchor="middle" >VBAT</text>
+<path d="M40,155 L25,155 L25,850 L760,850 L760,770" class="df"/>
+<path d="M760,770 l-5,9 h10 z" class="ah_df"/>
+<text x="390" y="844" class="al" text-anchor="middle" >USB_DP / USB_DM (90 Ω)</text>
+<path d="M600,150 L1130,150" class="pw"/>
+<path d="M1130,150 l-9,-5 v10 z" class="ah_pw"/>
+<text x="860" y="142" class="al" text-anchor="middle" >3V3 (BUCK2)</text>
+<path d="M600,380 L740,380 L740,470" class="pw"/>
+<path d="M740,470 l-5,-9 h10 z" class="ah_pw"/>
+<text x="670" y="372" class="al" text-anchor="middle" >3V3</text>
+<path d="M600,350 L820,350 L820,470" class="pw"/>
+<path d="M820,470 l-5,-9 h10 z" class="ah_pw"/>
+<text x="860" y="342" class="al" text-anchor="middle" >VBUS_MCU</text>
+<path d="M600,250 L1100,250" class="gn"/>
+<text x="860" y="242" class="al" text-anchor="middle" >V_GNSS (BUCK1 ⇐ PIN_GPS_EN)</text>
+<path d="M1100,250 L1100,380" class="gn"/>
+<path d="M1100,380 L1130,380" class="gn"/>
+<path d="M1130,380 l-9,-5 v10 z" class="ah_gn"/>
+<path d="M1000,510 L1060,510 L1060,205 L1130,205" class="sg"/>
+<path d="M1130,205 l-9,-5 v10 z" class="ah_sg"/>
+<text x="1052" y="300" class="al" text-anchor="end" >SPI · BUSY</text>
+<text x="1052" y="314" class="al" text-anchor="end" >DIO1 · NRST</text>
+<text x="1052" y="328" class="al" text-anchor="end" >RXEN</text>
+<path d="M1000,560 L1110,560 L1110,440 L1130,440" class="sg"/>
+<path d="M1130,440 l-9,-5 v10 z" class="ah_sg"/>
+<text x="1050" y="552" class="al" text-anchor="middle" >UART · PPS · RST</text>
+<path d="M1000,640 L1130,640" class="sg"/>
+<path d="M1130,640 l-9,-5 v10 z" class="ah_sg"/>
+<text x="1065" y="632" class="al" text-anchor="middle" >I²C · GPIO</text>
+<path d="M700,700 L460,700 L460,410" class="sg"/>
+<path d="M460,410 l-5,9 h10 z" class="ah_sg"/>
+<text x="580" y="692" class="al" text-anchor="middle" >I²C · PMIC_INT · GNSS_EN</text>
+<path d="M1390,180 L1480,180" class="rf"/>
+<path d="M1480,180 l-9,-5 v10 z" class="ah_rf"/>
+<path d="M1390,400 L1480,400" class="rf"/>
+<path d="M1480,400 l-9,-5 v10 z" class="ah_rf"/>
+<path d="M1000,745 L1440,745 L1440,635 L1480,635" class="rf"/>
+<path d="M1480,635 l-9,-5 v10 z" class="ah_rf"/>
+<text x="1220" y="738" class="al" text-anchor="middle" >BLE 2,4 GHz (antena del módulo)</text>
+<rect x="40" y="880" width="820" height="340" rx="7" class="frame"/>
+<text x="52" y="900" class="ft" text-anchor="start" >Matriz de estados de alimentación (¿quién queda apagado con otro vivo y qué los une?)</text>
+<text x="56" y="920" class="th" text-anchor="start" >Estado</text>
+<text x="250" y="920" class="th" text-anchor="start" >Líneas entre dominios</text>
+<text x="470" y="920" class="th" text-anchor="start" >Riesgo y quién lo resuelve</text>
+<path d="M50,926 L850,926" class="thin"/>
+<text x="56" y="944" class="td" text-anchor="start" >GNSS apagado (BUCK1 off)</text>
+<text x="250" y="944" class="td" text-anchor="start" >TX MCU→RXD (R402 1k), RX, PPS, RST</text>
+<text x="470" y="944" class="td" text-anchor="start" >TX alto alimentaría el GNSS por su ESD ⇒ FIRMWARE: TX a 0/entrada</text>
+<rect x="48" y="955" width="804" height="24" fill="#f1f5f9"/>
+<text x="56" y="968" class="td" text-anchor="start" ></text>
+<text x="250" y="968" class="td" text-anchor="start" >V_BCKP desde 3V3 (R401 1k)</text>
+<text x="470" y="968" class="td" text-anchor="start" >deseado: RTC y efemérides vivos</text>
+<text x="56" y="992" class="td" text-anchor="start" >OLED / SHT41 / IMU / Qwiic</text>
+<text x="250" y="992" class="td" text-anchor="start" >I²C con pull-ups propios</text>
+<text x="470" y="992" class="td" text-anchor="start" >siempre en 3V3 ⇒ no hay estado parcial (HARDWARE)</text>
+<rect x="48" y="1003" width="804" height="24" fill="#f1f5f9"/>
+<text x="56" y="1016" class="td" text-anchor="start" >E22 (en 3V3 siempre)</text>
+<text x="250" y="1016" class="td" text-anchor="start" >SPI, BUSY, DIO1, NRST, RXEN</text>
+<text x="470" y="1016" class="td" text-anchor="start" >mismo raíl que el MCU ⇒ sin riesgo</text>
+<text x="56" y="1040" class="td" text-anchor="start" >Ship mode / batería a 0</text>
+<text x="250" y="1040" class="td" text-anchor="start" >todo apagado salvo nPM1300</text>
+<text x="470" y="1040" class="td" text-anchor="start" >370 nA; sale con SW101 o al enchufar USB</text>
+<rect x="48" y="1051" width="804" height="24" fill="#f1f5f9"/>
+<text x="56" y="1064" class="td" text-anchor="start" >Sólo USB, sin batería</text>
+<text x="250" y="1064" class="td" text-anchor="start" >VBUS límite 100 mA por defecto</text>
+<text x="470" y="1064" class="td" text-anchor="start" >TX LoRa o zumbador &gt; 100 mA ⇒ FIRMWARE: 500 mA</text>
+<text x="56" y="1088" class="td" text-anchor="start" >USB sin firmware de PMIC</text>
+<text x="250" y="1088" class="td" text-anchor="start" >VBUS_MCU (VBUSOUT) al módulo</text>
+<text x="470" y="1088" class="td" text-anchor="start" >USB CDC funciona; no carga hasta el driver</text>
+<rect x="880" y="880" width="800" height="340" rx="7" class="frame"/>
+<text x="892" y="900" class="ft" text-anchor="start" >Consumo orientativo (3V3 desde LiPo) y hojas</text>
+<text x="896" y="920" class="th" text-anchor="start" >Consumidor</text>
+<text x="1090" y="920" class="th" text-anchor="start" >Corriente</text>
+<text x="1210" y="920" class="th" text-anchor="start" >Nota</text>
+<path d="M890,926 L1670,926" class="thin"/>
+<text x="896" y="944" class="td" text-anchor="start" >E22 en RX continua</text>
+<text x="1090" y="944" class="td" text-anchor="start" >≈ 7 mA</text>
+<text x="1210" y="944" class="td" text-anchor="start" >Meshtastic escucha siempre (manual E22 §2.2)</text>
+<rect x="888" y="953" width="784" height="22" fill="#f1f5f9"/>
+<text x="896" y="966" class="td" text-anchor="start" >E22 en TX 22 dBm</text>
+<text x="1090" y="966" class="td" text-anchor="start" >100–140 mA</text>
+<text x="1210" y="966" class="td" text-anchor="start" >ráfagas; C301 22 µF + BUCK2</text>
+<text x="896" y="988" class="td" text-anchor="start" >nRF54LM20A + BLE</text>
+<text x="1090" y="988" class="td" text-anchor="start" >≈ 1–3 mA medio</text>
+<text x="1210" y="988" class="td" text-anchor="start" >conexión BLE con el móvil</text>
+<rect x="888" y="997" width="784" height="22" fill="#f1f5f9"/>
+<text x="896" y="1010" class="td" text-anchor="start" >GNSS seguimiento</text>
+<text x="1090" y="1010" class="td" text-anchor="start" >25–27 mA</text>
+<text x="1210" y="1010" class="td" text-anchor="start" >conmutado por PIN_GPS_EN (BUCK1)</text>
+<text x="896" y="1032" class="td" text-anchor="start" >OLED encendido</text>
+<text x="1090" y="1032" class="td" text-anchor="start" >10–23 mA</text>
+<text x="1210" y="1032" class="td" text-anchor="start" >se apaga por timeout (sleep ~3 µA)</text>
+<rect x="888" y="1041" width="784" height="22" fill="#f1f5f9"/>
+<text x="896" y="1054" class="td" text-anchor="start" >⇒ 1500 mAh</text>
+<text x="1090" y="1054" class="td" text-anchor="start" >≈ 7 días sin GNSS</text>
+<text x="1210" y="1054" class="td" text-anchor="start" >≈ 1,7 días con GNSS siempre encendido</text>
+<text x="896" y="1090" class="ts" text-anchor="start" >Hojas: 00 bloques (raíz) · 01 alimentación · 02 MCU · 03 LoRa · 04 GNSS · 05 interfaz.</text>
+<text x="896" y="1109" class="ts" text-anchor="start" >Entre hojas: etiquetas jerárquicas (azul). Alimentación: símbolos globales GND, 3V3, VSYS,</text>
+<text x="896" y="1128" class="ts" text-anchor="start" >VBAT, V_GNSS, VBUS (rojo). Las cifras de consumo son de los datasheets, no medidas:</text>
+<text x="896" y="1147" class="ts" text-anchor="start" >medir con el INA en el banco antes de fiarse del cálculo de autonomía.</text>
+</svg>

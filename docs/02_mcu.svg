@@ -1,0 +1,714 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="1340" viewBox="0 0 1720 1340" font-family="Segoe UI, Arial, sans-serif">
+<defs><style>
+ .frame { fill:#fbfcfe; stroke:#90a4ae; stroke-width:1.3; }
+ .framep { fill:#fffaf0; stroke:#b7791f; stroke-width:1.5; stroke-dasharray:6 4; }
+ .ft { font-size:13.5px; font-weight:700; fill:#102a43; }
+ .sym { fill:#ffffff; stroke:#263238; stroke-width:1.6; }
+ .symp { fill:#fff4d6; stroke:#b7791f; stroke-width:1.6; stroke-dasharray:5 3; }
+ .dnp { fill:#ffffff; stroke:#90a4ae; stroke-width:1.4; stroke-dasharray:4 3; }
+ .w { stroke:#263238; stroke-width:1.5; fill:none; }
+ .thin { stroke:#90a4ae; stroke-width:1.2; fill:none; }
+ .pw { stroke:#c62828; stroke-width:2.4; fill:none; }
+ .sg { stroke:#1565c0; stroke-width:1.8; fill:none; }
+ .rf { stroke:#2e7d32; stroke-width:2.6; fill:none; }
+ .df { stroke:#6a1b9a; stroke-width:2.0; fill:none; }
+ .gn { stroke:#ef6c00; stroke-width:2.2; fill:none; }
+ .ah_sg { fill:#1565c0; } .ah_pw { fill:#c62828; } .ah_rf { fill:#2e7d32; } .ah_df { fill:#6a1b9a; } .ah_gn { fill:#ef6c00; }
+ .plate { stroke:#263238; stroke-width:2.4; fill:none; }
+ .plated { stroke:#90a4ae; stroke-width:2.4; fill:none; stroke-dasharray:3 2; }
+ .nc { stroke:#c62828; stroke-width:1.8; }
+ .blk { fill:#eef4fb; stroke:#5c7a99; stroke-width:1.6; }
+ .blkp { fill:#fdecea; stroke:#c62828; stroke-width:1.6; }
+ .blkr { fill:#e8f5e9; stroke:#2e7d32; stroke-width:1.6; }
+ .blkg { fill:#fff3e0; stroke:#ef6c00; stroke-width:1.6; }
+ .bt { font-size:14px; font-weight:700; fill:#102a43; }
+ .bs { font-size:11.5px; fill:#37474f; }
+ .al { font-size:11px; fill:#102a43; font-weight:600; }
+ .t { font-size:13px; fill:#212121; }
+ .ts { font-size:11.5px; fill:#455a64; }
+ .tp { font-size:11.5px; fill:#8a5a00; font-weight:600; }
+ .tw { font-size:11.5px; fill:#b71c1c; font-weight:600; }
+ .tb { font-size:13px; font-weight:700; fill:#102a43; }
+ .h1 { font-size:22px; font-weight:700; fill:#102a43; }
+ .h2 { font-size:13px; fill:#455a64; }
+ .ref { font-size:11.5px; font-weight:700; fill:#102a43; }
+ .val { font-size:11px; fill:#37474f; }
+ .icref { font-size:13px; font-weight:700; fill:#102a43; }
+ .pn { font-size:10px; fill:#8d6e63; font-weight:600; }
+ .pname { font-size:11px; fill:#102a43; }
+ .lp { font-size:11.5px; fill:#c62828; font-weight:700; }
+ .lsb { font-size:11.5px; fill:#1565c0; font-weight:700; }
+ .ll { font-size:11.5px; fill:#4e342e; font-weight:700; }
+ .lab_p { fill:#ffebee; stroke:#c62828; stroke-width:1.2; }
+ .lab_s { fill:#e3f2fd; stroke:#1565c0; stroke-width:1.2; }
+ .lab_l { fill:#efebe9; stroke:#8d6e63; stroke-width:1.2; }
+ .th { font-size:11.5px; font-weight:700; fill:#102a43; }
+ .td { font-size:11px; fill:#263238; }
+ .tdm { font-size:11px; fill:#263238; font-family:Consolas, monospace; }
+</style></defs>
+<rect width="1720" height="1340" fill="#ffffff"/>
+<text x="24" y="36" class="h1" text-anchor="start" >02 · MCU — ME54BS13 (nRF54LM20A)</text>
+<text x="24" y="56" class="h2" text-anchor="start" >nrf54lm20-meshnode · hoja 2 · referencias 2xx · intención de 02_mcu.kicad_sch · mapa de pines elegido por mí (revisar con las huellas en el PCB)</text>
+<rect x="760" y="31" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="777.1" y="44.5" class="lp" text-anchor="middle" >3V3</text>
+<text x="806" y="44" class="ts" text-anchor="start" >alimentación global</text>
+<rect x="945" y="31" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="976.9" y="44.5" class="lsb" text-anchor="middle" >I2C_SDA</text>
+<text x="1020" y="44" class="ts" text-anchor="start" >jerárquica (otra hoja)</text>
+<rect x="1165" y="31" width="34.2" height="18" rx="3" class="lab_l"/>
+<text x="1182.1" y="44.5" class="ll" text-anchor="middle" >SW1</text>
+<text x="1208" y="44" class="ts" text-anchor="start" >local de la hoja</text>
+<rect x="1320" y="31" width="34" height="18" rx="3" class="dnp"/>
+<text x="1360" y="44" class="ts" text-anchor="start" >DNP / opcional</text>
+<rect x="1465" y="31" width="34" height="18" rx="3" class="symp"/>
+<text x="1505" y="44" class="ts" text-anchor="start" >pendiente de confirmar</text>
+<rect x="20" y="76" width="800" height="1250" rx="7" class="frame"/>
+<text x="32" y="96" class="ft" text-anchor="start" >A · U201 ME54BS13 — nRF54LM20A, antena PCB, cristales y DCDC internos</text>
+<rect x="300" y="140" width="250" height="798.5" rx="3" class="sym"/>
+<text x="425.0" y="118" class="icref" text-anchor="middle" >U201</text>
+<text x="425.0" y="132" class="val" text-anchor="middle" >ME54BS13 · Minew</text>
+<path d="M278,160.0 L300,160.0" class="w"/>
+<text x="296" y="156.0" class="pn" text-anchor="end" >19</text>
+<text x="306" y="164.0" class="pname" text-anchor="start" >VCC</text>
+<path d="M278,178.5 L300,178.5" class="w"/>
+<text x="296" y="174.5" class="pn" text-anchor="end" >9</text>
+<text x="306" y="182.5" class="pname" text-anchor="start" >VBUS</text>
+<path d="M278,197.0 L300,197.0" class="w"/>
+<text x="296" y="193.0" class="pn" text-anchor="end" >8</text>
+<text x="306" y="201.0" class="pname" text-anchor="start" >D+</text>
+<path d="M278,215.5 L300,215.5" class="w"/>
+<text x="296" y="211.5" class="pn" text-anchor="end" >7</text>
+<text x="306" y="219.5" class="pname" text-anchor="start" >D-</text>
+<path d="M278,252.5 L300,252.5" class="w"/>
+<text x="296" y="248.5" class="pn" text-anchor="end" >4</text>
+<text x="306" y="256.5" class="pname" text-anchor="start" >nRESET</text>
+<path d="M278,271.0 L300,271.0" class="w"/>
+<text x="296" y="267.0" class="pn" text-anchor="end" >5</text>
+<text x="306" y="275.0" class="pname" text-anchor="start" >SWDIO</text>
+<path d="M278,289.5 L300,289.5" class="w"/>
+<text x="296" y="285.5" class="pn" text-anchor="end" >6</text>
+<text x="306" y="293.5" class="pname" text-anchor="start" >SWDCLK</text>
+<path d="M278,308.0 L300,308.0" class="w"/>
+<text x="296" y="304.0" class="pn" text-anchor="end" >2</text>
+<text x="306" y="312.0" class="pname" text-anchor="start" >RF</text>
+<path d="M278,345.0 L300,345.0" class="w"/>
+<text x="296" y="341.0" class="pn" text-anchor="end" >A2</text>
+<text x="306" y="349.0" class="pname" text-anchor="start" >P0.00</text>
+<path d="M278,363.5 L300,363.5" class="w"/>
+<text x="296" y="359.5" class="pn" text-anchor="end" >A1</text>
+<text x="306" y="367.5" class="pname" text-anchor="start" >P0.01</text>
+<path d="M278,382.0 L300,382.0" class="w"/>
+<text x="296" y="378.0" class="pn" text-anchor="end" >B0</text>
+<text x="306" y="386.0" class="pname" text-anchor="start" >P0.02</text>
+<path d="M278,400.5 L300,400.5" class="w"/>
+<text x="296" y="396.5" class="pn" text-anchor="end" >B1</text>
+<text x="306" y="404.5" class="pname" text-anchor="start" >P0.03/CK</text>
+<path d="M278,419.0 L300,419.0" class="w"/>
+<text x="296" y="415.0" class="pn" text-anchor="end" >A0</text>
+<text x="306" y="423.0" class="pname" text-anchor="start" >P0.04/CK</text>
+<path d="M278,437.5 L300,437.5" class="w"/>
+<text x="296" y="433.5" class="pn" text-anchor="end" >C0</text>
+<text x="306" y="441.5" class="pname" text-anchor="start" >P0.05</text>
+<path d="M278,456.0 L300,456.0" class="w"/>
+<text x="296" y="452.0" class="pn" text-anchor="end" >C1</text>
+<text x="306" y="460.0" class="pname" text-anchor="start" >P0.06/CK</text>
+<path d="M278,474.5 L300,474.5" class="w"/>
+<text x="296" y="470.5" class="pn" text-anchor="end" >D1</text>
+<text x="306" y="478.5" class="pname" text-anchor="start" >P0.07/CK</text>
+<path d="M278,493.0 L300,493.0" class="w"/>
+<text x="296" y="489.0" class="pn" text-anchor="end" >E1</text>
+<text x="306" y="497.0" class="pname" text-anchor="start" >P0.08</text>
+<path d="M278,511.5 L300,511.5" class="w"/>
+<text x="296" y="507.5" class="pn" text-anchor="end" >F1</text>
+<text x="306" y="515.5" class="pname" text-anchor="start" >P0.09</text>
+<path d="M278,548.5 L300,548.5" class="w"/>
+<text x="296" y="544.5" class="pn" text-anchor="end" >B5</text>
+<text x="306" y="552.5" class="pname" text-anchor="start" >P3.00</text>
+<path d="M278,567.0 L300,567.0" class="w"/>
+<text x="296" y="563.0" class="pn" text-anchor="end" >B4</text>
+<text x="306" y="571.0" class="pname" text-anchor="start" >P3.01</text>
+<path d="M278,585.5 L300,585.5" class="w"/>
+<text x="296" y="581.5" class="pn" text-anchor="end" >B3</text>
+<text x="306" y="589.5" class="pname" text-anchor="start" >P3.02</text>
+<path d="M278,604.0 L300,604.0" class="w"/>
+<text x="296" y="600.0" class="pn" text-anchor="end" >B2</text>
+<text x="306" y="608.0" class="pname" text-anchor="start" >P3.03/CK</text>
+<path d="M278,622.5 L300,622.5" class="w"/>
+<text x="296" y="618.5" class="pn" text-anchor="end" >A3</text>
+<text x="306" y="626.5" class="pname" text-anchor="start" >P3.04/CK</text>
+<path d="M278,641.0 L300,641.0" class="w"/>
+<text x="296" y="637.0" class="pn" text-anchor="end" >C5</text>
+<text x="306" y="645.0" class="pname" text-anchor="start" >P3.05</text>
+<path d="M278,659.5 L300,659.5" class="w"/>
+<text x="296" y="655.5" class="pn" text-anchor="end" >C4</text>
+<text x="306" y="663.5" class="pname" text-anchor="start" >P3.06</text>
+<path d="M278,678.0 L300,678.0" class="w"/>
+<text x="296" y="674.0" class="pn" text-anchor="end" >C2</text>
+<text x="306" y="682.0" class="pname" text-anchor="start" >P3.07</text>
+<path d="M278,696.5 L300,696.5" class="w"/>
+<text x="296" y="692.5" class="pn" text-anchor="end" >C3</text>
+<text x="306" y="700.5" class="pname" text-anchor="start" >P3.08</text>
+<path d="M278,715.0 L300,715.0" class="w"/>
+<text x="296" y="711.0" class="pn" text-anchor="end" >D5</text>
+<text x="306" y="719.0" class="pname" text-anchor="start" >P3.09</text>
+<path d="M278,733.5 L300,733.5" class="w"/>
+<text x="296" y="729.5" class="pn" text-anchor="end" >D3</text>
+<text x="306" y="737.5" class="pname" text-anchor="start" >P3.10</text>
+<path d="M278,752.0 L300,752.0" class="w"/>
+<text x="296" y="748.0" class="pn" text-anchor="end" >D2</text>
+<text x="306" y="756.0" class="pname" text-anchor="start" >P3.11</text>
+<path d="M278,770.5 L300,770.5" class="w"/>
+<text x="296" y="766.5" class="pn" text-anchor="end" >E2</text>
+<text x="306" y="774.5" class="pname" text-anchor="start" >P3.12</text>
+<path d="M550,160.0 L572,160.0" class="w"/>
+<text x="554" y="156.0" class="pn" text-anchor="start" >A7</text>
+<text x="544" y="164.0" class="pname" text-anchor="end" >P1.00/AIN0</text>
+<path d="M550,178.5 L572,178.5" class="w"/>
+<text x="554" y="174.5" class="pn" text-anchor="start" >A4</text>
+<text x="544" y="182.5" class="pname" text-anchor="end" >P1.01/NFC1</text>
+<path d="M550,197.0 L572,197.0" class="w"/>
+<text x="554" y="193.0" class="pn" text-anchor="start" >A5</text>
+<text x="544" y="201.0" class="pname" text-anchor="end" >P1.02/NFC2</text>
+<path d="M550,215.5 L572,215.5" class="w"/>
+<text x="554" y="211.5" class="pn" text-anchor="start" >B8</text>
+<text x="544" y="219.5" class="pname" text-anchor="end" >P1.03/AIN7/CK</text>
+<path d="M550,234.0 L572,234.0" class="w"/>
+<text x="554" y="230.0" class="pn" text-anchor="start" >A8</text>
+<text x="544" y="238.0" class="pname" text-anchor="end" >P1.04/AIN6/CK</text>
+<path d="M550,252.5 L572,252.5" class="w"/>
+<text x="554" y="248.5" class="pn" text-anchor="start" >C7</text>
+<text x="544" y="256.5" class="pname" text-anchor="end" >P1.05/AIN5</text>
+<path d="M550,271.0 L572,271.0" class="w"/>
+<text x="554" y="267.0" class="pn" text-anchor="start" >A6</text>
+<text x="544" y="275.0" class="pname" text-anchor="end" >P1.06/AIN4</text>
+<path d="M550,289.5 L572,289.5" class="w"/>
+<text x="554" y="285.5" class="pn" text-anchor="start" >B6</text>
+<text x="544" y="293.5" class="pname" text-anchor="end" >P1.07/CK</text>
+<path d="M550,308.0 L572,308.0" class="w"/>
+<text x="554" y="304.0" class="pn" text-anchor="start" >C6</text>
+<text x="544" y="312.0" class="pname" text-anchor="end" >P1.08</text>
+<path d="M550,326.5 L572,326.5" class="w"/>
+<text x="554" y="322.5" class="pn" text-anchor="start" >D6</text>
+<text x="544" y="330.5" class="pname" text-anchor="end" >P1.09</text>
+<path d="M550,345.0 L572,345.0" class="w"/>
+<text x="554" y="341.0" class="pn" text-anchor="start" >E3</text>
+<text x="544" y="349.0" class="pname" text-anchor="end" >P1.10</text>
+<path d="M550,363.5 L572,363.5" class="w"/>
+<text x="554" y="359.5" class="pn" text-anchor="start" >F5</text>
+<text x="544" y="367.5" class="pname" text-anchor="end" >P1.11</text>
+<path d="M550,382.0 L572,382.0" class="w"/>
+<text x="554" y="378.0" class="pn" text-anchor="start" >F4</text>
+<text x="544" y="386.0" class="pname" text-anchor="end" >P1.12</text>
+<path d="M550,400.5 L572,400.5" class="w"/>
+<text x="554" y="396.5" class="pn" text-anchor="start" >F3</text>
+<text x="544" y="404.5" class="pname" text-anchor="end" >P1.13/CK</text>
+<path d="M550,419.0 L572,419.0" class="w"/>
+<text x="554" y="415.0" class="pn" text-anchor="start" >F2</text>
+<text x="544" y="423.0" class="pname" text-anchor="end" >P1.14/CK</text>
+<path d="M550,437.5 L572,437.5" class="w"/>
+<text x="554" y="433.5" class="pn" text-anchor="start" >18</text>
+<text x="544" y="441.5" class="pname" text-anchor="end" >P1.15</text>
+<path d="M550,456.0 L572,456.0" class="w"/>
+<text x="554" y="452.0" class="pn" text-anchor="start" >17</text>
+<text x="544" y="460.0" class="pname" text-anchor="end" >P1.16</text>
+<path d="M550,474.5 L572,474.5" class="w"/>
+<text x="554" y="470.5" class="pn" text-anchor="start" >16</text>
+<text x="544" y="478.5" class="pname" text-anchor="end" >P1.17/CK</text>
+<path d="M550,493.0 L572,493.0" class="w"/>
+<text x="554" y="489.0" class="pn" text-anchor="start" >15</text>
+<text x="544" y="497.0" class="pname" text-anchor="end" >P1.18/CK</text>
+<path d="M550,511.5 L572,511.5" class="w"/>
+<text x="554" y="507.5" class="pn" text-anchor="start" >14</text>
+<text x="544" y="515.5" class="pname" text-anchor="end" >P1.19</text>
+<path d="M550,530.0 L572,530.0" class="w"/>
+<text x="554" y="526.0" class="pn" text-anchor="start" >E4</text>
+<text x="544" y="534.0" class="pname" text-anchor="end" >P1.22</text>
+<path d="M550,548.5 L572,548.5" class="w"/>
+<text x="554" y="544.5" class="pn" text-anchor="start" >13</text>
+<text x="544" y="552.5" class="pname" text-anchor="end" >P1.23/CK</text>
+<path d="M550,567.0 L572,567.0" class="w"/>
+<text x="554" y="563.0" class="pn" text-anchor="start" >D4</text>
+<text x="544" y="571.0" class="pname" text-anchor="end" >P1.24/CK</text>
+<path d="M550,585.5 L572,585.5" class="w"/>
+<text x="554" y="581.5" class="pn" text-anchor="start" >E5</text>
+<text x="544" y="589.5" class="pname" text-anchor="end" >P1.25</text>
+<path d="M550,604.0 L572,604.0" class="w"/>
+<text x="554" y="600.0" class="pn" text-anchor="start" >12</text>
+<text x="544" y="608.0" class="pname" text-anchor="end" >P1.26</text>
+<path d="M550,622.5 L572,622.5" class="w"/>
+<text x="554" y="618.5" class="pn" text-anchor="start" >F6</text>
+<text x="544" y="626.5" class="pname" text-anchor="end" >P1.27</text>
+<path d="M550,641.0 L572,641.0" class="w"/>
+<text x="554" y="637.0" class="pn" text-anchor="start" >E6</text>
+<text x="544" y="645.0" class="pname" text-anchor="end" >P1.28</text>
+<path d="M550,659.5 L572,659.5" class="w"/>
+<text x="554" y="655.5" class="pn" text-anchor="start" >B9</text>
+<text x="544" y="663.5" class="pname" text-anchor="end" >P1.29/AIN3</text>
+<path d="M550,678.0 L572,678.0" class="w"/>
+<text x="554" y="674.0" class="pn" text-anchor="start" >A9</text>
+<text x="544" y="682.0" class="pname" text-anchor="end" >P1.30/AIN2</text>
+<path d="M550,696.5 L572,696.5" class="w"/>
+<text x="554" y="692.5" class="pn" text-anchor="start" >B7</text>
+<text x="544" y="700.5" class="pname" text-anchor="end" >P1.31/AIN1</text>
+<path d="M550,733.5 L572,733.5" class="w"/>
+<text x="554" y="729.5" class="pn" text-anchor="start" >F9</text>
+<text x="544" y="737.5" class="pname" text-anchor="end" >P2.00</text>
+<path d="M550,752.0 L572,752.0" class="w"/>
+<text x="554" y="748.0" class="pn" text-anchor="start" >E9</text>
+<text x="544" y="756.0" class="pname" text-anchor="end" >P2.01/CK</text>
+<path d="M550,770.5 L572,770.5" class="w"/>
+<text x="554" y="766.5" class="pn" text-anchor="start" >D9</text>
+<text x="544" y="774.5" class="pname" text-anchor="end" >P2.02/U00TX</text>
+<path d="M550,789.0 L572,789.0" class="w"/>
+<text x="554" y="785.0" class="pn" text-anchor="start" >C9</text>
+<text x="544" y="793.0" class="pname" text-anchor="end" >P2.03</text>
+<path d="M550,807.5 L572,807.5" class="w"/>
+<text x="554" y="803.5" class="pn" text-anchor="start" >C8</text>
+<text x="544" y="811.5" class="pname" text-anchor="end" >P2.04</text>
+<path d="M550,826.0 L572,826.0" class="w"/>
+<text x="554" y="822.0" class="pn" text-anchor="start" >D8</text>
+<text x="544" y="830.0" class="pname" text-anchor="end" >P2.05</text>
+<path d="M550,844.5 L572,844.5" class="w"/>
+<text x="554" y="840.5" class="pn" text-anchor="start" >F7</text>
+<text x="544" y="848.5" class="pname" text-anchor="end" >P2.06/CK</text>
+<path d="M550,863.0 L572,863.0" class="w"/>
+<text x="554" y="859.0" class="pn" text-anchor="start" >E8</text>
+<text x="544" y="867.0" class="pname" text-anchor="end" >P2.07/U00RX</text>
+<path d="M550,881.5 L572,881.5" class="w"/>
+<text x="554" y="877.5" class="pn" text-anchor="start" >F8</text>
+<text x="544" y="885.5" class="pname" text-anchor="end" >P2.08</text>
+<path d="M550,900.0 L572,900.0" class="w"/>
+<text x="554" y="896.0" class="pn" text-anchor="start" >E7</text>
+<text x="544" y="904.0" class="pname" text-anchor="end" >P2.09</text>
+<path d="M550,918.5 L572,918.5" class="w"/>
+<text x="554" y="914.5" class="pn" text-anchor="start" >D7</text>
+<text x="544" y="922.5" class="pname" text-anchor="end" >P2.10</text>
+<path d="M273,340.0 L283,350.0" class="nc"/>
+<path d="M273,350.0 L283,340.0" class="nc"/>
+<path d="M273,358.5 L283,368.5" class="nc"/>
+<path d="M273,368.5 L283,358.5" class="nc"/>
+<rect x="206.8" y="373.0" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="242.4" y="386.5" class="lsb" text-anchor="middle" >IMU_INT1</text>
+<rect x="214.2" y="391.5" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="246.1" y="405.0" class="lsb" text-anchor="middle" >I2C_SDA</text>
+<rect x="214.2" y="410.0" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="246.1" y="423.5" class="lsb" text-anchor="middle" >I2C_SCL</text>
+<rect x="206.8" y="428.5" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="242.4" y="442.0" class="lsb" text-anchor="middle" >IMU_INT2</text>
+<path d="M273,451.0 L283,461.0" class="nc"/>
+<path d="M273,461.0 L283,451.0" class="nc"/>
+<path d="M273,469.5 L283,479.5" class="nc"/>
+<path d="M273,479.5 L283,469.5" class="nc"/>
+<path d="M273,488.0 L283,498.0" class="nc"/>
+<path d="M273,498.0 L283,488.0" class="nc"/>
+<path d="M273,506.5 L283,516.5" class="nc"/>
+<path d="M273,516.5 L283,506.5" class="nc"/>
+<path d="M273,543.5 L283,553.5" class="nc"/>
+<path d="M273,553.5 L283,543.5" class="nc"/>
+<path d="M273,562.0 L283,572.0" class="nc"/>
+<path d="M273,572.0 L283,562.0" class="nc"/>
+<path d="M273,580.5 L283,590.5" class="nc"/>
+<path d="M273,590.5 L283,580.5" class="nc"/>
+<path d="M273,599.0 L283,609.0" class="nc"/>
+<path d="M273,609.0 L283,599.0" class="nc"/>
+<path d="M273,617.5 L283,627.5" class="nc"/>
+<path d="M273,627.5 L283,617.5" class="nc"/>
+<path d="M273,636.0 L283,646.0" class="nc"/>
+<path d="M273,646.0 L283,636.0" class="nc"/>
+<path d="M273,654.5 L283,664.5" class="nc"/>
+<path d="M273,664.5 L283,654.5" class="nc"/>
+<path d="M273,673.0 L283,683.0" class="nc"/>
+<path d="M273,683.0 L283,673.0" class="nc"/>
+<path d="M273,691.5 L283,701.5" class="nc"/>
+<path d="M273,701.5 L283,691.5" class="nc"/>
+<path d="M273,710.0 L283,720.0" class="nc"/>
+<path d="M273,720.0 L283,710.0" class="nc"/>
+<path d="M273,728.5 L283,738.5" class="nc"/>
+<path d="M273,738.5 L283,728.5" class="nc"/>
+<path d="M273,747.0 L283,757.0" class="nc"/>
+<path d="M273,757.0 L283,747.0" class="nc"/>
+<path d="M273,765.5 L283,775.5" class="nc"/>
+<path d="M273,775.5 L283,765.5" class="nc"/>
+<rect x="572" y="151.0" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="607.6" y="164.5" class="lsb" text-anchor="middle" >GNSS_RST</text>
+<path d="M567,173.5 L577,183.5" class="nc"/>
+<path d="M567,183.5 L577,173.5" class="nc"/>
+<path d="M567,192.0 L577,202.0" class="nc"/>
+<path d="M567,202.0 L577,192.0" class="nc"/>
+<rect x="572" y="206.5" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="603.9" y="220.0" class="lsb" text-anchor="middle" >GNSS_TX</text>
+<rect x="572" y="225.0" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="607.6" y="238.5" class="lsb" text-anchor="middle" >GNSS_PPS</text>
+<rect x="572" y="243.5" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="603.9" y="257.0" class="lsb" text-anchor="middle" >GNSS_EN</text>
+<rect x="572" y="262.0" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="607.6" y="275.5" class="lsb" text-anchor="middle" >PMIC_INT</text>
+<path d="M567,284.5 L577,294.5" class="nc"/>
+<path d="M567,294.5 L577,284.5" class="nc"/>
+<path d="M567,303.0 L577,313.0" class="nc"/>
+<path d="M567,313.0 L577,303.0" class="nc"/>
+<rect x="572" y="317.5" width="56.400000000000006" height="18" rx="3" class="lab_s"/>
+<text x="600.2" y="331.0" class="lsb" text-anchor="middle" >BUZZER</text>
+<path d="M567,340.0 L577,350.0" class="nc"/>
+<path d="M567,350.0 L577,340.0" class="nc"/>
+<path d="M567,358.5 L577,368.5" class="nc"/>
+<path d="M567,368.5 L577,358.5" class="nc"/>
+<rect x="572" y="373.0" width="78.60000000000001" height="18" rx="3" class="lab_s"/>
+<text x="611.3" y="386.5" class="lsb" text-anchor="middle" >LORA_TXEN</text>
+<rect x="572" y="391.5" width="78.60000000000001" height="18" rx="3" class="lab_s"/>
+<text x="611.3" y="405.0" class="lsb" text-anchor="middle" >LORA_RXEN</text>
+<path d="M567,414.0 L577,424.0" class="nc"/>
+<path d="M567,424.0 L577,414.0" class="nc"/>
+<rect x="572" y="428.5" width="78.60000000000001" height="18" rx="3" class="lab_s"/>
+<text x="611.3" y="442.0" class="lsb" text-anchor="middle" >LORA_MISO</text>
+<rect x="572" y="447.0" width="78.60000000000001" height="18" rx="3" class="lab_s"/>
+<text x="611.3" y="460.5" class="lsb" text-anchor="middle" >LORA_MOSI</text>
+<rect x="572" y="465.5" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="607.6" y="479.0" class="lsb" text-anchor="middle" >LORA_SCK</text>
+<rect x="572" y="484.0" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="607.6" y="497.5" class="lsb" text-anchor="middle" >LORA_NSS</text>
+<rect x="572" y="502.5" width="78.60000000000001" height="18" rx="3" class="lab_s"/>
+<text x="611.3" y="516.0" class="lsb" text-anchor="middle" >LORA_BUSY</text>
+<path d="M567,525.0 L577,535.0" class="nc"/>
+<path d="M567,535.0 L577,525.0" class="nc"/>
+<rect x="572" y="539.5" width="78.60000000000001" height="18" rx="3" class="lab_s"/>
+<text x="611.3" y="553.0" class="lsb" text-anchor="middle" >LORA_DIO1</text>
+<path d="M567,562.0 L577,572.0" class="nc"/>
+<path d="M567,572.0 L577,562.0" class="nc"/>
+<rect x="572" y="576.5" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="607.6" y="590.0" class="lsb" text-anchor="middle" >BTN_DOWN</text>
+<rect x="572" y="595.0" width="78.60000000000001" height="18" rx="3" class="lab_s"/>
+<text x="611.3" y="608.5" class="lsb" text-anchor="middle" >LORA_NRST</text>
+<rect x="572" y="613.5" width="56.400000000000006" height="18" rx="3" class="lab_s"/>
+<text x="600.2" y="627.0" class="lsb" text-anchor="middle" >BTN_UP</text>
+<rect x="572" y="632.0" width="56.400000000000006" height="18" rx="3" class="lab_s"/>
+<text x="600.2" y="645.5" class="lsb" text-anchor="middle" >BTN_OK</text>
+<rect x="572" y="650.5" width="63.800000000000004" height="18" rx="3" class="lab_s"/>
+<text x="603.9" y="664.0" class="lsb" text-anchor="middle" >GNSS_RX</text>
+<rect x="572" y="669.0" width="86.0" height="18" rx="3" class="lab_s"/>
+<text x="615.0" y="682.5" class="lsb" text-anchor="middle" >VBAT_SENSE</text>
+<path d="M567,691.5 L577,701.5" class="nc"/>
+<path d="M567,701.5 L577,691.5" class="nc"/>
+<rect x="572" y="724.5" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="607.6" y="738.0" class="lsb" text-anchor="middle" >LED_STAT</text>
+<path d="M567,747.0 L577,757.0" class="nc"/>
+<path d="M567,757.0 L577,747.0" class="nc"/>
+<rect x="572" y="761.5" width="56.400000000000006" height="18" rx="3" class="lab_l"/>
+<text x="600.2" y="775.0" class="ll" text-anchor="middle" >DBG_TX</text>
+<path d="M567,784.0 L577,794.0" class="nc"/>
+<path d="M567,794.0 L577,784.0" class="nc"/>
+<path d="M567,802.5 L577,812.5" class="nc"/>
+<path d="M567,812.5 L577,802.5" class="nc"/>
+<path d="M567,821.0 L577,831.0" class="nc"/>
+<path d="M567,831.0 L577,821.0" class="nc"/>
+<path d="M567,839.5 L577,849.5" class="nc"/>
+<path d="M567,849.5 L577,839.5" class="nc"/>
+<rect x="572" y="854.0" width="56.400000000000006" height="18" rx="3" class="lab_l"/>
+<text x="600.2" y="867.5" class="ll" text-anchor="middle" >DBG_RX</text>
+<path d="M567,876.5 L577,886.5" class="nc"/>
+<path d="M567,886.5 L577,876.5" class="nc"/>
+<path d="M567,895.0 L577,905.0" class="nc"/>
+<path d="M567,905.0 L577,895.0" class="nc"/>
+<path d="M567,913.5 L577,923.5" class="nc"/>
+<path d="M567,923.5 L577,913.5" class="nc"/>
+<rect x="214.2" y="151.0" width="63.800000000000004" height="18" rx="3" class="lab_l"/>
+<text x="246.1" y="164.5" class="ll" text-anchor="middle" >VCC_MCU</text>
+<rect x="206.8" y="169.5" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="242.4" y="183.0" class="lsb" text-anchor="middle" >VBUS_MCU</text>
+<rect x="221.6" y="188.0" width="56.400000000000006" height="18" rx="3" class="lab_s"/>
+<text x="249.8" y="201.5" class="lsb" text-anchor="middle" >USB_DP</text>
+<rect x="221.6" y="206.5" width="56.400000000000006" height="18" rx="3" class="lab_s"/>
+<text x="249.8" y="220.0" class="lsb" text-anchor="middle" >USB_DM</text>
+<rect x="214.2" y="243.5" width="63.800000000000004" height="18" rx="3" class="lab_l"/>
+<text x="246.1" y="257.0" class="ll" text-anchor="middle" >SWD_RST</text>
+<rect x="229.0" y="262.0" width="49.0" height="18" rx="3" class="lab_l"/>
+<text x="253.5" y="275.5" class="ll" text-anchor="middle" >SWDIO</text>
+<rect x="221.6" y="280.5" width="56.400000000000006" height="18" rx="3" class="lab_l"/>
+<text x="249.8" y="294.0" class="ll" text-anchor="middle" >SWDCLK</text>
+<path d="M273,303.0 L283,313.0" class="nc"/>
+<path d="M273,313.0 L283,303.0" class="nc"/>
+<text x="425" y="956.5" class="td" text-anchor="middle" >GND: 1 · 3 · 10 · 11 · 20 · D0 · E0 · F0  (todas, con vía cada una)</text>
+<path d="M425,964.5 L425,971.5" class="w"/>
+<path d="M416,971.5 L434,971.5" class="w"/>
+<path d="M419,975.5 L431,975.5" class="w"/>
+<path d="M422,979.5 L428,979.5" class="w"/>
+<text x="40" y="1004.5" class="ts" text-anchor="start" >Castellado 2 (RF) sin conectar: antena PCB del módulo (configuración por defecto).</text>
+<text x="40" y="1019.5" class="ts" text-anchor="start" >P1.01/P1.02 = NFC por defecto · P1.20/P1.21 = cristal de 32 kHz interno (no salen).</text>
+<text x="40" y="1034.5" class="ts" text-anchor="start" >Los GPIO libres quedan sin conectar (NC): el pad del módulo se suelda igual.</text>
+<rect x="840" y="76" width="860" height="250" rx="7" class="frame"/>
+<text x="852" y="96" class="ft" text-anchor="start" >B · Alimentación del módulo (Minew §7.3: π reservada junto a VCC)</text>
+<rect x="855.8" y="131" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="872.9" y="144.5" class="lp" text-anchor="middle" >3V3</text>
+<path d="M890,140 L980,140" class="pw"/>
+<circle cx="940" cy="140" r="3.2" fill="#263238"/>
+<path d="M940,140 L940,159.0" class="w"/>
+<path d="M940,165.0 L940,184" class="w"/>
+<path d="M931,159.0 L949,159.0" class="plate"/>
+<path d="M931,165.0 L949,165.0" class="plate"/>
+<text x="928" y="160.0" class="ref" text-anchor="end" >C201</text>
+<text x="928" y="173.0" class="val" text-anchor="end" >10 µF</text>
+<path d="M940,184 L940,191" class="w"/>
+<path d="M931,191 L949,191" class="w"/>
+<path d="M934,195 L946,195" class="w"/>
+<path d="M937,199 L943,199" class="w"/>
+<path d="M980,140 L1012.0,140" class="w"/>
+<path d="M1038.0,140 L1070,140" class="w"/>
+<rect x="1012.0" y="135" width="26" height="10" class="symp"/>
+<text x="1025.0" y="131" class="ref" text-anchor="middle" >FB201 0 Ω (o ferrita 600 Ω)</text>
+<path d="M1070,140 L1220,140" class="pw"/>
+<circle cx="1110" cy="140" r="3.2" fill="#263238"/>
+<circle cx="1170" cy="140" r="3.2" fill="#263238"/>
+<path d="M1110,140 L1110,159.0" class="w"/>
+<path d="M1110,165.0 L1110,184" class="w"/>
+<path d="M1101,159.0 L1119,159.0" class="plate"/>
+<path d="M1101,165.0 L1119,165.0" class="plate"/>
+<text x="1122" y="160.0" class="ref" text-anchor="start" >C202</text>
+<text x="1122" y="173.0" class="val" text-anchor="start" >10 µF</text>
+<path d="M1110,184 L1110,191" class="w"/>
+<path d="M1101,191 L1119,191" class="w"/>
+<path d="M1104,195 L1116,195" class="w"/>
+<path d="M1107,199 L1113,199" class="w"/>
+<path d="M1170,140 L1170,159.0" class="w"/>
+<path d="M1170,165.0 L1170,184" class="w"/>
+<path d="M1161,159.0 L1179,159.0" class="plate"/>
+<path d="M1161,165.0 L1179,165.0" class="plate"/>
+<text x="1182" y="160.0" class="ref" text-anchor="start" >C203</text>
+<text x="1182" y="173.0" class="val" text-anchor="start" >100 nF</text>
+<path d="M1170,184 L1170,191" class="w"/>
+<path d="M1161,191 L1179,191" class="w"/>
+<path d="M1164,195 L1176,195" class="w"/>
+<path d="M1167,199 L1173,199" class="w"/>
+<rect x="1220" y="131" width="63.800000000000004" height="18" rx="3" class="lab_l"/>
+<text x="1251.9" y="144.5" class="ll" text-anchor="middle" >VCC_MCU</text>
+<text x="860" y="240" class="ts" text-anchor="start" >FB201 = π de Minew: 0 Ω de serie; ferrita (CBW160808U601T, cajón) si el</text>
+<text x="860" y="255" class="ts" text-anchor="start" >buck mete ruido en el BLE. C202/C203 a ≤ 0,5 mm de la pata 19, 2 vías a GND.</text>
+<rect x="1358.8" y="131" width="71.2" height="18" rx="3" class="lab_s"/>
+<text x="1394.3999999999999" y="144.5" class="lsb" text-anchor="middle" >VBUS_MCU</text>
+<path d="M1430,140 L1450,140" class="w"/>
+<path d="M1450,140 L1450,159.0" class="w"/>
+<path d="M1450,165.0 L1450,184" class="w"/>
+<path d="M1441,159.0 L1459,159.0" class="plate"/>
+<path d="M1441,165.0 L1459,165.0" class="plate"/>
+<text x="1462" y="160.0" class="ref" text-anchor="start" >C204</text>
+<text x="1462" y="173.0" class="val" text-anchor="start" >1 µF 25 V</text>
+<path d="M1450,184 L1450,191" class="w"/>
+<path d="M1441,191 L1459,191" class="w"/>
+<path d="M1444,195 L1456,195" class="w"/>
+<path d="M1447,199 L1453,199" class="w"/>
+<text x="1350" y="240" class="ts" text-anchor="start" >VBUS del módulo (pata 9): alimenta</text>
+<text x="1350" y="255" class="ts" text-anchor="start" >el regulador del PHY USB interno.</text>
+<rect x="840" y="340" width="430" height="270" rx="7" class="frame"/>
+<text x="852" y="360" class="ft" text-anchor="start" >C · SWD — cabecera Cortex 2×5 1,27 mm</text>
+<rect x="990" y="400" width="100" height="136" rx="3" class="sym"/>
+<text x="1040.0" y="378" class="icref" text-anchor="middle" >J201</text>
+<text x="1040.0" y="392" class="val" text-anchor="middle" >2×5 1,27 SMD</text>
+<path d="M970,420 L990,420" class="w"/>
+<text x="986" y="416" class="pn" text-anchor="end" >1</text>
+<text x="996" y="424" class="pname" text-anchor="start" >VTref</text>
+<path d="M970,444 L990,444" class="w"/>
+<text x="986" y="440" class="pn" text-anchor="end" >3</text>
+<text x="996" y="448" class="pname" text-anchor="start" >GND</text>
+<path d="M970,468 L990,468" class="w"/>
+<text x="986" y="464" class="pn" text-anchor="end" >5</text>
+<text x="996" y="472" class="pname" text-anchor="start" >GND</text>
+<path d="M970,492 L990,492" class="w"/>
+<text x="986" y="488" class="pn" text-anchor="end" >7</text>
+<text x="996" y="496" class="pname" text-anchor="start" >KEY</text>
+<path d="M970,516 L990,516" class="w"/>
+<text x="986" y="512" class="pn" text-anchor="end" >9</text>
+<text x="996" y="520" class="pname" text-anchor="start" >GNDdet</text>
+<path d="M1090,420 L1110,420" class="w"/>
+<text x="1094" y="416" class="pn" text-anchor="start" >2</text>
+<text x="1084" y="424" class="pname" text-anchor="end" >SWDIO</text>
+<path d="M1090,444 L1110,444" class="w"/>
+<text x="1094" y="440" class="pn" text-anchor="start" >4</text>
+<text x="1084" y="448" class="pname" text-anchor="end" >SWCLK</text>
+<path d="M1090,468 L1110,468" class="w"/>
+<text x="1094" y="464" class="pn" text-anchor="start" >6</text>
+<text x="1084" y="472" class="pname" text-anchor="end" >SWO</text>
+<path d="M1090,492 L1110,492" class="w"/>
+<text x="1094" y="488" class="pn" text-anchor="start" >8</text>
+<text x="1084" y="496" class="pname" text-anchor="end" >NC</text>
+<path d="M1090,516 L1110,516" class="w"/>
+<text x="1094" y="512" class="pn" text-anchor="start" >10</text>
+<text x="1084" y="520" class="pname" text-anchor="end" >nRESET</text>
+<rect x="906.2" y="411" width="63.800000000000004" height="18" rx="3" class="lab_l"/>
+<text x="938.1" y="424.5" class="ll" text-anchor="middle" >VCC_MCU</text>
+<path d="M970,444 L960,444" class="w"/>
+<path d="M960,444 L960,451" class="w"/>
+<path d="M951,451 L969,451" class="w"/>
+<path d="M954,455 L966,455" class="w"/>
+<path d="M957,459 L963,459" class="w"/>
+<path d="M970,468 L960,468" class="w"/>
+<path d="M960,468 L960,475" class="w"/>
+<path d="M951,475 L969,475" class="w"/>
+<path d="M954,479 L966,479" class="w"/>
+<path d="M957,483 L963,483" class="w"/>
+<path d="M965,487 L975,497" class="nc"/>
+<path d="M965,497 L975,487" class="nc"/>
+<path d="M970,516 L960,516" class="w"/>
+<path d="M960,516 L960,523" class="w"/>
+<path d="M951,523 L969,523" class="w"/>
+<path d="M954,527 L966,527" class="w"/>
+<path d="M957,531 L963,531" class="w"/>
+<rect x="1110" y="411" width="49.0" height="18" rx="3" class="lab_l"/>
+<text x="1134.5" y="424.5" class="ll" text-anchor="middle" >SWDIO</text>
+<rect x="1110" y="435" width="56.400000000000006" height="18" rx="3" class="lab_l"/>
+<text x="1138.2" y="448.5" class="ll" text-anchor="middle" >SWDCLK</text>
+<path d="M1105,463 L1115,473" class="nc"/>
+<path d="M1105,473 L1115,463" class="nc"/>
+<path d="M1105,487 L1115,497" class="nc"/>
+<path d="M1105,497 L1115,487" class="nc"/>
+<rect x="1110" y="507" width="63.800000000000004" height="18" rx="3" class="lab_l"/>
+<text x="1141.9" y="520.5" class="ll" text-anchor="middle" >SWD_RST</text>
+<text x="856" y="560" class="ts" text-anchor="start" >Sólo para grabar el bootloader la primera vez (luego UF2/DFU por USB).</text>
+<text x="856" y="575" class="ts" text-anchor="start" >SWO sin conectar: P2.07 se usa como RXD de depuración.</text>
+<rect x="1290" y="340" width="410" height="270" rx="7" class="frame"/>
+<text x="1302" y="360" class="ft" text-anchor="start" >D · UART de depuración (UARTE00)</text>
+<circle cx="1340" cy="410" r="5" fill="#fff" stroke="#263238" stroke-width="1.6"/>
+<text x="1349" y="414" class="ref" text-anchor="start" >TP201</text>
+<rect x="1390" y="401" width="56.400000000000006" height="18" rx="3" class="lab_l"/>
+<text x="1418.2" y="414.5" class="ll" text-anchor="middle" >DBG_TX</text>
+<circle cx="1340" cy="450" r="5" fill="#fff" stroke="#263238" stroke-width="1.6"/>
+<text x="1349" y="454" class="ref" text-anchor="start" >TP202</text>
+<rect x="1390" y="441" width="56.400000000000006" height="18" rx="3" class="lab_l"/>
+<text x="1418.2" y="454.5" class="ll" text-anchor="middle" >DBG_RX</text>
+<circle cx="1340" cy="490" r="5" fill="#fff" stroke="#263238" stroke-width="1.6"/>
+<text x="1349" y="494" class="ref" text-anchor="start" >TP203</text>
+<rect x="1390" y="481" width="34.2" height="18" rx="3" class="lab_p"/>
+<text x="1407.1" y="494.5" class="lp" text-anchor="middle" >GND</text>
+<text x="1306" y="536" class="ts" text-anchor="start" >Pines dedicados de UARTE00: TXD P2.02 y RXD P2.07.</text>
+<text x="1306" y="555" class="ts" text-anchor="start" >Por si el USB nativo no arranca (consola del core).</text>
+<text x="1306" y="574" class="ts" text-anchor="start" >Huella TestPoint:TestPoint_Pad_D1.0mm (todos los TP).</text>
+<rect x="840" y="624" width="860" height="702" rx="7" class="frame"/>
+<text x="852" y="644" class="ft" text-anchor="start" >E · Mapa de pines (base de la variante de Meshtastic)</text>
+<text x="860" y="664" class="th" text-anchor="start" >Señal</text>
+<text x="990" y="664" class="th" text-anchor="start" >Puerto</text>
+<text x="1060" y="664" class="th" text-anchor="start" >Pad</text>
+<text x="1110" y="664" class="th" text-anchor="start" >Periférico / nota</text>
+<path d="M850,670 L1690,670" class="thin"/>
+<text x="860" y="688" class="tdm" text-anchor="start" >LORA_SCK</text>
+<text x="990" y="688" class="tdm" text-anchor="start" >P1.17</text>
+<text x="1060" y="688" class="tdm" text-anchor="start" >16</text>
+<text x="1110" y="688" class="td" text-anchor="start" >SPIM22 SCK (clock pin) · castellado 16</text>
+<rect x="848" y="695" width="844" height="20" fill="#f1f5f9"/>
+<text x="860" y="708" class="tdm" text-anchor="start" >LORA_MOSI</text>
+<text x="990" y="708" class="tdm" text-anchor="start" >P1.16</text>
+<text x="1060" y="708" class="tdm" text-anchor="start" >17</text>
+<text x="1110" y="708" class="td" text-anchor="start" >SPIM22 MOSI · castellado 17</text>
+<text x="860" y="728" class="tdm" text-anchor="start" >LORA_MISO</text>
+<text x="990" y="728" class="tdm" text-anchor="start" >P1.15</text>
+<text x="1060" y="728" class="tdm" text-anchor="start" >18</text>
+<text x="1110" y="728" class="td" text-anchor="start" >SPIM22 MISO · castellado 18</text>
+<rect x="848" y="735" width="844" height="20" fill="#f1f5f9"/>
+<text x="860" y="748" class="tdm" text-anchor="start" >LORA_NSS</text>
+<text x="990" y="748" class="tdm" text-anchor="start" >P1.18</text>
+<text x="1060" y="748" class="tdm" text-anchor="start" >15</text>
+<text x="1110" y="748" class="td" text-anchor="start" >GPIO · castellado 15</text>
+<text x="860" y="768" class="tdm" text-anchor="start" >LORA_BUSY</text>
+<text x="990" y="768" class="tdm" text-anchor="start" >P1.19</text>
+<text x="1060" y="768" class="tdm" text-anchor="start" >14</text>
+<text x="1110" y="768" class="td" text-anchor="start" >GPIO entrada · castellado 14</text>
+<rect x="848" y="775" width="844" height="20" fill="#f1f5f9"/>
+<text x="860" y="788" class="tdm" text-anchor="start" >LORA_DIO1</text>
+<text x="990" y="788" class="tdm" text-anchor="start" >P1.23</text>
+<text x="1060" y="788" class="tdm" text-anchor="start" >13</text>
+<text x="1110" y="788" class="td" text-anchor="start" >GPIOTE20 (IRQ) · castellado 13</text>
+<text x="860" y="808" class="tdm" text-anchor="start" >LORA_NRST</text>
+<text x="990" y="808" class="tdm" text-anchor="start" >P1.26</text>
+<text x="1060" y="808" class="tdm" text-anchor="start" >12</text>
+<text x="1110" y="808" class="td" text-anchor="start" >GPIO · castellado 12</text>
+<rect x="848" y="815" width="844" height="20" fill="#f1f5f9"/>
+<text x="860" y="828" class="tdm" text-anchor="start" >LORA_RXEN</text>
+<text x="990" y="828" class="tdm" text-anchor="start" >P1.13</text>
+<text x="1060" y="828" class="tdm" text-anchor="start" >F3</text>
+<text x="1110" y="828" class="td" text-anchor="start" >GPIO (RadioLib RXEN)</text>
+<text x="860" y="848" class="tdm" text-anchor="start" >LORA_TXEN</text>
+<text x="990" y="848" class="tdm" text-anchor="start" >P1.12</text>
+<text x="1060" y="848" class="tdm" text-anchor="start" >F4</text>
+<text x="1110" y="848" class="td" text-anchor="start" >GPIO opcional (R302 DNP)</text>
+<rect x="848" y="855" width="844" height="20" fill="#f1f5f9"/>
+<text x="860" y="868" class="tdm" text-anchor="start" >I2C_SDA</text>
+<text x="990" y="868" class="tdm" text-anchor="start" >P0.03</text>
+<text x="1060" y="868" class="tdm" text-anchor="start" >B1</text>
+<text x="1110" y="868" class="td" text-anchor="start" >TWIM30 SDA (como la DK)</text>
+<text x="860" y="888" class="tdm" text-anchor="start" >I2C_SCL</text>
+<text x="990" y="888" class="tdm" text-anchor="start" >P0.04</text>
+<text x="1060" y="888" class="tdm" text-anchor="start" >A0</text>
+<text x="1110" y="888" class="td" text-anchor="start" >TWIM30 SCL (clock pin)</text>
+<rect x="848" y="895" width="844" height="20" fill="#f1f5f9"/>
+<text x="860" y="908" class="tdm" text-anchor="start" >IMU_INT1</text>
+<text x="990" y="908" class="tdm" text-anchor="start" >P0.02</text>
+<text x="1060" y="908" class="tdm" text-anchor="start" >B0</text>
+<text x="1110" y="908" class="td" text-anchor="start" >GPIOTE30 ← INT1 del LSM6DS3TR-C</text>
+<text x="860" y="928" class="tdm" text-anchor="start" >IMU_INT2</text>
+<text x="990" y="928" class="tdm" text-anchor="start" >P0.05</text>
+<text x="1060" y="928" class="tdm" text-anchor="start" >C0</text>
+<text x="1110" y="928" class="td" text-anchor="start" >GPIOTE30 ← INT2 del LSM6DS3TR-C</text>
+<rect x="848" y="935" width="844" height="20" fill="#f1f5f9"/>
+<text x="860" y="948" class="tdm" text-anchor="start" >GNSS_TX</text>
+<text x="990" y="948" class="tdm" text-anchor="start" >P1.03</text>
+<text x="1060" y="948" class="tdm" text-anchor="start" >B8</text>
+<text x="1110" y="948" class="td" text-anchor="start" >UARTE20 TXD → RXD del GNSS</text>
+<text x="860" y="968" class="tdm" text-anchor="start" >GNSS_RX</text>
+<text x="990" y="968" class="tdm" text-anchor="start" >P1.29</text>
+<text x="1060" y="968" class="tdm" text-anchor="start" >B9</text>
+<text x="1110" y="968" class="td" text-anchor="start" >UARTE20 RXD ← TXD del GNSS</text>
+<rect x="848" y="975" width="844" height="20" fill="#f1f5f9"/>
+<text x="860" y="988" class="tdm" text-anchor="start" >GNSS_PPS</text>
+<text x="990" y="988" class="tdm" text-anchor="start" >P1.04</text>
+<text x="1060" y="988" class="tdm" text-anchor="start" >A8</text>
+<text x="1110" y="988" class="td" text-anchor="start" >GPIOTE20 (PIN_GPS_PPS)</text>
+<text x="860" y="1008" class="tdm" text-anchor="start" >GNSS_RST</text>
+<text x="990" y="1008" class="tdm" text-anchor="start" >P1.00</text>
+<text x="1060" y="1008" class="tdm" text-anchor="start" >A7</text>
+<text x="1110" y="1008" class="td" text-anchor="start" >salida en drenador abierto</text>
+<rect x="848" y="1015" width="844" height="20" fill="#f1f5f9"/>
+<text x="860" y="1028" class="tdm" text-anchor="start" >GNSS_EN</text>
+<text x="990" y="1028" class="tdm" text-anchor="start" >P1.05</text>
+<text x="1060" y="1028" class="tdm" text-anchor="start" >C7</text>
+<text x="1110" y="1028" class="td" text-anchor="start" >→ GPIO0 del nPM1300 (PIN_GPS_EN)</text>
+<text x="860" y="1048" class="tdm" text-anchor="start" >PMIC_INT</text>
+<text x="990" y="1048" class="tdm" text-anchor="start" >P1.06</text>
+<text x="1060" y="1048" class="tdm" text-anchor="start" >A6</text>
+<text x="1110" y="1048" class="td" text-anchor="start" >GPIOTE20 ← GPIO1 del nPM1300</text>
+<rect x="848" y="1055" width="844" height="20" fill="#f1f5f9"/>
+<text x="860" y="1068" class="tdm" text-anchor="start" >VBAT_SENSE</text>
+<text x="990" y="1068" class="tdm" text-anchor="start" >P1.30</text>
+<text x="1060" y="1068" class="tdm" text-anchor="start" >A9</text>
+<text x="1110" y="1068" class="td" text-anchor="start" >AIN2 (BATTERY_PIN)</text>
+<text x="860" y="1088" class="tdm" text-anchor="start" >BTN_UP</text>
+<text x="990" y="1088" class="tdm" text-anchor="start" >P1.27</text>
+<text x="1060" y="1088" class="tdm" text-anchor="start" >F6</text>
+<text x="1110" y="1088" class="td" text-anchor="start" >GPIOTE20, pull-up interno</text>
+<rect x="848" y="1095" width="844" height="20" fill="#f1f5f9"/>
+<text x="860" y="1108" class="tdm" text-anchor="start" >BTN_OK</text>
+<text x="990" y="1108" class="tdm" text-anchor="start" >P1.28</text>
+<text x="1060" y="1108" class="tdm" text-anchor="start" >E6</text>
+<text x="1110" y="1108" class="td" text-anchor="start" >GPIOTE20, pull-up interno (BUTTON1)</text>
+<text x="860" y="1128" class="tdm" text-anchor="start" >BTN_DOWN</text>
+<text x="990" y="1128" class="tdm" text-anchor="start" >P1.25</text>
+<text x="1060" y="1128" class="tdm" text-anchor="start" >E5</text>
+<text x="1110" y="1128" class="td" text-anchor="start" >GPIOTE20, pull-up interno</text>
+<rect x="848" y="1135" width="844" height="20" fill="#f1f5f9"/>
+<text x="860" y="1148" class="tdm" text-anchor="start" >BUZZER</text>
+<text x="990" y="1148" class="tdm" text-anchor="start" >P1.09</text>
+<text x="1060" y="1148" class="tdm" text-anchor="start" >D6</text>
+<text x="1110" y="1148" class="td" text-anchor="start" >PWM20 (PIN_BUZZER)</text>
+<text x="860" y="1168" class="tdm" text-anchor="start" >LED_STAT</text>
+<text x="990" y="1168" class="tdm" text-anchor="start" >P2.00</text>
+<text x="1060" y="1168" class="tdm" text-anchor="start" >F9</text>
+<text x="1110" y="1168" class="td" text-anchor="start" >GPIO salida (PIN_LED1)</text>
+<rect x="848" y="1175" width="844" height="20" fill="#f1f5f9"/>
+<text x="860" y="1188" class="tdm" text-anchor="start" >DBG_TX</text>
+<text x="990" y="1188" class="tdm" text-anchor="start" >P2.02</text>
+<text x="1060" y="1188" class="tdm" text-anchor="start" >D9</text>
+<text x="1110" y="1188" class="td" text-anchor="start" >UARTE00 TXD (pin dedicado) → TP201</text>
+<text x="860" y="1208" class="tdm" text-anchor="start" >DBG_RX</text>
+<text x="990" y="1208" class="tdm" text-anchor="start" >P2.07</text>
+<text x="1060" y="1208" class="tdm" text-anchor="start" >E8</text>
+<text x="1110" y="1208" class="td" text-anchor="start" >UARTE00 RXD (pin dedicado) ← TP202</text>
+<text x="856" y="1262" class="ts" text-anchor="start" >Reglas del nRF54LM20A: SERIAL2x sólo en P1/P3, SERIAL30 en P0, SERIAL00 en P2; IRQ y SENSE sólo en P0/P1/P3;</text>
+<text x="856" y="1280" class="ts" text-anchor="start" >SCK/SCL en clock pins. LoRa: SPIM22 (como la DK) · GNSS: UARTE20 · I²C: TWIM30 · depuración: UARTE00.</text>
+<text x="856" y="1298" class="tw" text-anchor="start" >E22 con cristal pasivo ⇒ la variante NO define SX126X_DIO3_TCXO_VOLTAGE.</text>
+</svg>

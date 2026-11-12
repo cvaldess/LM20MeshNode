@@ -1,0 +1,38 @@
+PEDIDO PCBWay — nrflm20-meshnode rev 0.1                                        generado 12-11-2026
+
+Subir:  nrflm20-meshnode_rev0.1_pcbway.zip   (13 ficheros: 10 Gerber + PTH/NPTH Excellon + IPC-D-356)
+Placa:  nrflm20-meshnode.kicad_pcb guardada 12-11-2026 15:46, sha256 4d9225a0b012ae88…bc131d5
+
+FORMULARIO (PCB estándar)
+  Tamaño            40 x 85,68 mm            Capas        4 (orden: GTL · G1 · G2 · GBL; X2 lo indica)
+  Grosor            1,6 mm                   Cobre        1 oz exterior / 1 oz interior
+  Pista/espacio mín 6/6 mil (placa: 0,20/0,20) Taladro mín 0,3 mm (vías 0,6/0,3, anillo 0,15)
+  Acabado           ENIG (recomendado: QFN/DFN/LGA de paso 0,5 + rejilla del ME54BS13 + placa caliente)
+  Vías              Tenting vias             Máscara/serig. a elegir (verde/blanco = sin recargo)
+  Impedancia        NO (ver abajo)           Medias vías / dedos de oro: no
+  Nº de pedido      mirar «Remove product No.» si no quieres el número impreso donde caiga
+  Plantilla         SÓLO CARA SUPERIOR (F_Paste), 0,10 mm
+                    (área mín. IPC-7525: 0,77 con 0,10 mm; con 0,12 mm U102 DFN2510 baja a 0,64 < 0,66)
+
+APILADO E IMPEDANCIA
+  Estándar PCBWay 4L 1,6 mm (multi-layer-laminated-structure, entrada 1): PP 7628 0,1855 mm Dk 4,74 / núcleo
+  1,03 mm. Anchos pensados para JLC04161H-7628 ⇒ aquí (IPC-2141): RF 0,35 → 44 Ω; USB 0,28/0,2 → 85 Ω.
+  RF mide 2,3–4,2 mm (≪ λ/10) y USB 2.0 admite 90 Ω ±15 % ⇒ sin cambios y sin impedancia controlada.
+  El .gbrjob (no va en el zip) lleva el apilado por defecto de KiCad, no el de PCBWay.
+
+COMPROBADO
+  DRC (kicad-cli 10.0.8, con paridad): 0 sin conectar, 0 paridad, 13 errores, todos aceptables:
+    · 4 hole_clearance de la huella J101 (pads A4/A9/B1/B12 a 0,215–0,2475 de los tetones NPTH; regla 0,25).
+      Propio del land pattern del KH-TYPE-C-16P; PCBWay fabrica ≥ 0,15 (6 mil).
+    · 9 starved_thermal en GND_F (J101 A12/B1, U101 2/6/31, C101/C201/C403/R102): 1 radio de 2, conectados.
+      U101 PVSS1/PVSS2/31 van además con pista de 0,25 al EP (5 vías a In1).
+  Rellenos guardados = rellenados de nuevo (Gerber de cobre idénticos salvo la fecha).
+  Contorno cerrado (22 extremos exactos, 8 arcos R3/R1/R0,5). Nada se sale del contorno.
+  Puente de máscara mín. 0,195 mm (U102), ninguna abertura une redes distintas.
+  Serigrafía: texto mín. 1,0 mm, trazo 0,15 mm (PCBWay: 0,8 / 0,15).
+  Taladros: PTH 190 (0,3 x174 · 0,6 ranura x4 · 0,9 x8 · 1,0 x4), NPTH 6 (0,65 x2 · 2,2 x4).
+  Visor independiente (gerbonara): las 10 capas identificadas, registro correcto.
+
+NO VA EN EL ZIP: mapas de taladro (PDF), informe de taladros, .gbrjob, B_Paste (vacía), User.Comments.
+Ajustes = plugin oficial de PCBWay para KiCad (X2, sin máscara en serigrafía, PTH/NPTH separados), salvo
+taladros en mm en vez de pulgadas, extensiones Protel y cabecera Excellon completa.

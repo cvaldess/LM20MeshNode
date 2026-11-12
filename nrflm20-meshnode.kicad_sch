@@ -1,0 +1,1766 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "c94704a9-c067-4fa4-9697-76ed3889f8ff")
+	(paper "A3")
+	(title_block
+		(title "nRF54LM20-MeshNode")
+		(date "2026-11-09")
+		(rev "0.1")
+		(company "CValdesS.com")
+	)
+	(lib_symbols
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "nrf54lm20-meshnode · raíz = diagrama de bloques (docs/00_diagrama_bloques.svg) · entre hojas: etiquetas jerárquicas · raíles globales: GND, 3V3, VSYS, VBAT, V_GNSS, VBUS"
+		(at 40.64 30.48 0)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "b52a74ac-fd54-4254-ace1-4d4e3c8b17db")
+	)
+	(label "LORA_TXEN"
+		(at 299.72 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "007aa0bf-133b-4feb-a46e-e6a59d97e249")
+	)
+	(label "GNSS_PPS"
+		(at 160.02 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "00a591cd-f5c4-44a9-9602-93be83d82237")
+	)
+	(label "I2C_SDA"
+		(at 101.6 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0980896b-397f-4bf7-82d2-07d100b87e6a")
+	)
+	(label "GNSS_EN"
+		(at 160.02 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0b758fd6-a10c-4eb5-838f-534cd643bc19")
+	)
+	(label "BUZZER"
+		(at 160.02 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0caf604b-35b7-4174-909f-d7d4c8b58e84")
+	)
+	(label "LORA_NSS"
+		(at 299.72 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0da4cad3-b24d-4e4e-be8e-24c71f707a83")
+	)
+	(label "PMIC_INT"
+		(at 101.6 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f37406d-8427-4193-b734-9367e5fa5ee2")
+	)
+	(label "LORA_TXEN"
+		(at 160.02 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "108e96eb-bd31-4a94-b99b-b5f519b9c944")
+	)
+	(label "USB_DP"
+		(at 160.02 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "18543a03-6ba3-4446-af55-7aaad3a37d1c")
+	)
+	(label "IMU_INT1"
+		(at 299.72 162.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "19067d30-dbc3-42af-9d05-02f1a892f4f8")
+	)
+	(label "I2C_SDA"
+		(at 160.02 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1c0f1bfe-ce19-4540-9db6-0a08c9f4604a")
+	)
+	(label "LORA_BUSY"
+		(at 160.02 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1d164970-b8bd-4b0d-9035-43fea1590808")
+	)
+	(label "BTN_UP"
+		(at 160.02 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1d6b8cae-c5b6-47ef-ba02-9c4595ff732d")
+	)
+	(label "VBAT_SENSE"
+		(at 101.6 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2410029f-93db-4243-aec3-414d3152aa02")
+	)
+	(label "BUZZER"
+		(at 299.72 154.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "247eefab-c652-4991-8902-178b5965f3f9")
+	)
+	(label "LORA_NRST"
+		(at 160.02 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "24d69e96-d516-4a51-a574-d4e42c335c2f")
+	)
+	(label "IMU_INT2"
+		(at 160.02 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "25251542-b765-4ff9-8643-e825fe0dd001")
+	)
+	(label "LORA_BUSY"
+		(at 299.72 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "25e2496d-0efc-4fab-91d0-74d81a496459")
+	)
+	(label "LORA_SCK"
+		(at 160.02 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "29b0a443-7ad0-4d0a-9bd9-df6305ed98ae")
+	)
+	(label "GNSS_RX"
+		(at 160.02 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2a3acd90-1ecb-4190-aca3-484ae1328f1c")
+	)
+	(label "LORA_RXEN"
+		(at 160.02 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2dbbff69-f61e-4117-acf7-75b7927dcd3b")
+	)
+	(label "I2C_SCL"
+		(at 101.6 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "332f168e-58d4-4434-b0c0-7037acafc6f9")
+	)
+	(label "LORA_MOSI"
+		(at 299.72 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "36c526da-137a-4088-bc29-524237e8f5e3")
+	)
+	(label "LORA_NRST"
+		(at 299.72 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3ef6e5fd-288f-4534-8c44-af3d41adbb91")
+	)
+	(label "I2C_SCL"
+		(at 160.02 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "40879d67-e77b-4d66-9e13-17d3945a91f5")
+	)
+	(label "GNSS_RX"
+		(at 299.72 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "418466c5-923c-4f28-98f7-8c22224fb267")
+	)
+	(label "LORA_DIO1"
+		(at 160.02 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "44938d1d-14cd-4aeb-8854-e632e17c7a72")
+	)
+	(label "BTN_OK"
+		(at 299.72 149.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "49f01cb9-4cd9-4e8e-8285-9d3414680b05")
+	)
+	(label "IMU_INT1"
+		(at 160.02 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4c497b07-6b8c-4723-8136-7f09a9e9dc60")
+	)
+	(label "LORA_MOSI"
+		(at 160.02 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "56e09b7c-b9fb-4d76-91e3-539343101e08")
+	)
+	(label "USB_DM"
+		(at 160.02 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "64577794-a739-4990-8389-5b4ea8ba3986")
+	)
+	(label "LORA_MISO"
+		(at 299.72 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "67c15114-f559-4a7e-94af-21a81271166c")
+	)
+	(label "GNSS_EN"
+		(at 101.6 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "68bb1231-4dfe-4c86-aaa9-cf3e4135c0fb")
+	)
+	(label "BTN_OK"
+		(at 160.02 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "699adbb8-f6a6-4576-abe1-76e705412382")
+	)
+	(label "PMIC_INT"
+		(at 160.02 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "71a22e01-8ba0-4b02-99ab-9c8b87bbd4ba")
+	)
+	(label "VBUS_MCU"
+		(at 101.6 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e1375b2-06ed-476b-9943-eaed0fe174fc")
+	)
+	(label "VBUS_MCU"
+		(at 160.02 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8bd97602-4d43-4054-96b4-8a955616bdc6")
+	)
+	(label "I2C_SCL"
+		(at 299.72 157.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8c972309-bc55-48df-9cb9-da477cd1cd0a")
+	)
+	(label "LORA_RXEN"
+		(at 299.72 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "941a4c04-54a9-4a43-9ada-f2a95ce9d4c4")
+	)
+	(label "LORA_MISO"
+		(at 160.02 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "97715ee0-39e8-4f07-882c-2ddf7f7be565")
+	)
+	(label "GNSS_PPS"
+		(at 299.72 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9d8903ca-f6b0-4c6e-b5e8-f50a90c0fb21")
+	)
+	(label "LORA_NSS"
+		(at 160.02 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a0b94c0d-712c-4fce-b2df-c5ad5207060f")
+	)
+	(label "USB_DM"
+		(at 101.6 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a36ce443-09bf-40a1-a9cd-e3767a8062d4")
+	)
+	(label "LORA_SCK"
+		(at 299.72 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ae74b099-ef5b-49a5-b74c-a38b5fecf0db")
+	)
+	(label "LED_STAT"
+		(at 299.72 167.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b1412f96-1562-4e2e-822d-185fd3cfe48d")
+	)
+	(label "GNSS_TX"
+		(at 299.72 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b4a18953-397b-4c75-b0bf-b5ac4e093611")
+	)
+	(label "LORA_DIO1"
+		(at 299.72 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c46cff12-193f-41d3-a882-f34dd56c4c33")
+	)
+	(label "VBAT_SENSE"
+		(at 160.02 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c90c946e-c3d1-4291-85fb-91bcd9630e66")
+	)
+	(label "IMU_INT2"
+		(at 299.72 165.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cb953044-db9a-47c7-80c3-81eec9ae0be9")
+	)
+	(label "USB_DP"
+		(at 101.6 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cea6145b-37a2-4416-baee-c0073dcdb0b7")
+	)
+	(label "GNSS_RST"
+		(at 160.02 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d339f248-2c6f-4185-b4d2-43e2a3be8d14")
+	)
+	(label "GNSS_RST"
+		(at 299.72 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d5b81801-eebc-451d-be4a-548d62f9979b")
+	)
+	(label "LED_STAT"
+		(at 160.02 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d9352d1d-a640-4933-83e2-c2af95f1fd28")
+	)
+	(label "GNSS_TX"
+		(at 160.02 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e0188f5a-dd85-4d2b-8e1f-275ca47e7e2d")
+	)
+	(label "BTN_DOWN"
+		(at 299.72 147.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e0845060-b7a7-4d14-811f-fc3e1f3e2530")
+	)
+	(label "BTN_UP"
+		(at 299.72 152.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e56ae599-e65d-4f8e-a736-ec644c46a663")
+	)
+	(label "I2C_SDA"
+		(at 299.72 160.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ecc8127d-f34c-4c89-a435-b1db84d9d0b9")
+	)
+	(label "BTN_DOWN"
+		(at 160.02 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f96669f3-a4df-4c1f-bca8-58abab117caf")
+	)
+	(sheet
+		(at 160.02 40.64)
+		(size 60.96 142.24)
+		(fields_autoplaced)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "31596303-a1ed-469b-a7bd-138ba8176d89")
+		(property "Sheetname" "02_mcu"
+			(at 160.02 40.005 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "02_mcu.kicad_sch"
+			(at 160.02 183.515 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "BTN_DOWN" input
+			(at 160.02 43.18 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "40973741-0f5d-4b5a-89d5-f363bc76ccd0")
+		)
+		(pin "BTN_OK" input
+			(at 160.02 45.72 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ee05f3e4-b1c1-410f-88d6-89a3b214581a")
+		)
+		(pin "BTN_UP" input
+			(at 160.02 48.26 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "54f4aa2d-bee3-4fc9-8302-62dad65822c4")
+		)
+		(pin "BUZZER" output
+			(at 160.02 50.8 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c647f200-6eef-409e-91ef-8668577880e8")
+		)
+		(pin "GNSS_EN" output
+			(at 160.02 53.34 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "11a45944-f04a-464a-bdde-03be3edb06ee")
+		)
+		(pin "GNSS_PPS" input
+			(at 160.02 55.88 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "cf7e3658-c20e-4f9d-ac92-be2254cce8b6")
+		)
+		(pin "GNSS_RST" output
+			(at 160.02 58.42 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "089f7c3c-304a-4318-952b-4bb239f53f47")
+		)
+		(pin "GNSS_RX" input
+			(at 160.02 60.96 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f92f671e-199c-445e-a326-3b36ed4359bd")
+		)
+		(pin "GNSS_TX" output
+			(at 160.02 63.5 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d349b03c-221a-4c95-8328-00f7a5519333")
+		)
+		(pin "I2C_SCL" bidirectional
+			(at 160.02 66.04 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "616c4b72-d4c6-4244-97de-b5c1123e0ed4")
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 160.02 68.58 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "003eb665-78e7-472b-859e-91d3544c218a")
+		)
+		(pin "IMU_INT1" input
+			(at 160.02 71.12 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8fe2fa94-c263-404b-afb8-2d6934f349a4")
+		)
+		(pin "IMU_INT2" input
+			(at 160.02 73.66 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f7aba502-01ab-4072-9015-f238ec4a0e5d")
+		)
+		(pin "LED_STAT" output
+			(at 160.02 76.2 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e35c0502-c8a3-40a6-91ea-1bc95a271aa7")
+		)
+		(pin "LORA_BUSY" input
+			(at 160.02 78.74 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6462d5c2-04ec-4140-b58a-c6b29cddce52")
+		)
+		(pin "LORA_DIO1" input
+			(at 160.02 81.28 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c25ed433-596b-4bae-9072-fb1ed6a5759b")
+		)
+		(pin "LORA_MISO" input
+			(at 160.02 83.82 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d3cab2fa-999c-413f-8011-4982814e950e")
+		)
+		(pin "LORA_MOSI" output
+			(at 160.02 86.36 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f0812003-6b1e-4964-a3f9-3e9750ee4425")
+		)
+		(pin "LORA_NRST" output
+			(at 160.02 88.9 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3ac986e0-d3f6-4d31-a575-5637e04107eb")
+		)
+		(pin "LORA_NSS" output
+			(at 160.02 91.44 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "08a39b3d-cd46-4e2f-acee-9660e0797b06")
+		)
+		(pin "LORA_RXEN" output
+			(at 160.02 93.98 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "de0838e0-98ef-4abc-abe2-dc134315eaeb")
+		)
+		(pin "LORA_SCK" output
+			(at 160.02 96.52 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6b8063de-7cdd-4efb-9728-402a78134b93")
+		)
+		(pin "LORA_TXEN" output
+			(at 160.02 99.06 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "2bdedb54-6d47-4973-a7a2-74f07a413259")
+		)
+		(pin "PMIC_INT" input
+			(at 160.02 101.6 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6c839dad-0a6a-4ef9-b5db-1c24cf5c0254")
+		)
+		(pin "USB_DM" bidirectional
+			(at 160.02 104.14 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6ad6314b-8133-45fb-9457-dd924935c0e7")
+		)
+		(pin "USB_DP" bidirectional
+			(at 160.02 106.68 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5cd0ef5a-0b9a-4100-807f-c958d24eea40")
+		)
+		(pin "VBAT_SENSE" input
+			(at 160.02 109.22 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e23134c0-6a84-4d07-a51e-039445b66543")
+		)
+		(pin "VBUS_MCU" input
+			(at 160.02 111.76 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "42111982-5d20-44c0-94ec-aa677244b657")
+		)
+		(instances
+			(project "nrflm20-meshnode"
+				(path "/c94704a9-c067-4fa4-9697-76ed3889f8ff"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 299.72 99.06)
+		(size 50.8 27.94)
+		(fields_autoplaced)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "56bb3179-dcc4-4712-9d39-8cf4a76bc201")
+		(property "Sheetname" "04_gnss"
+			(at 299.72 98.425 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "04_gnss.kicad_sch"
+			(at 299.72 127.635 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GNSS_PPS" output
+			(at 299.72 101.6 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ca0b845d-ad54-4b3d-b41f-a7eec99f1102")
+		)
+		(pin "GNSS_RST" input
+			(at 299.72 104.14 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9e2df707-3620-43b7-a3f6-8308fcc46159")
+		)
+		(pin "GNSS_RX" output
+			(at 299.72 106.68 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9a840750-1d66-4c56-9942-f23e6537ce77")
+		)
+		(pin "GNSS_TX" input
+			(at 299.72 109.22 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8af25ae2-f7bd-4284-8687-9db04a5c1275")
+		)
+		(instances
+			(project "nrflm20-meshnode"
+				(path "/c94704a9-c067-4fa4-9697-76ed3889f8ff"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 299.72 40.64)
+		(size 50.8 40.64)
+		(fields_autoplaced)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7827cb89-b4fa-44c0-bf25-bc774d666d20")
+		(property "Sheetname" "03_lora"
+			(at 299.72 40.005 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "03_lora.kicad_sch"
+			(at 299.72 81.915 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LORA_BUSY" output
+			(at 299.72 43.18 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a61766e4-f223-40db-bd45-dbfd4f3b3e10")
+		)
+		(pin "LORA_DIO1" output
+			(at 299.72 45.72 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "010c8036-fe0c-49d9-b665-33f68ed55446")
+		)
+		(pin "LORA_MISO" output
+			(at 299.72 48.26 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "bb6da87b-2f8b-48a7-bf6d-990f063c17bb")
+		)
+		(pin "LORA_MOSI" input
+			(at 299.72 50.8 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a19c7448-423b-407e-b03f-5f1495f244e6")
+		)
+		(pin "LORA_NRST" input
+			(at 299.72 53.34 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "abce0559-2325-4d5a-aaff-aca1d87016d9")
+		)
+		(pin "LORA_NSS" input
+			(at 299.72 55.88 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "658c037d-7812-424d-ac13-eed8edcfe7e4")
+		)
+		(pin "LORA_RXEN" input
+			(at 299.72 58.42 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "71fc1553-cdcd-45ab-b470-3138751ef500")
+		)
+		(pin "LORA_SCK" input
+			(at 299.72 60.96 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "62f38b9d-ff6e-4256-be1b-2fcec3f067a6")
+		)
+		(pin "LORA_TXEN" input
+			(at 299.72 63.5 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "121e4d7d-0491-4240-8fe6-c2d75396c5aa")
+		)
+		(instances
+			(project "nrflm20-meshnode"
+				(path "/c94704a9-c067-4fa4-9697-76ed3889f8ff"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 299.72 144.78)
+		(size 50.8 40.64)
+		(fields_autoplaced)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d1cb34ed-1bd2-42b4-a8ea-f9a02cf3bac9")
+		(property "Sheetname" "05_interfaz"
+			(at 299.72 144.145 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "05_interfaz.kicad_sch"
+			(at 299.72 186.055 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "BTN_DOWN" output
+			(at 299.72 147.32 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ef316659-be96-46ce-a71b-bb42dcdf37da")
+		)
+		(pin "BTN_OK" output
+			(at 299.72 149.86 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8a076430-08d0-4811-8f22-fd4d90d6bd06")
+		)
+		(pin "BTN_UP" output
+			(at 299.72 152.4 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "585f6e0d-c901-4aa9-b71a-4181d105b3ff")
+		)
+		(pin "BUZZER" input
+			(at 299.72 154.94 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "40b60f73-00a4-400a-add6-f77117efe090")
+		)
+		(pin "I2C_SCL" bidirectional
+			(at 299.72 157.48 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "be4cd081-d87e-4f93-ae28-5cc7e0c28d24")
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 299.72 160.02 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "31408729-19ca-4fae-b14a-5b089476b020")
+		)
+		(pin "IMU_INT1" output
+			(at 299.72 162.56 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5be5eb39-a0a5-4ce0-8f4a-7601db8d34e7")
+		)
+		(pin "IMU_INT2" output
+			(at 299.72 165.1 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "2b05934c-fd7f-4654-b97a-b1840d81fd04")
+		)
+		(pin "LED_STAT" input
+			(at 299.72 167.64 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f9560982-1fd5-4311-8753-67cedef3fc15")
+		)
+		(instances
+			(project "nrflm20-meshnode"
+				(path "/c94704a9-c067-4fa4-9697-76ed3889f8ff"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 40.64 60.96)
+		(size 60.96 60.96)
+		(fields_autoplaced)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ff7fb619-71aa-4cad-8cba-b5ec7bae50e1")
+		(property "Sheetname" "01_alimentacion"
+			(at 40.64 60.325 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "01_alimentacion.kicad_sch"
+			(at 40.64 122.555 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GNSS_EN" input
+			(at 101.6 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "1aba8298-0a8a-4be6-ab16-a9d337df36e9")
+		)
+		(pin "I2C_SCL" bidirectional
+			(at 101.6 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e4d51f77-7588-4ba5-bbf8-b5ca4a7311f3")
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 101.6 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7d514902-797b-40d1-bdf5-32f0daf647bd")
+		)
+		(pin "PMIC_INT" output
+			(at 101.6 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2dd863ef-64e6-43c9-a842-140a223cf5d6")
+		)
+		(pin "USB_DM" bidirectional
+			(at 101.6 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "22825f83-2b97-4a19-b9c2-5c4f2fd591de")
+		)
+		(pin "USB_DP" bidirectional
+			(at 101.6 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "11da27bf-c2c9-44e3-8ca9-53f801446800")
+		)
+		(pin "VBAT_SENSE" output
+			(at 101.6 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "cdad74b7-2256-40ae-998a-e897df34a9d6")
+		)
+		(pin "VBUS_MCU" output
+			(at 101.6 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3a91d8e6-6923-4f89-945d-7b0da1932e2b")
+		)
+		(instances
+			(project "nrflm20-meshnode"
+				(path "/c94704a9-c067-4fa4-9697-76ed3889f8ff"
+					(page "2")
+				)
+			)
+		)
+	)
+	
+  (text "Agujeros de montaje: 4 × M2, NPTH sin cobre (MountingHole_2.2mm_M2), uno en cada esquina, a 3,5 mm de los cantos"
+    (at 45.72 205.74 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "eba09d7d-d1d2-4d3e-902f-285ce8fa3640")
+  )(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 50.8 215.9 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8bce6ebb-25b2-4894-9fac-49bceee50ac0")
+		(property "Reference" "H1"
+			(at 50.8 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M2"
+			(at 50.8 212.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 50.8 215.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 215.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 50.8 215.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "nrflm20-meshnode"
+				(path "/c94704a9-c067-4fa4-9697-76ed3889f8ff"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 66.04 215.9 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1c893e78-5b54-4f72-863a-ce33c0b222f0")
+		(property "Reference" "H2"
+			(at 66.04 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M2"
+			(at 66.04 212.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 66.04 215.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 215.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 66.04 215.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "nrflm20-meshnode"
+				(path "/c94704a9-c067-4fa4-9697-76ed3889f8ff"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 81.28 215.9 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fd125f23-d7d5-400f-9348-5dca1b2f7393")
+		(property "Reference" "H3"
+			(at 81.28 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M2"
+			(at 81.28 212.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 81.28 215.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 215.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 81.28 215.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "nrflm20-meshnode"
+				(path "/c94704a9-c067-4fa4-9697-76ed3889f8ff"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 96.52 215.9 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "98b26090-61e0-485a-8f9a-4f01c486df56")
+		(property "Reference" "H4"
+			(at 96.52 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M2"
+			(at 96.52 212.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 96.52 215.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 215.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 96.52 215.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "nrflm20-meshnode"
+				(path "/c94704a9-c067-4fa4-9697-76ed3889f8ff"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

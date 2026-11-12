@@ -1,0 +1,7 @@
+(version 1)
+
+# Pulsadores laterales HX TS35CA (SW101, SW501-503): sus patillas delanteras van casi en el canto para
+# que el botón asome (~0,25 mm). Cobre a canto 0,3 mm sólo para estas huellas; el resto, 0,5 mm (Board Setup).
+(rule "Pulsadores laterales: cobre a canto 0,3 mm"
+	(constraint edge_clearance (min 0.3mm))
+	(condition "A.memberOfFootprint('SW*')"))
