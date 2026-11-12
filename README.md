@@ -14,7 +14,7 @@ It connects to the phone over Bluetooth LE.
 > **Status:** revision 0.1, not yet manufactured or tested. There is no Meshtastic firmware
 > variant for this board yet.
 
-<a href="https://www.pcbway.com/"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
+<a href="https://www.pcbway.com/project/shareproject/LM20MeshNode_52978000.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
 
 ## Features
 
