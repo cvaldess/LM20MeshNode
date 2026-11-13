@@ -11,8 +11,8 @@ It connects to the phone over Bluetooth LE.
 
 ![PCB layout](LM20MeshNode-2D.JPG)
 
-> **Status:** revision 0.1, not yet manufactured or tested. There is no Meshtastic firmware
-> variant for this board yet.
+> **Status:** revision 0.1, not yet manufactured or tested. A Meshtastic firmware variant is
+> under review as a draft, not yet tested on hardware: see [Meshtastic firmware](#meshtastic-firmware).
 
 <a href="https://www.pcbway.com/project/shareproject/LM20MeshNode_52978000.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
 
@@ -63,6 +63,41 @@ I²C devices: nPM1300 `0x6B`, LSM6DS3TR-C `0x6A`, SHT41 `0x44`, OLED `0x3C`.
   over I²C. The board is designed so that LoRa and Bluetooth work without a PMIC driver.
 - The E22-900MM22S used here has a crystal, not a TCXO: do not define a DIO3 TCXO voltage.
 - The GNSS rail (BUCK1) must be set to 3.3 V and enabled by firmware.
+
+## Meshtastic firmware
+
+The `lm20meshnode` variant is under review upstream. All three pull requests are open, and
+nothing has run on hardware yet:
+
+| Part | Pull request |
+|------|--------------|
+| Meshtastic variant (draft, on top of the nRF54LM20-DK support in [#12130](https://github.com/meshtastic/firmware/pull/12130)) | [meshtastic/firmware#12354](https://github.com/meshtastic/firmware/pull/12354) |
+| Arduino core variant | [andyshinn/nRF54_Arduino#3](https://github.com/andyshinn/nRF54_Arduino/pull/3) |
+| Bootloader board | [andyshinn/nRF54_Bootloader#3](https://github.com/andyshinn/nRF54_Bootloader/pull/3) |
+
+Until they are merged, the variant builds from the `feat/lm20meshnode-variant` branch of
+[cvaldess/firmware](https://github.com/cvaldess/firmware/tree/feat/lm20meshnode-variant) with
+`pio run -e lm20meshnode`. The core and the bootloader come from forks (the core at a pinned commit,
+the bootloader at the tag `v0.5.0-lm20meshnode.1`).
+
+What the variant does on this board:
+
+- **nPM1300**, set up over I²C at boot: BUCK1 (GNSS rail) at 3.3 V, switched by the PMIC's GPIO0,
+  which the GPS code drives from P1.05; battery charger on at 200 mA (`NPM1300_CHARGE_CURRENT_MA`),
+  4.20 V (4.00 V in the warm region), with the on-board 10 kΩ NTC; USB input limit 500 mA. BUCK2,
+  the 3.3 V main rail, is left on its VSET2 setting. After USB is unplugged and plugged in again,
+  the PMIC goes back to its 100 mA startup input limit until the next boot.
+- **LoRa** with RXEN from the MCU and TXEN from DIO2, no TCXO. **GNSS** on `Serial1` at 38400 bps.
+- **Buttons:** UP, DOWN and OK navigate the screen (up/down input driver). **OLED** at 128×32,
+  **buzzer**, **status LED**, **battery** level from AIN2, and the SHT41 and LSM6DS3TR-C drivers.
+- **USB-C:** console and Meshtastic API over USB CDC; firmware updates over USB (serial DFU or a
+  UF2 drive) or over Bluetooth.
+- **Bootloader** (64 KB, application at `0x10000`): hold **OK** at reset for USB DFU (UF2 drive
+  `LM20MN-BOOT`), **OK + DOWN** for Bluetooth OTA. The status LED shows the bootloader state.
+
+Not tested yet, besides the board itself: the nPM1300 setup, GPS on the nRF54 platform (no other
+nRF54 variant uses it so far), the 128×32 screen layout and the battery reading through the
+2 × 1 MΩ divider.
 
 ## Manufacturing
 
