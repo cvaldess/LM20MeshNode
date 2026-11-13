@@ -22792,6 +22792,18 @@
 			(justify left bottom mirror)
 		)
 	)
+	(gr_text "LED D102 (battery charging error indicator)\nLED D103 (battery charge indicator)"
+		(at 131.86 107.67 90)
+		(layer "B.SilkS")
+		(uuid "e54b4263-e0bb-45d3-b176-00c3f1d94f5b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "J401 GNSS Antenna"
 		(at 132.37 81.06 90)
 		(layer "B.SilkS")
