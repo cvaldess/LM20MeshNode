@@ -5,6 +5,8 @@ Pocket [Meshtastic](https://meshtastic.org/) node built around the Nordic **nRF5
 **E108-GN04S** GNSS receiver and a Nordic **nPM1300** PMIC for a single-cell LiPo battery.
 It connects to the phone over Bluetooth LE.
 
+![Cover](LM20MeshNode-Cover.png)
+
 | Front | Back |
 |-------|------|
 | ![3D view, front](LM20MeshNode-3D-F.JPG) | ![3D view, back](LM20MeshNode-3D-B.JPG) |
